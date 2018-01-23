@@ -7,7 +7,7 @@ The user interface has some dependencies, most importantly Bootstrap, and some J
 
 
 ## Installation
-For **deployment** install (Jekyll)[https://jekyllrb.com/] and hit `jekyll serve`.
+For **deployment** install [Jekyll](https://jekyllrb.com/) and hit `jekyll serve`.
 
-For **development** (i.e., if you want to change the styles or scripts) you need to install (node)[https://nodejs.org/en/] and (yarn)[https://yarnpkg.com/lang/en/docs/install/]. Then run `yarn install` in the main directory to install all dependencies. After that, you can start developing! Run `yarn build` to turn process the styles and scripts (and dump them in `jekyll/assest`). Run `yarn watch` to do this whenever a file in `webpack/` gets updated.
+For **development** (i.e., if you want to change the styles or scripts) you need to install [node](https://nodejs.org/en/) and the package manager [yarn](https://yarnpkg.com/lang/en/docs/install/). Then run `yarn install` in the main directory to install all dependencies. After that, you can start developing! Run `yarn build` to turn process the styles and scripts (and dump them in `jekyll/assest`). Run `yarn watch` to do this whenever a file in `webpack/` gets updated.
 
