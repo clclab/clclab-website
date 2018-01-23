@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="container">
+      <div class="row">
+
+        <div id="sidebar" class="col-lg-2 navbar navbar-light"> 
+          <div class="clc-mark p-3">
+            <div class="p-3">{% include clc.svg %}</div>
+            <p class="clc-name">cognition, language<br/>and computation lab</p>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="research.html">Research</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="people.html">People</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="publications.html">Publications</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-lg-9 offset-lg-3">
+          {{ content }}
+        </div>
+        <!-- <div class="col-lg-1"></div> -->
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+
+</html>

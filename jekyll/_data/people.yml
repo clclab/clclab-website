@@ -1,0 +1,152 @@
+- name: Jelle Zuidema
+  type: current
+  position: PI
+  email: w.h.zuidema@uva.nl
+  twitter: wzuidema
+  interests: >
+    I am assistant professor in cognitive science and computational 
+    linguistics at the Institute for Logic, Language and Computation. 
+    I do research on these topics, coordinate the Cognition, Language 
+    and Computation lab and supervise several PhD and MSc students there. 
+    I teach in the interdisciplinary master’s programs Brain & 
+    Cognitive Sciences, Artificial Intelligence, and Logic, and coordinate 
+    the Cognitive Science track in the MBCS. I sometimes give public talks 
+    on human language, animal communication and evolution.
+  img: media/jelle.jpg
+
+- name: Dieuwke Hupkes
+  type: current
+  position: phd
+  url: http://dieuwkehupkes.nl
+  github: dieuwkehupkes
+  email: d.hupkes@uva.nl
+  img: media/dieuwke.png
+  interests: >
+    Currently, in my PhD work, I focus on (artificial) neural network models 
+    for (semantic) parsing, a problem that for me touches on the core of 
+    understanding natural language. Although artificial neural networks 
+    are of course nothing like the real brain, I hope that understanding 
+    the principles by which they can encode processes can still teach us 
+    something that will lead to a better understanding of how language 
+    could be implemented in the brain.
+
+- name: Samira Abnar
+  type: current
+  position: phd
+  url: https://staff.fnwi.uva.nl/s.abnar/
+  github: samiraabnar
+  twitter: samiraabnar
+  img: media/samira.jpg
+  interests: >
+    My general research interest is Cognitive Modeling. I am interested 
+    in working on deep neural models that are biologically plausible and 
+    can perform at a human level. I have chosen Language as the higher 
+    cognitive function that I am going to focus on because I think much 
+    of human intelligence is reflected in language.
+
+
+
+- name: Bas Cornelissen
+  type: current
+  position: phd
+  url: http://bascornelissen.nl
+  github: bacor
+  twitter: bas_c
+  email: bjmcornelissen@gmail.com
+  img: media/bas.jpg
+
+- name: Peter Dekker  
+  type: current
+  position: master
+
+- name: Matthijs Mul
+  type: current
+  position: master
+
+- name: Raquel Alhama
+  type: former
+  position: phd
+  url: https://rgalhama.github.io/
+  img: https://rgalhama.github.io/img/raquel-home.jpg
+
+- name: Raquel Fernandez
+  type: collaborator
+  img: https://staff.fnwi.uva.nl/r.fernandezrovira/web/raq.png
+  url: https://staff.fnwi.uva.nl/r.fernandezrovira
+  twitter: raquelfdzrovira
+
+- name: Ivan Titov
+  type: collaborator
+  url: http://ivan-titov.org/
+  img: http://ivan-titov.org/it2.jpg
+  twitter: iatitov
+
+- name: Tejaswini Deoskar
+  type: collaborator
+  img: https://staff.fnwi.uva.nl/t.deoskar/td1.jpg
+  url: https://staff.fnwi.uva.nl/t.deoskar/
+
+- name: Henkjan Honing
+  type: collaborator
+  img: https://pbs.twimg.com/profile_images/902836949492277249/hPi9UMyU_400x400.jpg
+  twitter: musiccognition
+  url: http://www.mcg.uva.nl/
+
+- name: Phong Le
+  type: former
+  now: Postdoc at the University of Amsterdam
+  img: https://sites.google.com/site/lephongxyz/_/rsrc/1510338357982/home/me.jpg?height=200&width=200
+  url: https://sites.google.com/site/lephongxyz/home
+  interests: >
+    I'm interested in neural networks and deep learning. My current work is to 
+    employ them to solve natural language processing tasks such as entity linking, 
+    coreference resolution, and dependency parsing.  I'm also interested in formal 
+    semantics, especially learning semantic parsing, which is the topic of my master thesis.
+
+
+- name: Marieke Woensdrecht
+  type: former
+  now: PhD student at the University of Edinburgh
+  url: https://marieke-woensdregt.github.io/
+  img: https://marieke-woensdregt.github.io/sidebar_pic.jpg
+  twitter: mariekewoe
+
+- name: Katja Abramova 
+  type: former
+  now: PhD student at Radboud University Nijmegen
+  url: http://www.ru.nl/ptrs/ccl/about-us-0/members/katja-abramova-ma/
+  img: http://www.ru.nl/publish/pages/765325/s200_katja_abramova.jpg
+
+- name: Vanessa Ferdinand
+  type: former
+  now: Postdoc at Santa Fe
+  url: http://tuvalu.santafe.edu/~vanessa/homepage/Research.html
+  img: http://tuvalu.santafe.edu/~vanessa/homepage/Research_files/17105918018_bede93d392_o.jpg
+
+- name: Jonathan Mallinson
+  type: former
+  now: PhD student at the University of Edinburgh
+  url: http://homepages.inf.ed.ac.uk/s1564225/
+
+- name: Federico Sangati
+  type: former
+  now: Postdoc at the University of Edinburgh
+  url: http://homepages.inf.ed.ac.uk/fsangati/
+  img: http://homepages.inf.ed.ac.uk/fsangati/chromer150.png
+
+- name: Willemijn van Woerkum
+  type: former
+
+- name: Stijn de Gooijer
+  type: former
+
+- name: Gideon Boreztajn
+  type: former
+
+- name: Kasper Kok
+  type: former
+
+- name: Simon Hofmann
+  type: former
+
+

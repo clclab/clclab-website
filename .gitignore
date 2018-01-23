@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+*.sublime-*
+yarn-error.log
+.sass-cache
+.jekyll-metadata

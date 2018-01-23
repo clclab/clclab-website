@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+
+<div class="container">
+	<div class="row">
+		<h2 class="my-4">Current members</h2>
+		
+		{% assign members = site.data.people | where:"type","current" %}
+		{% for member in members %}
+		
+			{% assign cardsPerRow = 2 %}
+			{% assign cardsPerRowm1 = cardsPerRow | minus:1 %}
+			{% assign indexMod2 = forloop.index0 | modulo:cardsPerRow %}
+			{% if indexMod2 == 0 %}<div class="card-deck">{% endif %}
+				
+				{% include person.html person=member %}
+
+		  {% if indexMod2 == cardsPerRowm1 %}</div>{% endif %}
+		{% endfor %}
+
+		{% if indexMod2 != cardsPerRow %}</div>{% endif %}
+	</div>
+
+	<div class="row">
+		<h2 class="col-12">Frequent collaborators</h2>
+
+		{% assign collaborators = site.data.people | where:"type","collaborator" %}
+		{% for member in collaborators %}
+	    {% include person.html person=member %}
+		{% endfor %}
+	</div>
+
+	<div class="row">
+		<h2 class="col-12">Former members</h2>
+		{% assign former_members = site.data.people | where:"type","former" %}
+		{% for member in former_members %}
+	    {% include person.html person=member %}
+		{% endfor %}
+	</div>
+</div>
+		

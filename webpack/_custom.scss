@@ -1,0 +1,76 @@
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono|Source+Sans+Pro");
+$font-family-sans-serif: "Source Sans Pro";
+$font-family-monospace: "Ubuntu Mono";
+
+$blue: #00b49d;
+$yellow: #fdf499;
+$secondary: $yellow;
+$gray-900: #004b44;
+// $gray-900: #003c36;
+$gray-100: #fbfcf2;
+$enable-rounded: false;
+
+*[class^="display-"],
+h1, h2, h3, h4, h5, h6,
+.card-footer { 
+	font-family: $font-family-monospace !important;
+}
+
+::selection { 
+	color: $gray-900;
+	background-color: $blue;
+}
+
+.clc-mark {
+	background: $yellow;
+	text-align: center;
+
+	svg {
+		path {
+			fill: $gray-900;
+		}
+	}
+
+	.clc-name {
+		font-family: $font-family-monospace;
+		color: $gray-900;
+		line-height: 1;
+	}
+}
+
+
+@media (min-width: 992px){
+    #sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+.person {
+	font-family: $font-family-monospace;
+	.card-header {
+	  background-color: $blue;
+	  position: relative;
+	  height: 50px;
+
+	  .img {
+	    filter: grayscale(100%); 
+      mix-blend-mode: darken;
+      
+      height: 120px;
+      width: 120px;
+      background-size: cover;
+	    background-position: center;
+	    border-radius: 100%;
+	    position: absolute;
+	    margin-left: 0px;
+  	  margin-top: -50px;
+	  }
+}
+
+	.card-footer.border-0 {
+		border-bottom: 5px solid $blue!important;
+	}
+}
