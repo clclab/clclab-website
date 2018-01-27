@@ -1,6 +1,8 @@
 ---
 layout: page
-title: our research
+title: Our research
+updated: 2018-01-29
+published: 2018-01-28
 ---
 
 Language is extremely complex, extremely useful, universally found in all human populations

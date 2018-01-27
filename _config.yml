@@ -45,11 +45,14 @@ encoding: utf-8
 plugins: ['jekyll/scholar']
 
 scholar:
-  style: apa
+  style: apa-no-doi-no-issue
   sort_by: year
   order: descending
   bibliography: publications.bib
   bibliography_template: bib
-  bibtex_skip_fields: [mendeley-tags, file]
+  bibtex_skip_fields: [mendeley-tags, file, url]
+  bibtex_filters:
+    - latex
+    - markdown
 
 
