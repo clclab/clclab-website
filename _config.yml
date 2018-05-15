@@ -50,7 +50,7 @@ scholar:
   order: descending
   bibliography: publications.bib
   bibliography_template: bib
-  bibtex_skip_fields: [mendeley-tags, file, url]
+  #bibtex_skip_fields: [mendeley-tags, file, url]
   bibtex_filters:
     - latex
     - markdown

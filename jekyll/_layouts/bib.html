@@ -1,11 +1,12 @@
 ---
 ---
 <!-- {{ reference }} -->
-<div class="bib-entry my-3">
+<div class="bib-entry my-3" data-tags="{{ entry.tags }}">
 <!-- 
   <h5 class="bib-title">{{ entry.title }}</h5>
   <span class="bib-author">{{ entry.author }}</span>
  -->
+
  {{ reference }}
   <div>
     <span class="bib-year badge badge-pill badge-secondary">{{ entry.year }}</span>
@@ -18,10 +19,6 @@
       BibTeX
     </a>
   </div>
-
-  
-
-
 
   <!-- Modal -->
   <div class="modal fade" id="bibtexmodal-{{ entry.key }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
