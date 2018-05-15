@@ -1,23 +1,36 @@
 ---
 ---
-<!-- {{ reference }} -->
-<div class="bib-entry my-3" data-tags="{{ entry.tags }}">
-<!-- 
-  <h5 class="bib-title">{{ entry.title }}</h5>
-  <span class="bib-author">{{ entry.author }}</span>
- -->
 
- {{ reference }}
+<div class="bib-entry my-3" 
+  data-year="{{ entry.year }}"
+  data-title="{{ entry.title }}"
+  data-author="{{ entry.author }}">
+
+  <span class="bib-year badge badge-pill badge-primary">{{ entry.year }}</span>
+  {{ reference }}
+  
   <div>
-    <span class="bib-year badge badge-pill badge-secondary">{{ entry.year }}</span>
-
     {% if entry.doi %}
-    	<a class="badge badge-pill badge-light" href="https://doi.org/{{ entry.doi }}">DOI</a>
+      <a class="badge badge-pill badge-secondary" href="https://doi.org/{{ entry.doi }}">DOI</a>
     {% endif %}
 
-    <a href="#" class="badge badge-pill badge-light" data-toggle="modal" data-target="#bibtexmodal-{{ entry.key }}">
+    {% if entry.file %}
+      <a class="badge badge-pill badge-secondary" href="{{ site_url }}/media/pdfs/{{ entry.file }}">PDF</a>
+    {% endif %}
+
+    <a href="#" class="badge badge-pill badge-secondary" data-toggle="modal" data-target="#bibtexmodal-{{ entry.key }}">
       BibTeX
     </a>
+
+    {% if entry.clctags %}
+      {% assign rawtags = entry.clctags %}
+      {% assign tags = rawtags | split: "," %}
+      {% for tag in tags %}
+        <a href="#" class="badge badge-pill badge-light">
+          {{ tag }}
+        </a>
+      {% endfor %}
+    {% endif %}
   </div>
 
   <!-- Modal -->
