@@ -1,6 +1,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono|Source+Sans+Pro");
-$font-family-sans-serif: "Source Sans Pro";
+$font-family-sans-serif: "PT Serif";//"Source Sans Pro";
+// $font-family-sans: "PT Serif";//"Source Sans Pro";
 $font-family-monospace: "Ubuntu Mono";
 
 $blue: #00b49d;
@@ -10,7 +11,6 @@ $gray-900: #004b44;
 $black: $gray-900;
 $gray-100: #fbfcf2;
 $enable-rounded: false;
-
 
 *[class^="display-"],
 h1, h2, h3, h4, h5, h6,
@@ -59,10 +59,15 @@ h2 {
 }
 
 
+.btn,
+.badge {
+	font-family: $font-family-monospace;
+}
+
 
 
 .person {
-	font-family: $font-family-monospace;
+	// font-family: $font-family-monospace;
 	.card-header {
 	  background-color: $blue;
 	  position: relative;
@@ -98,4 +103,23 @@ h2 {
 
 .container.page {
 
+}
+
+.oi.hidden {
+	visibility: hidden;
+}
+
+.btn .oi {
+	margin-left: .2em;
+	font-size: .8em;
+}
+
+.bib-entry.hidden {
+	display: none;
+}
+
+#search-pubs {
+	font-family: $font-family-monospace;
+	color: $blue;
+	border-color: $blue;
 }

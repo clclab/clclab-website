@@ -1,6 +1,6 @@
 
 
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const path = require('path');
@@ -42,6 +42,12 @@ module.exports = {
   },
 
   plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: './node_modules/open-iconic/font',
+        to: 'iconic'
+      }
+    ]),
     // Copy the bootstrap scss files to the jekyll site
     // new CopyWebpackPlugin([
     //   { 

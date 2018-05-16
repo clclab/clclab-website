@@ -1,0 +1,52 @@
+---
+layout: page
+title: Publications
+updated: 2018-01-29
+---
+<!-- <input class="search" /> -->
+<!-- <div class="btn-toolbar" role="toolbar" aria-label="Sorting options"> -->
+<div class="btn-group">
+    <button type="button" class="btn btn-sm btn-primary" disabled>Sort by</button>
+    
+    <button type="button" class="btn btn-sm btn-primary" 
+        data-sort-selector="#publications .bibliography>li .bib-entry"
+        data-sort-order="asc"
+        data-sort="year,author">
+        year 
+        <span class="oi oi-chevron-top" aria-hidden="true"></span>
+
+    </button>
+
+    <button type="button" class="btn btn-sm btn-primary" 
+        data-sort-selector="#publications .bibliography>li .bib-entry"
+        data-sort-order="asc"
+        data-sort="author,year">
+        author
+        <span class="oi small hidden" aria-hidden="true"></span>
+    </button>
+
+    <button type="button" class="btn btn-sm btn-primary" 
+        data-sort-selector="#publications .bibliography>li .bib-entry"
+        data-sort-order="asc"
+        data-sort="title">title
+        <span class="oi oi-chevron-top small hidden" aria-hidden="true"></span>
+    </button>
+
+    <button type="button" class="btn btn-sm btn-primary" 
+        data-sort-selector="#publications .bibliography>li .bib-entry"
+        data-sort-order="asc,asc"
+        data-sort="journal,author">journal
+        <span class="oi oi-chevron-top small hidden" aria-hidden="true"></span>
+    </button>
+
+    <input type="text" id="search-pubs" class="form-control" placeholder="filter..."
+        data-searchable-input-for="bib-entry">
+
+</div>
+
+<div id="publications">
+  {% bibliography 
+      --file publications 
+      --order ascending
+      --sort_by year %}
+</div>

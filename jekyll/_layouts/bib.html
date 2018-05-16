@@ -1,12 +1,13 @@
 ---
 ---
 
-<div class="bib-entry my-3" 
+<div id="bib-item-{{ entry.key }}" class="bib-entry my-3" 
+  data-searchable
   data-year="{{ entry.year }}"
   data-title="{{ entry.title }}"
-  data-author="{{ entry.author }}">
-
-  <span class="bib-year badge badge-pill badge-primary">{{ entry.year }}</span>
+  data-author="{{ entry.author }}"
+  data-journal="{{ entry.journal }}">
+  
   {{ reference }}
   
   <div>
@@ -32,8 +33,7 @@
       {% endfor %}
     {% endif %}
   </div>
-
-  <!-- Modal -->
+  
   <div class="modal fade" id="bibtexmodal-{{ entry.key }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -44,7 +44,7 @@
           </button>
         </div>
         <div class="modal-body">
-        	<pre>{{ entry.bibtex }}</pre>
+          <pre>{{ entry.bibtex }}</pre>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -52,4 +52,5 @@
       </div>
     </div>
   </div>
+
 </div>

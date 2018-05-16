@@ -34,6 +34,8 @@
 	
 	<!-- CSS & fonts -->
   <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/styles.css">
+   <link rel="stylesheet" href="/assets/iconic/css/open-iconic-bootstrap.css">
+
 
 </head>
 
@@ -144,15 +146,245 @@
 		<h1 class="display-1 my-5">Publications</h1>
 	</header>
 
-	<div id="publications">
+	<!-- <input class="search" /> -->
+<!-- <div class="btn-toolbar" role="toolbar" aria-label="Sorting options"> -->
+<div class="btn-group">
+    <button type="button" class="btn btn-sm btn-primary" disabled>Sort by</button>
+    
+    <button type="button" class="btn btn-sm btn-primary" 
+        data-sort-selector="#publications .bibliography>li .bib-entry"
+        data-sort-order="asc"
+        data-sort="year,author">
+        year 
+        <span class="oi oi-chevron-top" aria-hidden="true"></span>
+
+    </button>
+
+    <button type="button" class="btn btn-sm btn-primary" 
+        data-sort-selector="#publications .bibliography>li .bib-entry"
+        data-sort-order="asc"
+        data-sort="author,year">
+        author
+        <span class="oi small hidden" aria-hidden="true"></span>
+    </button>
+
+    <button type="button" class="btn btn-sm btn-primary" 
+        data-sort-selector="#publications .bibliography>li .bib-entry"
+        data-sort-order="asc"
+        data-sort="title">title
+        <span class="oi oi-chevron-top small hidden" aria-hidden="true"></span>
+    </button>
+
+    <button type="button" class="btn btn-sm btn-primary" 
+        data-sort-selector="#publications .bibliography>li .bib-entry"
+        data-sort-order="asc,asc"
+        data-sort="journal,author">journal
+        <span class="oi oi-chevron-top small hidden" aria-hidden="true"></span>
+    </button>
+
+    <input type="text" id="search-pubs" class="form-control" placeholder="filter..."
+        data-searchable-input-for="bib-entry">
+
+</div>
+
+<div id="publications">
+  <ol class="bibliography"><li><div id="bib-item-Pulses2009" class="bib-entry my-3" 
+  data-searchable
+  data-year="2009"
+  data-title="Language Phylogenies Reveal Expansion Pulses and Pauses in Pacific Settlement"
+  data-author="Gray, R. D. and Drummond, A. J. and Greenhill, S. J."
+  data-journal="Science">
   
-  <input class="search" />
-  <span class="sort" data-sort="year">Sort by year</span>
+  <span id="Pulses2009">Gray, R. D., Drummond, A. J., &amp; Greenhill, S. J. (2009). Language Phylogenies Reveal Expansion Pulses and Pauses in Pacific Settlement. <i>Science</i>, <i>323</i>, 479–483.</span>
+  
+  <div>
+    
+      <a class="badge badge-pill badge-secondary" href="https://doi.org/10.1126/science.1166858">DOI</a>
+    
 
-  <ol class="bibliography"><li><div class="bib-entry my-3" data-year="2013" data-title="Language in Nature: On the Evolutionary Roots of a Cultural Phenomenon" data-author="Zuidema, Willem">
+    
+      <a class="badge badge-pill badge-secondary" href="/media/pdfs/:Users/Bas/Dropbox/Literature/Gray, Drummond, Greenhill/Gray, Drummond, Greenhill - 2009 - Language Phylogenies Reveal Expansion Pulses and Pauses in Pacific Settlement.pdf:pdf">PDF</a>
+    
 
-  <span class="bib-year badge badge-pill badge-primary">2013</span>
-  <span id="Zuidema2013">Zuidema, W. (2013). Language in Nature: On the Evolutionary Roots of a Cultural Phenomenon. In P.-M. Binder &amp; K. Smith (Eds.), <i>The Language Phenomenon: Human Communication from Milliseconds to Milennia</i> (pp. 163–189). Heidelberg: Springer.</span>
+    <a href="#" class="badge badge-pill badge-secondary" data-toggle="modal" data-target="#bibtexmodal-Pulses2009">
+      BibTeX
+    </a>
+
+    
+      
+      
+      
+        <a href="#" class="badge badge-pill badge-light">
+          gray
+        </a>
+      
+    
+  </div>
+  
+  <div class="modal fade" id="bibtexmodal-Pulses2009" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Language Phylogenies Reveal Expansion Pulses and Pauses in Pacific Settlement</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <pre>@article{Pulses2009,
+  author = {Gray, R. D. and Drummond, A. J. and Greenhill, S. J.},
+  doi = {10.1126/science.1166858},
+  file = {:Users/Bas/Dropbox/Literature/Gray, Drummond, Greenhill/Gray, Drummond, Greenhill - 2009 - Language Phylogenies Reveal Expansion Pulses and Pauses in Pacific Settlement.pdf:pdf},
+  issn = {0036-8075},
+  journal = {Science},
+  keywords = {Printed},
+  mendeley-tags = {Printed},
+  month = jan,
+  number = {5913},
+  pages = {479--483},
+  title = {{Language Phylogenies Reveal Expansion Pulses and Pauses in Pacific Settlement}},
+  url = {http://www.sciencemag.org/cgi/doi/10.1126/science.1166858},
+  volume = {323},
+  year = {2009},
+  clctags = {gray}
+}
+</pre>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</li>
+<li><div id="bib-item-Zuidema2003" class="bib-entry my-3" 
+  data-searchable
+  data-year="2003"
+  data-title="How the Poverty of the Stimulus Solves the Poverty of the Stimulus"
+  data-author="Zuidema, Willem"
+  data-journal="Advances in Neural Information Processing Systems 15">
+  
+  <span id="Zuidema2003">Zuidema, W. (2003). How the Poverty of the Stimulus Solves the Poverty of the Stimulus. <i>Advances in Neural Information Processing Systems 15</i>, <i>15</i>, 51.</span>
+  
+  <div>
+    
+
+    
+      <a class="badge badge-pill badge-secondary" href="/media/pdfs/:Users/Bas/Dropbox/Literature/Zuidema/Zuidema - 2003 - How the Poverty of the Stimulus Solves the Poverty of the Stimulus.pdf:pdf">PDF</a>
+    
+
+    <a href="#" class="badge badge-pill badge-secondary" data-toggle="modal" data-target="#bibtexmodal-Zuidema2003">
+      BibTeX
+    </a>
+
+    
+  </div>
+  
+  <div class="modal fade" id="bibtexmodal-Zuidema2003" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">How the Poverty of the Stimulus Solves the Poverty of the Stimulus</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <pre>@article{Zuidema2003,
+  author = {Zuidema, Willem},
+  file = {:Users/Bas/Dropbox/Literature/Zuidema/Zuidema - 2003 - How the Poverty of the Stimulus Solves the Poverty of the Stimulus.pdf:pdf},
+  journal = {Advances in Neural Information Processing Systems 15},
+  pages = {51},
+  title = {{How the Poverty of the Stimulus Solves the Poverty of the Stimulus}},
+  url = {http://books.nips.cc/papers/files/nips15/CS07.pdf},
+  volume = {15},
+  year = {2003}
+}
+</pre>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</li>
+<li><div id="bib-item-Zuidema2001" class="bib-entry my-3" 
+  data-searchable
+  data-year="2001"
+  data-title="On the Relevance of Language Evolution Models for Cognitive Science"
+  data-author="Zuidema, W and Westermann, Gert"
+  data-journal="">
+  
+  <span id="Zuidema2001">Zuidema, W., &amp; Westermann, G. (2001). On the Relevance of Language Evolution Models for Cognitive Science.</span>
+  
+  <div>
+    
+
+    
+      <a class="badge badge-pill badge-secondary" href="/media/pdfs/zuidema2003.txt">PDF</a>
+    
+
+    <a href="#" class="badge badge-pill badge-secondary" data-toggle="modal" data-target="#bibtexmodal-Zuidema2001">
+      BibTeX
+    </a>
+
+    
+      
+      
+      
+        <a href="#" class="badge badge-pill badge-light">
+          jelle
+        </a>
+      
+        <a href="#" class="badge badge-pill badge-light">
+          evolang
+        </a>
+      
+    
+  </div>
+  
+  <div class="modal fade" id="bibtexmodal-Zuidema2001" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">On the Relevance of Language Evolution Models for Cognitive Science</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <pre>@article{Zuidema2001,
+  author = {Zuidema, W and Westermann, Gert},
+  file = {zuidema2003.txt},
+  number = {i},
+  title = {{On the Relevance of Language Evolution Models for Cognitive Science}},
+  year = {2001},
+  clctags = {jelle,evolang}
+}
+</pre>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</li>
+<li><div id="bib-item-Zuidema2013" class="bib-entry my-3" 
+  data-searchable
+  data-year="2001"
+  data-title="Language in Nature: On the Evolutionary Roots of a Cultural Phenomenon"
+  data-author="Auidema, Willem"
+  data-journal="">
+  
+  <span id="Zuidema2013">Auidema, W. (2001). Language in Nature: On the Evolutionary Roots of a Cultural Phenomenon. In P.-M. Binder &amp; K. Smith (Eds.), <i>The Language Phenomenon: Human Communication from Milliseconds to Milennia</i> (pp. 163–189). Heidelberg: Springer.</span>
   
   <div>
     
@@ -181,8 +413,7 @@
       
     
   </div>
-
-  <!-- Modal -->
+  
   <div class="modal fade" id="bibtexmodal-Zuidema2013" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -193,9 +424,9 @@
           </button>
         </div>
         <div class="modal-body">
-        	<pre>@incollection{Zuidema2013,
+          <pre>@incollection{Zuidema2013,
   address = {Heidelberg},
-  author = {Zuidema, Willem},
+  author = {Auidema, Willem},
   booktitle = {The Language Phenomenon: Human Communication from Milliseconds to Milennia},
   chapter = {8},
   doi = {10.1007/978-3-642-36086-2_8},
@@ -207,7 +438,7 @@
   publisher = {Springer},
   title = {{Language in Nature: On the Evolutionary Roots of a Cultural Phenomenon}},
   url = {http://link.springer.com/10.1007/978-3-642-36086-2{\_}8},
-  year = {2013},
+  year = {2001},
   clctags = {jelle,test}
 }
 </pre>
@@ -218,187 +449,10 @@
       </div>
     </div>
   </div>
-</div>
-</li>
-<li><div class="bib-entry my-3" data-year="2009" data-title="Language Phylogenies Reveal Expansion Pulses and Pauses in Pacific Settlement" data-author="Gray, R. D. and Drummond, A. J. and Greenhill, S. J.">
 
-  <span class="bib-year badge badge-pill badge-primary">2009</span>
-  <span id="Pulses2009">Gray, R. D., Drummond, A. J., &amp; Greenhill, S. J. (2009). Language Phylogenies Reveal Expansion Pulses and Pauses in Pacific Settlement. <i>Science</i>, <i>323</i>, 479–483.</span>
-  
-  <div>
-    
-      <a class="badge badge-pill badge-secondary" href="https://doi.org/10.1126/science.1166858">DOI</a>
-    
-
-    
-      <a class="badge badge-pill badge-secondary" href="/media/pdfs/:Users/Bas/Dropbox/Literature/Gray, Drummond, Greenhill/Gray, Drummond, Greenhill - 2009 - Language Phylogenies Reveal Expansion Pulses and Pauses in Pacific Settlement.pdf:pdf">PDF</a>
-    
-
-    <a href="#" class="badge badge-pill badge-secondary" data-toggle="modal" data-target="#bibtexmodal-Pulses2009">
-      BibTeX
-    </a>
-
-    
-      
-      
-      
-        <a href="#" class="badge badge-pill badge-light">
-          gray
-        </a>
-      
-    
-  </div>
-
-  <!-- Modal -->
-  <div class="modal fade" id="bibtexmodal-Pulses2009" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Language Phylogenies Reveal Expansion Pulses and Pauses in Pacific Settlement</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-        	<pre>@article{Pulses2009,
-  author = {Gray, R. D. and Drummond, A. J. and Greenhill, S. J.},
-  doi = {10.1126/science.1166858},
-  file = {:Users/Bas/Dropbox/Literature/Gray, Drummond, Greenhill/Gray, Drummond, Greenhill - 2009 - Language Phylogenies Reveal Expansion Pulses and Pauses in Pacific Settlement.pdf:pdf},
-  issn = {0036-8075},
-  journal = {Science},
-  keywords = {Printed},
-  mendeley-tags = {Printed},
-  month = jan,
-  number = {5913},
-  pages = {479--483},
-  title = {{Language Phylogenies Reveal Expansion Pulses and Pauses in Pacific Settlement}},
-  url = {http://www.sciencemag.org/cgi/doi/10.1126/science.1166858},
-  volume = {323},
-  year = {2009},
-  clctags = {gray}
-}
-</pre>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</li>
-<li><div class="bib-entry my-3" data-year="2003" data-title="How the Poverty of the Stimulus Solves the Poverty of the Stimulus" data-author="Zuidema, Willem">
-
-  <span class="bib-year badge badge-pill badge-primary">2003</span>
-  <span id="Zuidema2003">Zuidema, W. (2003). How the Poverty of the Stimulus Solves the Poverty of the Stimulus. <i>Advances in Neural Information Processing Systems 15</i>, <i>15</i>, 51.</span>
-  
-  <div>
-    
-
-    
-      <a class="badge badge-pill badge-secondary" href="/media/pdfs/:Users/Bas/Dropbox/Literature/Zuidema/Zuidema - 2003 - How the Poverty of the Stimulus Solves the Poverty of the Stimulus.pdf:pdf">PDF</a>
-    
-
-    <a href="#" class="badge badge-pill badge-secondary" data-toggle="modal" data-target="#bibtexmodal-Zuidema2003">
-      BibTeX
-    </a>
-
-    
-  </div>
-
-  <!-- Modal -->
-  <div class="modal fade" id="bibtexmodal-Zuidema2003" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">How the Poverty of the Stimulus Solves the Poverty of the Stimulus</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-        	<pre>@article{Zuidema2003,
-  author = {Zuidema, Willem},
-  file = {:Users/Bas/Dropbox/Literature/Zuidema/Zuidema - 2003 - How the Poverty of the Stimulus Solves the Poverty of the Stimulus.pdf:pdf},
-  journal = {Advances in Neural Information Processing Systems 15},
-  pages = {51},
-  title = {{How the Poverty of the Stimulus Solves the Poverty of the Stimulus}},
-  url = {http://books.nips.cc/papers/files/nips15/CS07.pdf},
-  volume = {15},
-  year = {2003}
-}
-</pre>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</li>
-<li><div class="bib-entry my-3" data-year="2001" data-title="On the Relevance of Language Evolution Models for Cognitive Science" data-author="Zuidema, W and Westermann, Gert">
-
-  <span class="bib-year badge badge-pill badge-primary">2001</span>
-  <span id="Zuidema2001">Zuidema, W., &amp; Westermann, G. (2001). On the Relevance of Language Evolution Models for Cognitive Science.</span>
-  
-  <div>
-    
-
-    
-      <a class="badge badge-pill badge-secondary" href="/media/pdfs/zuidema2003.txt">PDF</a>
-    
-
-    <a href="#" class="badge badge-pill badge-secondary" data-toggle="modal" data-target="#bibtexmodal-Zuidema2001">
-      BibTeX
-    </a>
-
-    
-      
-      
-      
-        <a href="#" class="badge badge-pill badge-light">
-          jelle
-        </a>
-      
-        <a href="#" class="badge badge-pill badge-light">
-          evolang
-        </a>
-      
-    
-  </div>
-
-  <!-- Modal -->
-  <div class="modal fade" id="bibtexmodal-Zuidema2001" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">On the Relevance of Language Evolution Models for Cognitive Science</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-        	<pre>@article{Zuidema2001,
-  author = {Zuidema, W and Westermann, Gert},
-  file = {zuidema2003.txt},
-  number = {i},
-  title = {{On the Relevance of Language Evolution Models for Cognitive Science}},
-  year = {2001},
-  clctags = {jelle,evolang}
-}
-</pre>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 </li></ol>
-  </div>
-
+</div>
 
 	<footer>
 		<p class="text-muted small">

@@ -34,24 +34,26 @@ h2 {
     top: 0;
     bottom: 0; } }
 
-.person {
+.btn,
+.badge {
   font-family: "Ubuntu Mono"; }
-  .person .card-header {
-    background-color: #00b49d;
-    position: relative;
-    height: 50px; }
-    .person .card-header .img {
-      -webkit-filter: grayscale(100%);
-              filter: grayscale(100%);
-      mix-blend-mode: darken;
-      height: 120px;
-      width: 120px;
-      background-size: cover;
-      background-position: center;
-      border-radius: 100%;
-      position: absolute;
-      margin-left: 0px;
-      margin-top: -50px; }
+
+.person .card-header {
+  background-color: #00b49d;
+  position: relative;
+  height: 50px; }
+  .person .card-header .img {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    mix-blend-mode: darken;
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: -50px; }
 
 .card-underline,
 .card-underline.border-0 {
@@ -61,6 +63,21 @@ h2 {
   padding-left: 0; }
   .bibliography li {
     list-style: none; }
+
+.oi.hidden {
+  visibility: hidden; }
+
+.btn .oi {
+  margin-left: .2em;
+  font-size: .8em; }
+
+.bib-entry.hidden {
+  display: none; }
+
+#search-pubs {
+  font-family: "Ubuntu Mono";
+  color: #00b49d;
+  border-color: #00b49d; }
 
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
@@ -95,7 +112,7 @@ h2 {
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: Source Sans Pro;
+  --font-family-sans-serif: PT Serif;
   --font-family-monospace: Ubuntu Mono; }
 
 *,
@@ -120,7 +137,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Source Sans Pro";
+  font-family: "PT Serif";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -4255,7 +4272,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Source Sans Pro";
+  font-family: "PT Serif";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4339,7 +4356,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Source Sans Pro";
+  font-family: "PT Serif";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
