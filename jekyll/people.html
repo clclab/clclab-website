@@ -2,22 +2,21 @@
 layout: default
 ---
 
+<div class="container">
+	<div class="row">
 
-<div class="col-lg-9 offset-lg-3">
-	<div class="container">
-		<div class="row">
+		<header class="col-lg-9 offset-lg-3 my-5">
 			<h1 class="display-1 my-5">People</h1>
-		</div>
+		</header>
 
-		<div class="row">			
-			<!-- <h2 class="my-4">Current members</h2> -->
-			
+
+		<section class="col-lg-9 offset-lg-3 p-0 mb-5">	
 			{% assign members = site.data.people | where:"type","current" %}
 			{% for member in members %}
 			
 				{% assign cardsPerRow = 2 %}
-				{% assign cardsPerRowm1 = cardsPerRow | minus:1 %}
-				{% assign indexMod2 = forloop.index0 | modulo:cardsPerRow %}
+				{% assign cardsPerRowm1 = cardsPerRow | minus: 1 %}
+				{% assign indexMod2 = forloop.index0 | modulo: cardsPerRow %}
 				{% if indexMod2 == 0 %}<div class="card-deck">{% endif %}
 					
 					{% include person.html person=member %}
@@ -25,42 +24,48 @@ layout: default
 			  {% if indexMod2 == cardsPerRowm1 %}</div>{% endif %}
 			{% endfor %}
 
-			{% if indexMod2 != cardsPerRow %}</div>{% endif %}
-		</div>
+			{% if indexMod2 != cardsPerRow %}{% endif %}
+		</section>
+			
 
-		<div class="row">
-			<h2 class="col-12">Frequent collaborators</h2>
+		<section class="col-lg-9 offset-lg-3 p-0 mb-5">	
+			<h2>Frequent collaborators</h2>
 
 			{% assign collaborators = site.data.people | where:"type","collaborator" %}
 			{% for member in collaborators %}
 		    {% include person.html person=member %}
 			{% endfor %}
-		</div>
+		</section>
 
-		<div class="row mb-5">
-			<h2 class="col-12">Former members</h2>
-			<div class="accordion col-6" id="accordion-1">
-				{% assign former_members = site.data.people | where:"type","former" %}
 
-				{% assign num_former_members = former_members | size %}
-				{% assign split_index = num_former_members | divided_by: 2 | ceil %}
+		<section class="col-lg-9 offset-lg-3 p-0 my-5">	
+			<h2>Former members</h2>
 
-				{% for member in former_members %}
+			<div class="row">
+				<div class="accordion col-6" id="accordion-1">
+					{% assign former_members = site.data.people | where:"type","former" %}
 
-					{% if forloop.index0 == split_index %}
-						</div>
-						<div class="accordion col-6" id="accordion-2">
-					{% endif %}
+					{% assign num_former_members = former_members | size %}
+					{% assign split_index = num_former_members | divided_by: 2 | ceil %}
 
-					{% if forloop.index0 < split_index %}
-			    	{% include former-member.html person=member parent="accordion-1" %}
-			    {% else %}
-			    	{% include former-member.html person=member parent="accordion-2" %}
-			    {% endif %}
+					{% for member in former_members %}
 
-				{% endfor %}
+						{% if forloop.index0 == split_index %}
+							</div>
+							<div class="accordion col-6" id="accordion-2">
+						{% endif %}
+
+						{% if forloop.index0 < split_index %}
+				    	{% include former-member.html person=member parent="accordion-1" %}
+				    {% else %}
+				    	{% include former-member.html person=member parent="accordion-2" %}
+				    {% endif %}
+
+					{% endfor %}
+				</div>
 			</div>
-		</div>
+		</section>
+
 	</div>
 </div>
 		

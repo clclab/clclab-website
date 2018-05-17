@@ -1,5 +1,5 @@
 
-@import url("https://fonts.googleapis.com/css?family=PT+Serif|Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif|Ubuntu+Mono");
 $font-family-sans-serif: "PT Serif";//"Source Sans Pro";
 // $font-family-sans: "PT Serif";//"Source Sans Pro";
 $font-family-monospace: "Ubuntu Mono";
@@ -33,21 +33,25 @@ h2 {
 }
 
 .clc-mark {
-	background: $yellow;
-	text-align: center;
+	position: fixed;
+	top: 0;
 
 	svg {
+		height: 5em;
 		path {
 			fill: $gray-900;
 		}
 	}
-
-	.clc-name {
-		font-family: $font-family-monospace;
-		color: $gray-900;
-		line-height: 1;
-	}
 }
+
+// @include media-breakpoint-down(sm) { 
+	.navbar {
+		background: $yellow;
+	}
+	.clc-mark {
+
+	}
+// }
 
 
 @media (min-width: 992px){

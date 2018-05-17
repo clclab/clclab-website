@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Serif|Source+Sans+Pro);*[class^="display-"],
+@import url(https://fonts.googleapis.com/css?family=PT+Serif|Ubuntu+Mono);*[class^="display-"],
 h1, h2, h3, h4, h5, h6,
 .card-footer {
   font-family: "Ubuntu Mono" !important; }
@@ -19,14 +19,15 @@ h2 {
   background-color: #00b49d; }
 
 .clc-mark {
-  background: #fdf499;
-  text-align: center; }
-  .clc-mark svg path {
-    fill: #004b44; }
-  .clc-mark .clc-name {
-    font-family: "Ubuntu Mono";
-    color: #004b44;
-    line-height: 1; }
+  position: fixed;
+  top: 0; }
+  .clc-mark svg {
+    height: 5em; }
+    .clc-mark svg path {
+      fill: #004b44; }
+
+.navbar {
+  background: #fdf499; }
 
 @media (min-width: 992px) {
   #sidebar {
