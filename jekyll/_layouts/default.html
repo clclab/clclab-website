@@ -4,47 +4,51 @@
   {% include head.html %}
 
   <body>
+    
+    <div class="navbar navbar-light navbar-expand-lg"> 
 
-    <div class="container">
-      <div class="row">
+      <div class="clc-mark p-3">
+        <div>{% include clc.svg %}</div>
+        <span class="clc-name d-none">
+            cognition, language<br/>and computation lab
+        </span>
+      </div>
 
-        <div id="sidebar" class="col-lg-2 navbar navbar-light"> 
-          <div class="clc-mark p-3">
-            <div class="p-3">{% include clc.svg %}</div>
-            <p class="clc-name">cognition, language<br/>and computation lab</p>
-          </div>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="{{site.url}}">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="research.html">Research</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="people.html">People</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="news.html">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="publications.html">Publications</a>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-        {{ content }}
+      <div class="container">
+        <button class="navbar-toggler navbar-toggler-right ml-auto" type="button" 
+          data-toggle="collapse" 
+          data-target="#navbarResponsive" 
+          aria-controls="navbarResponsive" 
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         
+        <div class="navbar-collapse collapse" id="navbarResponsive">
+          <ul class="navbar-nav offset-lg-3">
+            <li class="nav-item">
+              <a class="nav-link" href="{{site.url}}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="research.html">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="people.html">People</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="publications.html">Publications</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+   
+    {{ content }}
+    
     {% include footer.html %}
+
   </body>
 
 </html>

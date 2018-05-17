@@ -19,14 +19,15 @@ h2 {
   background-color: #00b49d; }
 
 .clc-mark {
-  background: #fdf499;
-  text-align: center; }
-  .clc-mark svg path {
-    fill: #004b44; }
-  .clc-mark .clc-name {
-    font-family: "Ubuntu Mono";
-    color: #004b44;
-    line-height: 1; }
+  position: fixed;
+  top: 0; }
+  .clc-mark svg {
+    height: 5em; }
+    .clc-mark svg path {
+      fill: #004b44; }
+
+.navbar {
+  background: #fdf499; }
 
 @media (min-width: 992px) {
   #sidebar {
