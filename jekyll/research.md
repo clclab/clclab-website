@@ -14,7 +14,10 @@ those found in closely related species without language. These sets of propertie
 pose a major challenge for the language sciences: how do we reconcile observations about the
 uniqueness of language with those about the biological continuity of the underlying neural and
 genetic mechanisms? In my research I try to face this challenge head-on. Where much of the debate in linguistics has been between traditions that emphasized either uniqueness or continuity, I try to develop models that do justice to insights from both traditions.
+{% reference Zuidema2003 %}
 
+
+{% cite Zuidema2001 %}
 
 ## Iterated Learning
 
@@ -73,3 +76,5 @@ In the research discussed so-far I try to account for complex patterns in natura
 One eye-catching result, published in PNAS (van Heijningen et al., 2009) is that experiments
 claimed to show that humans and starlings can, while Tamarin monkeys cannot learn contextfree
 languages suffer from a (non-trivial) problem in the experimental design. With my PhD-student Raquel Alhama we are investigating another finding from this literature, about a dissociation between so-called ’statistical learning’ and ’rule learning’, and a lack of evidence for the latter in rats (and presumably other non-human mammals). We have worked out a unified model that provides an excellent fit with both human and rat data, using quantitatively different parameters for both species but no qualitative difference in the mechanisms involved.
+
+{% bibliography --cited %}
