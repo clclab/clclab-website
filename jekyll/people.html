@@ -37,12 +37,29 @@ layout: default
 			{% endfor %}
 		</div>
 
-		<div class="row">
+		<div class="row mb-5">
 			<h2 class="col-12">Former members</h2>
-			{% assign former_members = site.data.people | where:"type","former" %}
-			{% for member in former_members %}
-		    {% include person.html person=member %}
-			{% endfor %}
+			<div class="accordion col-6" id="accordion-1">
+				{% assign former_members = site.data.people | where:"type","former" %}
+
+				{% assign num_former_members = former_members | size %}
+				{% assign split_index = num_former_members | divided_by: 2 | ceil %}
+
+				{% for member in former_members %}
+
+					{% if forloop.index0 == split_index %}
+						</div>
+						<div class="accordion col-6" id="accordion-2">
+					{% endif %}
+
+					{% if forloop.index0 < split_index %}
+			    	{% include former-member.html person=member parent="accordion-1" %}
+			    {% else %}
+			    	{% include former-member.html person=member parent="accordion-2" %}
+			    {% endif %}
+
+				{% endfor %}
+			</div>
 		</div>
 	</div>
 </div>

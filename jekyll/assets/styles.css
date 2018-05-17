@@ -55,6 +55,12 @@ h2 {
     margin-left: 0px;
     margin-top: -50px; }
 
+.person.former-member .card-header {
+  background: transparent; }
+
+.former-member .period {
+  color: #00b49d; }
+
 .card-underline,
 .card-underline.border-0 {
   border-bottom: 5px solid #00b49d !important; }

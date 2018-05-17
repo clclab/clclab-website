@@ -1,0 +1,45 @@
+{% assign member = include.person %}
+{% assign id = member.name | strip | replace: ' ', '-' | downcase %}
+
+<div class="card person former-member small border-0 bg-light my-1">
+  <div class="card-header border-0" id="heading-{{ id }}">
+    <h5 class="card-title"  
+      data-toggle="collapse" 
+      data-target="#collapse-{{ id }}" 
+      aria-expanded="false" 
+      aria-controls="collapse-{{ id }}" >
+        {{ member.name }}
+        {% if member.startyear %}
+        <span class="period small">{{ member.startyear }}&ndash;{{ member.endyear }}</span>
+        {% endif %}
+    </h5>
+  </div>
+
+  <div id="collapse-{{ id }}" class="collapse" 
+    aria-labelledby="heading-{{ id }}" 
+    data-parent="#{{ include.parent }}">
+    <div class="card-body">
+     {{ member.interests }}
+    </div>
+
+    <div class="card-footer bg-light text-white border-0 card-underline">
+      {% if member.url %}
+        <a href="{{ member.url }}" class="card-link">Website</a>
+      {% endif %}
+      {% if member.twitter %}
+        <a href="https://twitter.com/{{ member.twitter }}" 
+          target="_blank"
+          class="card-link">@{{ member.twitter }}</a>
+      {% endif %}
+      {% if member.github %}
+        <a href="https://github.com/{{ member.github }}" 
+          target="_blank"
+          class="card-link">GH</a>
+      {% endif %}
+      {% if member.email %}
+        <a href="mailto:{{ member.email }}" 
+          class="card-link">@</a>
+      {% endif %}
+    </div>
+  </div>
+</div>

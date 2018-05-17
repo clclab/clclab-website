@@ -89,6 +89,16 @@ h2 {
 	}
 }
 
+.person.former-member .card-header {
+	background: transparent;
+}
+
+.former-member {
+	.period {
+		color: $blue;
+	}
+}
+
 .card-underline,
 .card-underline.border-0 {
 	border-bottom: 5px solid $blue!important;
