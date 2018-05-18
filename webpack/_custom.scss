@@ -119,6 +119,12 @@ h2 {
 	}
 }
 
+.collaborators .person {
+	.card-header {
+		background: $yellow;
+	}
+}
+
 .person.former-member .card-header {
 	background: transparent;
 }
