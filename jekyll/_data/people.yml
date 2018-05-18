@@ -4,14 +4,12 @@
   email: w.h.zuidema@uva.nl
   twitter: wzuidema
   interests: >
-    I am assistant professor in cognitive science and computational 
-    linguistics at the Institute for Logic, Language and Computation. 
-    I do research on these topics, coordinate the Cognition, Language 
-    and Computation lab and supervise several PhD and MSc students there. 
-    I teach in the interdisciplinary master’s programs Brain & 
-    Cognitive Sciences, Artificial Intelligence, and Logic, and coordinate 
-    the Cognitive Science track in the MBCS. I sometimes give public talks 
-    on human language, animal communication and evolution. asdfasdfasdf. 
+     is an assistant professor in Cognitive Science and Computational Linguistics
+     at the Institute for Logic, Language and Computation (ILLC) of the University
+     of Amsterdam. Before joining the Institute in 2008(?), he worked in the Behavioural
+     Biology group at Leiden University (2007-2008), and at the University of Edinburgh 
+     (2002-2004), where he completed his PhD thesis on “The Major Transitions in the 
+     Evolution of Language”. 
   img: media/jelle.jpg
 
 - name: Dieuwke Hupkes
@@ -22,14 +20,12 @@
   email: d.hupkes@uva.nl
   img: media/dieuwke.png
   interests: >
-    Currently, in my PhD work, I focus on (artificial) neural network models 
-    for (semantic) parsing, a problem that for me touches on the core of 
-    understanding natural language. Although artificial neural networks 
-    are of course nothing like the real brain, I hope that understanding 
-    the principles by which they can encode processes can still teach us 
-    something that will lead to a better understanding of how language 
-    could be implemented in the brain.
-
+    has a background in Physics, Logic and Computational Linguistics.
+    In her PhD she works with artificial neural network models for semantic parsing. 
+    Despite the differences between artificial and biological neural networks, 
+    she hopes that investigating how artificial systems encode linguistic processes 
+    can help understanding how language is implemented in the brain.
+    
 - name: Samira Abnar
   type: current
   position: phd
@@ -38,14 +34,11 @@
   twitter: samiraabnar
   img: media/samira.jpg
   interests: >
-    My general research interest is Cognitive Modeling. I am interested 
-    in working on deep neural models that are biologically plausible and 
-    can perform at a human level. I have chosen Language as the higher 
-    cognitive function that I am going to focus on because I think much 
-    of human intelligence is reflected in language.
-
-
-
+    obtained her Master’s degree in Computer Science at the University of Tehran.
+    Her main interest lies in the field of Cognitive Modeling. During her PhD, 
+    she investigates biologically plausible neural network models which simulate
+    how humans learn and develop language.
+    
 - name: Bas Cornelissen
   type: current
   position: phd
@@ -62,35 +55,62 @@
 - name: Matthijs Mul
   type: current
   position: master
+  interests: >
+    is a graduate student in Artificial Intelligence and Logic. 
+    For his master’s thesis he works on computational models 
+    that recognize logical relations between pairs of sentences.
+
 
 - name: Raquel Alhama
-  type: former
-  position: phd
+  type: collaborator
   url: https://rgalhama.github.io/
   img: https://rgalhama.github.io/img/raquel-home.jpg
+  interests: >
+    completed her PhD in our lab in 2017 with a focus on Artificial Grammar Learning.
+    Today, she is a postdoctoral researcher at the Basque Center on Cognition, Brain 
+    and Language in Spain, where she investigates computational models of visual word recognition.
 
 - name: Raquel Fernandez
   type: collaborator
   img: https://staff.fnwi.uva.nl/r.fernandezrovira/web/raq.png
   url: https://staff.fnwi.uva.nl/r.fernandezrovira
   twitter: raquelfdzrovira
+  interests: >
+    is an associate professor and the head of the Dialogue Modelling Group
+    at the ILLC. She researches computational semantics and pragmatics
+    with a special focus on linguistic interaction.
+  
 
 - name: Ivan Titov
   type: collaborator
   url: http://ivan-titov.org/
   img: http://ivan-titov.org/it2.jpg
   twitter: iatitov
+  interests: >
+    is an associate professor at the University of Edinburgh and 
+    affiliated with the ILLC . His research focuses on Natural 
+    Language Processing and Machine Learning.
+
 
 - name: Tejaswini Deoskar
   type: collaborator
   img: https://staff.fnwi.uva.nl/t.deoskar/td1.jpg
   url: https://staff.fnwi.uva.nl/t.deoskar/
+  interests: >
+    is an assistant professor at the ILLC, investigating probabilistic
+    language models. In particular, she focuses on semi-supervised language learning techniques.
+
 
 - name: Henkjan Honing
   type: collaborator
   img: https://pbs.twimg.com/profile_images/902836949492277249/hPi9UMyU_400x400.jpg
   twitter: musiccognition
   url: http://www.mcg.uva.nl/
+  interests: >
+    leads the Music Cognition Group at the University of Amsterdam.
+    His research aims to identify the cognitive and biological mechanisms underlying musicality, 
+    as well as the commonalities and differences in the processing of music and language. 
+
 
 - name: Phong Le
   type: former
@@ -98,12 +118,9 @@
   img: https://sites.google.com/site/lephongxyz/_/rsrc/1510338357982/home/me.jpg?height=200&width=200
   url: https://sites.google.com/site/lephongxyz/home
   interests: >
-    I'm interested in neural networks and deep learning. My current work is to 
-    employ them to solve natural language processing tasks such as entity linking, 
-    coreference resolution, and dependency parsing.  I'm also interested in formal 
-    semantics, especially learning semantic parsing, which is the topic of my master thesis.
-
-
+    completed his PhD in our lab and is now a postdoctoral researcher at the University 
+    of Edinburgh, applying deep learning to natural language processing tasks.
+    
 - name: Marieke Woensdrecht
   type: former
   now: PhD student at the University of Edinburgh
@@ -112,43 +129,65 @@
   twitter: mariekewoe
   startyear: 2015
   endyear: 2016
+  interests: >
+    is a PhD student at the University of Edinburgh. Using agent-based models, 
+    she explores the hypothesis that language and theory of mind have co-evolved.
+
 
 - name: Katja Abramova 
   type: former
   now: PhD student at Radboud University Nijmegen
   url: http://www.ru.nl/ptrs/ccl/about-us-0/members/katja-abramova-ma/
   img: http://www.ru.nl/publish/pages/765325/s200_katja_abramova.jpg
+  interests: >
+    is a PhD student at Radbound University in Nijmegen, investigating human language 
+    evolution from an interdisciplinary perspective.  
+
 
 - name: Vanessa Ferdinand
   type: former
   now: Postdoc at Santa Fe
   url: http://tuvalu.santafe.edu/~vanessa/homepage/Research.html
   img: http://tuvalu.santafe.edu/~vanessa/homepage/Research_files/17105918018_bede93d392_o.jpg
+  interests: >
+    works as a postdoctoral researcher at the Santa Fe Institute, where she combes psychological
+    experiments and computational modeling to examines cultural evolution.
 
+  
 - name: Jonathan Mallinson
   type: former
   now: PhD student at the University of Edinburgh
   url: http://homepages.inf.ed.ac.uk/s1564225/
+  interests: >
+     is a PhD student at the University of Edinburgh, working on automatic text generation, 
+     focusing on paraphrasing and sentence compression.
 
 - name: Federico Sangati
   type: former
   now: Postdoc at the University of Edinburgh
   url: http://homepages.inf.ed.ac.uk/fsangati/
   img: http://homepages.inf.ed.ac.uk/fsangati/chromer150.png
-
+  interests: >
+    works as a postdoctoral researcher at the University of Edinburgh, focusing on 
+    Natural Language Processing, in particular on dependency and constituency parsing.
+  
 - name: Willemijn van Woerkum
   type: former
+  interests: >
+    works as Data Scientist and Consumer Psychologist at bunq in Amsterdam. 
 
 - name: Stijn de Gooijer
   type: former
+  interests: >
+    wrote his master’s thesis in our lab and today works as Data Scientist at Xomnia in Amsterdam. 
 
-- name: Gideon Boreztajn
+- name: Gideon Borensztajn
   type: former
 
 - name: Kasper Kok
   type: former
+  interests: >
+    completed a PhD at the Vrije University Amsterdam and now works as Data Scientists at Decos Information Solutions.
 
 - name: Simon Hofmann
   type: former
-
-
