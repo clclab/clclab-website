@@ -32,6 +32,6 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open",
-    "deploy": "yarn build; JEKYLL_ENV=production bundle exec jekyll build"
+    "jekyll": "JEKYLL_ENV=production bundle exec jekyll build"
   }
 }
