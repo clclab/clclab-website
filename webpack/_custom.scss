@@ -32,7 +32,7 @@ h2 {
 	background-color: $blue;
 }
 
-.clc-mark {
+.navbar .clc-mark {
 	position: fixed;
 	top: 0;
 
@@ -43,6 +43,37 @@ h2 {
 		}
 	}
 }
+
+#footer {
+	$footer-color: transparentize($black, .5);
+	color: $footer-color;
+	font-family: $font-family-monospace;
+	border-bottom: 10px solid $footer-color;
+
+	a {
+		color: transparentize($footer-color, .2);
+	}
+
+	.clc-mark {
+		svg {
+			height: 3.3em;
+			position: relative;
+			top: .2em;
+			margin-left: -.3em;
+
+			path {
+				fill: $footer-color;
+			}
+		}
+	}
+
+	.clc-name {
+		line-height: 1.2;
+		display: inline-block;
+	}
+
+}
+
 
 // @include media-breakpoint-down(sm) { 
 	.navbar {
@@ -136,4 +167,9 @@ h2 {
 	font-family: $font-family-monospace;
 	color: $blue;
 	border-color: $blue;
+}
+
+#footer {
+	background: $yellow;
+	margin-top: 100px;
 }

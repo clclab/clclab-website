@@ -18,13 +18,30 @@ h2 {
   color: #004b44;
   background-color: #00b49d; }
 
-.clc-mark {
+.navbar .clc-mark {
   position: fixed;
   top: 0; }
-  .clc-mark svg {
+  .navbar .clc-mark svg {
     height: 5em; }
-    .clc-mark svg path {
+    .navbar .clc-mark svg path {
       fill: #004b44; }
+
+#footer {
+  color: rgba(0, 75, 68, 0.5);
+  font-family: "Ubuntu Mono";
+  border-bottom: 10px solid rgba(0, 75, 68, 0.5); }
+  #footer a {
+    color: rgba(0, 75, 68, 0.3); }
+  #footer .clc-mark svg {
+    height: 3.3em;
+    position: relative;
+    top: .2em;
+    margin-left: -.3em; }
+    #footer .clc-mark svg path {
+      fill: rgba(0, 75, 68, 0.5); }
+  #footer .clc-name {
+    line-height: 1.2;
+    display: inline-block; }
 
 .navbar {
   background: #fdf499; }
@@ -85,6 +102,10 @@ h2 {
   font-family: "Ubuntu Mono";
   color: #00b49d;
   border-color: #00b49d; }
+
+#footer {
+  background: #fdf499;
+  margin-top: 100px; }
 
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
