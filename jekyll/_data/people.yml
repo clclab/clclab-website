@@ -111,12 +111,22 @@
     His research aims to identify the cognitive and biological mechanisms underlying musicality, 
     as well as the commonalities and differences in the processing of music and language. 
 
-
+- name: Sara Veldhoen
+  type: former
+  now: Dataanalyst at Snappet Connected learning
+  img: 
+  url: 
+  startyear: 2015
+  endyear: 2017
+  interests: >
+  
 - name: Phong Le
   type: former
   now: Postdoc at the University of Amsterdam
   img: https://sites.google.com/site/lephongxyz/_/rsrc/1510338357982/home/me.jpg?height=200&width=200
   url: https://sites.google.com/site/lephongxyz/home
+  startyear: 2012
+  endyear: 2016
   interests: >
     Phong completed his PhD in our lab and is now a postdoctoral researcher at the University 
     of Edinburgh, applying deep learning to natural language processing tasks.
@@ -127,8 +137,8 @@
   url: https://marieke-woensdregt.github.io/
   img: https://marieke-woensdregt.github.io/sidebar_pic.jpg
   twitter: mariekewoe
-  startyear: 2015
-  endyear: 2016
+  startyear: 2014
+  endyear: 2014
   interests: >
     Marieke is a PhD student at the University of Edinburgh. Using agent-based models, 
     she explores the hypothesis that language and theory of mind have co-evolved.
@@ -139,6 +149,8 @@
   now: PhD student at Radboud University Nijmegen
   url: http://www.ru.nl/ptrs/ccl/about-us-0/members/katja-abramova-ma/
   img: http://www.ru.nl/publish/pages/765325/s200_katja_abramova.jpg
+  startyear: 2011
+  endyear: 2012
   interests: >
     Katja is a PhD student at Radbound University in Nijmegen, investigating human language 
     evolution from an interdisciplinary perspective.  
@@ -146,9 +158,11 @@
 
 - name: Vanessa Ferdinand
   type: former
-  now: Postdoc at Santa Fe
+  now: Postdoc at Santa Fe Institute
   url: http://tuvalu.santafe.edu/~vanessa/homepage/Research.html
   img: http://tuvalu.santafe.edu/~vanessa/homepage/Research_files/17105918018_bede93d392_o.jpg
+  startyear: 2009
+  endyear: 2010
   interests: >
     Vanessa works as a postdoctoral researcher at the Santa Fe Institute, where she combes psychological
     experiments and computational modeling to examines cultural evolution.
@@ -158,6 +172,8 @@
   type: former
   now: PhD student at the University of Edinburgh
   url: http://homepages.inf.ed.ac.uk/s1564225/
+  startyear: 2015
+  endyear: 2015
   interests: >
      Jonathan is a PhD student at the University of Edinburgh, working on automatic text generation, 
      focusing on paraphrasing and sentence compression.
@@ -167,16 +183,20 @@
   now: Postdoc at the University of Edinburgh
   url: http://homepages.inf.ed.ac.uk/fsangati/
   img: http://homepages.inf.ed.ac.uk/fsangati/chromer150.png
+  startyear: 2008
+  endyear: 2011
   interests: >
     Frederico works as a postdoctoral researcher at the University of Edinburgh, focusing on 
     Natural Language Processing, in particular on dependency and constituency parsing.
   
 - name: Willemijn van Woerkum
+  now: Data Scientist and at bunq
   type: former
   interests: >
     Willemijn works as Data Scientist and Consumer Psychologist at bunq in Amsterdam. 
 
 - name: Stijn de Gooijer
+  now: Data Scientist at Xomnia
   type: former
   interests: >
     Stijn wrote his master’s thesis in our lab and today works as Data Scientist at Xomnia in Amsterdam. 
@@ -185,6 +205,7 @@
   type: former
 
 - name: Kasper Kok
+  now: Data Scientists at Decos Information Solutions
   type: former
   interests: >
     Kasper completed a PhD at the Vrije University Amsterdam and now works as Data Scientists at Decos Information Solutions.
