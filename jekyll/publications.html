@@ -44,8 +44,10 @@ updated: 2018-01-29
                 <span class="oi oi-chevron-top small hidden" aria-hidden="true"></span>
             </button>
 
-            <input type="text" id="search-pubs" class="form-control"    placeholder="filter..."
-                data-searchable-input-for="bib-entry">
+            <input type="text" id="search-pubs" class="form-control"    
+                placeholder="filter..."
+                data-searchable-input-for="bib-entry"
+                data-no-results-message="#filter-no-results">
         </div>
 
 
@@ -54,6 +56,11 @@ updated: 2018-01-29
               --file publications 
               --order ascending
               --sort_by year %}
+
+            <div class="alert alert-warning d-none" role="alert" id="filter-no-results">
+              <h4 class="alert-heading">No results...</h4>
+              <p>Couldn't find any publications matching your query. Please try again.</p>
+            </div>
         </div>
 
     </div>

@@ -11,6 +11,7 @@ $gray-900: #004b44;
 $black: $gray-900;
 $gray-100: #fbfcf2;
 $enable-rounded: false;
+$warning: $yellow;
 
 *[class^="display-"],
 h1, h2, h3, h4, h5, h6,
@@ -142,11 +143,14 @@ h2 {
 
 .bibliography {
 	padding-left: 0;
-	min-height: 70vh;
 
 	li {
 		list-style: none;
 	}
+}
+
+#publications {
+	min-height: 70vh;
 }
 
 .container.page {

@@ -13,10 +13,16 @@ function setupSearchApi(className) {
   return searchApi;
 }
 
-function filterItems(ids, className) {
+function filterItems(ids, className, noResultsMessage) {
   jquery('.' + className).addClass('hidden');
   if(ids.length > 0) {
     jquery('#' + ids.join(', #')).removeClass('hidden');  
+
+    if(noResultsMessage) {
+      noResultsMessage.addClass('d-none');
+    }
+  } else if(noResultsMessage) {
+    noResultsMessage.removeClass('d-none');
   }
 }
 
@@ -26,6 +32,10 @@ export default function setupSearchables() {
     const className = input.dataset.searchableInputFor;
     const searchApi = setupSearchApi(className);
 
+    const noResultsMessage = ('noResultsMessage' in input.dataset) 
+      ? jquery(input.dataset.noResultsMessage) 
+      : undefined;
+
     jquery(input).bind('propertychange change click keyup input paste', (event) => {
       const query = event.target.value;
 
@@ -33,7 +43,7 @@ export default function setupSearchables() {
         jquery('.' + className).removeClass('hidden');
       } else {
         searchApi.search(query).then(ids => { 
-          filterItems(ids, className) 
+          filterItems(ids, className, noResultsMessage) 
         });  
       }
     });
