@@ -1,0 +1,49 @@
+/**
+ * _brand.scss
+ */
+
+.clc-name {
+	font-family: $font-family-monospace;
+	line-height: 1.2;
+	display: inline-block;
+}
+
+.navbar .clc-mark {
+	position: fixed;
+	top: 0;
+
+	svg {
+		height: 5em;
+		path {
+			fill: $gray-900;
+		}
+	}
+}
+
+#footer .clc-mark {
+	svg {
+		height: 3.3em;
+		position: relative;
+		top: .2em;
+		margin-left: -.3em;
+
+		path {
+			fill: $footer-color;
+		}
+	}
+}
+
+.clc-pattern {
+	background: $yellow;
+
+	pattern {
+		fill: transparent;
+	}
+	
+	@for $i from 1 through 1000 {
+		pattern .clc-pattern-unit-letter:nth-of-type(#{$i}) {
+			$opacity: 1 - random(30) / 100;
+			fill: transparentize(#fff, $opacity);
+		}
+	}
+}

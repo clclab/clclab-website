@@ -1,0 +1,25 @@
+/**
+ * _publications.scss
+ */
+
+.bibliography {
+	padding-left: 0;
+
+	li {
+		list-style: none;
+	}
+}
+
+#publications {
+	min-height: 70vh;
+}
+
+.bib-entry.hidden {
+	display: none;
+}
+
+#search-pubs {
+	font-family: $font-family-monospace;
+	color: $blue;
+	border-color: $blue;
+}

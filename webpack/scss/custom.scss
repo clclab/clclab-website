@@ -1,37 +1,8 @@
 
 @import url("https://fonts.googleapis.com/css?family=PT+Serif|Ubuntu+Mono");
-$font-family-sans-serif: "PT Serif";//"Source Sans Pro";
-// $font-family-sans: "PT Serif";//"Source Sans Pro";
-$font-family-monospace: "Ubuntu Mono";
 
-$blue: #00b49d;
-$yellow: #fdf499;
-$secondary: $yellow;
-$gray-900: #004b44;
-$black: $gray-900;
-$gray-100: #fbfcf2;
-$enable-rounded: false;
-$warning: $yellow;
-
-*[class^="display-"],
-h1, h2, h3, h4, h5, h6,
-.card-footer { 
-	font-family: $font-family-monospace !important;
-}
-
-.display-1 {
-	color: $blue;
-	line-height: .75em !important;
-}
-
-h2 {
-	margin-top: 2em;
-}
-
-::selection { 
-	color: $gray-900;
-	background-color: $blue;
-}
+@include 'scss/_variables.scss';
+@include 'scss/_typography.scss';
 
 .navbar .clc-mark {
 	position: fixed;

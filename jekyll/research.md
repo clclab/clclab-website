@@ -14,10 +14,7 @@ those found in closely related species without language. These sets of propertie
 pose a major challenge for the language sciences: how do we reconcile observations about the
 uniqueness of language with those about the biological continuity of the underlying neural and
 genetic mechanisms? In my research I try to face this challenge head-on. Where much of the debate in linguistics has been between traditions that emphasized either uniqueness or continuity, I try to develop models that do justice to insights from both traditions.
-{% reference Zuidema2003 %}
 
-
-{% cite Zuidema2001 %}
 
 ## Iterated Learning
 
