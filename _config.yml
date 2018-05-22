@@ -35,7 +35,7 @@ encoding: utf-8
 # Jekkyl Scholar 
 # See here for a useful tutorial: 
 # https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/02/01/jekyll-and-bibtex/
-plugins: ['jekyll/scholar']
+plugins: ['jekyll/scholar', 'jekyll-twitter-plugin']
 
 scholar:
   style: apa-no-doi-no-issue

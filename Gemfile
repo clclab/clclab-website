@@ -27,3 +27,6 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "jekyll-scholar"
 gem "unicode", "~> 0.4.4"
+
+# Added at 2018-05-22 10:22:08 +0200 by Bas:
+gem "jekyll-twitter-plugin", "~> 2.0"
