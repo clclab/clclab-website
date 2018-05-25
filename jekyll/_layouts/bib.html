@@ -1,13 +1,24 @@
 ---
 ---
 
+{% if entry.type == 'article' %}
+  {% assign publication = entry.journal %}
+{% else if entry.type == 'inproceedings' or entry.type == 'incollection' %}
+  {% assign publication = entry.booktitle %}
+{% else if entry.type == 'phdthesis' %}
+  {% assign publication = entry.title %}
+{% endif %}
+
+{% if publication == '' %}
+  {% assign publication = 'zzz' %}
+{% endif %}
+
 <div id="bib-item-{{ entry.key }}" class="bib-entry my-3" 
   data-searchable
   data-year="{{ entry.year }}"
   data-title="{{ entry.title }}"
   data-author="{{ entry.author }}"
-  data-journal="{{ entry.journal }}">
-  
+  data-publication="{{ publication }}">
   {{ reference }}
   
   <div>
@@ -16,9 +27,13 @@
     {% endif %}
 
     {% if entry.file %}
-      <a class="badge badge-pill badge-secondary" href="{{ site_url }}/media/pdfs/{{ entry.file }}">PDF</a>
+      <a class="badge badge-pill badge-secondary" href="{{ site_url }}/media/pdfs/{{ entry.file }}" target="_blank">PDF</a>
     {% endif %}
 
+    {% if entry.arxivid %} 
+      <a class="badge badge-pill badge-secondary" href="https://arxiv.org/abs/{{ entry.arxivid }}" target="_blank">arXiv</a>
+    {% endif %}
+    
     <a href="#" class="badge badge-pill badge-secondary" data-toggle="modal" data-target="#bibtexmodal-{{ entry.key }}">
       BibTeX
     </a>

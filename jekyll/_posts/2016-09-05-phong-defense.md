@@ -2,6 +2,7 @@
 title: "Phong Le’s PhD defense"
 published: 2016-09-05
 categories: news
+type: defense
 layout: page
 ---
 

@@ -2,6 +2,7 @@
 type: publication
 title: Language, art and music are extremely revealing about workings of the human mind
 layout: page
+type: publication
 categories: news
 ---
 

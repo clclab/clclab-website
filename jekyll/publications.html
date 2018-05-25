@@ -10,8 +10,8 @@ updated: 2018-01-29
             <h1 class="display-1 my-5">Publications</h1>
         </header>
 
-        <div class="btn-group col-lg-9 offset-lg-3 p-0 sticky-top">
-            <button type="button" class="btn btn-sm btn-primary" disabled>Sort by</button>
+        <div class="btn-group col-lg-9 offset-lg-3 p-0 sticky-top bg-light">
+            <button type="button" class="btn btn-sm btn-primary d-none d-sm-block" disabled>Sort by</button>
             
             <button type="button" class="btn btn-sm btn-primary" 
                 data-sort-selector="#publications .bibliography>li .bib-entry"
@@ -37,15 +37,17 @@ updated: 2018-01-29
                 <span class="oi oi-chevron-top small hidden" aria-hidden="true"></span>
             </button>
 
-            <button type="button" class="btn btn-sm btn-primary" 
+            <button type="button" class="btn btn-sm btn-primary d-none d-sm-block" 
                 data-sort-selector="#publications .bibliography>li .bib-entry"
-                data-sort-order="asc,asc"
-                data-sort="journal,author">journal
+                data-sort-order="asc"
+                data-sort="publication">publication
                 <span class="oi oi-chevron-top small hidden" aria-hidden="true"></span>
             </button>
 
-            <input type="text" id="search-pubs" class="form-control"    placeholder="filter..."
-                data-searchable-input-for="bib-entry">
+            <input type="text" id="search-pubs" class="form-control"    
+                placeholder="filter..."
+                data-searchable-input-for="bib-entry"
+                data-no-results-message="#filter-no-results">
         </div>
 
 
@@ -54,6 +56,11 @@ updated: 2018-01-29
               --file publications 
               --order ascending
               --sort_by year %}
+
+            <div class="alert alert-warning d-none" role="alert" id="filter-no-results">
+              <h4 class="alert-heading">No results...</h4>
+              <p>Couldn't find any publications matching your query. Please try again.</p>
+            </div>
         </div>
 
     </div>

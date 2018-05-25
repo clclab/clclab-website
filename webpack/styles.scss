@@ -1,3 +1,16 @@
 
-@import "./custom";
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=PT+Serif|Ubuntu+Mono");
+
+// Custom css
+@import "./scss/variables";
+@import "./scss/typography";
+@import "./scss/people";
+@import "./scss/publications";
+@import "./scss/home";
+@import "./scss/brand";
+@import "./scss/main";
+@import "./scss/responsive";
+
+// Bootstrap
 @import "~bootstrap/scss/bootstrap";

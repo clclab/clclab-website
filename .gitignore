@@ -5,3 +5,4 @@ yarn-error.log
 .sass-cache
 .jekyll-metadata
 site/
+.tweet-cache

@@ -31,6 +31,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "jekyll": "JEKYLL_ENV=production bundle exec jekyll build"
   }
 }

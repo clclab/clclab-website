@@ -1,0 +1,24 @@
+/**
+ * _typography.scss
+ */
+
+
+h1, h2, h3, h4, h5, h6,
+*[class^="display-"],
+.card-footer { 
+	font-family: $font-family-monospace !important;
+}
+
+h2 {
+	margin-top: 2em;
+}
+
+.display-1 {
+	color: $blue;
+	line-height: .75em !important;
+}
+
+::selection { 
+	color: $gray-900;
+	background-color: $blue;
+}

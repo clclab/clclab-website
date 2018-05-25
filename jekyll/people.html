@@ -28,12 +28,21 @@ layout: default
 		</section>
 			
 
-		<section class="col-lg-9 offset-lg-3 p-0 mb-5">	
+		<section class="col-lg-9 offset-lg-3 p-0 mb-5 collaborators">	
 			<h2>Frequent collaborators</h2>
 
 			{% assign collaborators = site.data.people | where:"type","collaborator" %}
+			{% assign numCollabsMod2 = site.data.people | size | modulo: 2 %}
 			{% for member in collaborators %}
-		    {% include person.html person=member %}
+				{% assign cardsPerRow = 2 %}
+				{% assign cardsPerRowm1 = cardsPerRow | minus: 1 %}
+				{% assign indexMod2 = forloop.index0 | modulo: cardsPerRow %}
+
+		    {% if indexMod2 == 0 %}<div class="card-deck">{% endif %}
+					
+					{% include person.html person=member %}
+
+			  {% if indexMod2 == cardsPerRowm1 %}</div>{% endif %}
 			{% endfor %}
 		</section>
 
@@ -42,7 +51,7 @@ layout: default
 			<h2>Former members</h2>
 
 			<div class="row">
-				<div class="accordion col-6" id="accordion-1">
+				<div class="accordion col-md-6 col-sm-12" id="accordion-1">
 					{% assign former_members = site.data.people | where:"type","former" %}
 
 					{% assign num_former_members = former_members | size %}
@@ -52,7 +61,7 @@ layout: default
 
 						{% if forloop.index0 == split_index %}
 							</div>
-							<div class="accordion col-6" id="accordion-2">
+							<div class="accordion col-md-6 col-sm-12" id="accordion-2">
 						{% endif %}
 
 						{% if forloop.index0 < split_index %}
