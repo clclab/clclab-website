@@ -4,7 +4,7 @@
   email: w.h.zuidema@uva.nl
   twitter: wzuidema
   interests: >
-     Jelle is an assistant professor in Cognitive Science and Computational Linguistics
+     Jelle Zuidema is an assistant professor in Cognitive Science and Computational Linguistics
      at the Institute for Logic, Language and Computation (ILLC) of the University
      of Amsterdam. Before joining the Institute in 2008(?), he worked in the Behavioural
      Biology group at Leiden University (2007-2008), and at the University of Edinburgh 
@@ -20,7 +20,7 @@
   email: d.hupkes@uva.nl
   img: media/dieuwke.png
   interests: >
-    Dieuwke has a background in Physics, Logic and Computational Linguistics.
+    Dieuwke Hupkes has a background in Physics, Logic and Computational Linguistics.
     In her PhD she works with artificial neural network models for semantic parsing. 
     Despite the differences between artificial and biological neural networks, 
     she hopes that investigating how artificial systems encode linguistic processes 
@@ -34,7 +34,7 @@
   twitter: samiraabnar
   img: media/samira.jpg
   interests: >
-    Samira obtained her Master’s degree in Computer Science at the University of Tehran.
+    Samira Abnar obtained her Master’s degree in Computer Science at the University of Tehran.
     Her main interest lies in the field of Cognitive Modeling. During her PhD, 
     she investigates biologically plausible neural network models which simulate
     how humans learn and develop language.
@@ -51,12 +51,17 @@
 - name: Peter Dekker  
   type: current
   position: master
+  interests: >
+    Peter Dekker studied Artificial Intelligence in Utrecht and Amsterdam. 
+    In his MSc thesis at the CLC lab, Peter investigated  the possibilities to 
+    use neural networks to reconstruct the ancestry of languages. He currently 
+    works as a software developer at the Dutch Language Institute.
 
 - name: Matthijs Mul
   type: current
   position: master
   interests: >
-    Matthijs is a graduate student in Artificial Intelligence and Logic. 
+    Matthijs Mul is a graduate student in Artificial Intelligence and Logic. 
     For his master’s thesis he works on computational models 
     that recognize logical relations between pairs of sentences.
 
@@ -66,7 +71,7 @@
   url: https://rgalhama.github.io/
   img: https://rgalhama.github.io/img/raquel-home.jpg
   interests: >
-    Raquel completed her PhD in our lab in 2017 with a focus on Artificial Grammar Learning.
+    Raquel Alhama completed her PhD in our lab in 2017 with a focus on Artificial Grammar Learning.
     Today, she is a postdoctoral researcher at the Basque Center on Cognition, Brain 
     and Language in Spain, where she investigates computational models of visual word recognition.
 
@@ -76,7 +81,7 @@
   url: https://staff.fnwi.uva.nl/r.fernandezrovira
   twitter: raquelfdzrovira
   interests: >
-    is an associate professor and the head of the Dialogue Modelling Group
+    Raqzek Fernandez is an associate professor and the head of the Dialogue Modelling Group
     at the ILLC. She researches computational semantics and pragmatics
     with a special focus on linguistic interaction.
   
@@ -87,7 +92,7 @@
   img: http://ivan-titov.org/it2.jpg
   twitter: iatitov
   interests: >
-    Ivan is an associate professor at the University of Edinburgh and 
+    Ivan Titov is an associate professor at the University of Edinburgh and 
     affiliated with the ILLC . His research focuses on Natural 
     Language Processing and Machine Learning.
 
@@ -97,7 +102,7 @@
   img: https://staff.fnwi.uva.nl/t.deoskar/td1.jpg
   url: https://staff.fnwi.uva.nl/t.deoskar/
   interests: >
-    Tejaswini is an assistant professor at the ILLC, investigating probabilistic
+    Tejaswini Deoskar is an assistant professor at the ILLC, investigating probabilistic
     language models. In particular, she focuses on semi-supervised language learning techniques.
 
 
@@ -107,7 +112,7 @@
   twitter: musiccognition
   url: http://www.mcg.uva.nl/
   interests: >
-    Henkjan leads the Music Cognition Group at the University of Amsterdam.
+    Henkjan Honing leads the Music Cognition Group at the University of Amsterdam.
     His research aims to identify the cognitive and biological mechanisms underlying musicality, 
     as well as the commonalities and differences in the processing of music and language. 
 
@@ -128,7 +133,7 @@
   startyear: 2012
   endyear: 2016
   interests: >
-    Phong completed his PhD in our lab and is now a postdoctoral researcher at the University 
+    Phong Le completed his PhD in our lab and is now a postdoctoral researcher at the University 
     of Edinburgh, applying deep learning to natural language processing tasks.
     
 - name: Marieke Woensdrecht
@@ -140,7 +145,7 @@
   startyear: 2014
   endyear: 2014
   interests: >
-    Marieke is a PhD student at the University of Edinburgh. Using agent-based models, 
+    Marieke Woensdrecht is a PhD student at the University of Edinburgh. Using agent-based models, 
     she explores the hypothesis that language and theory of mind have co-evolved.
 
 
@@ -152,7 +157,7 @@
   startyear: 2011
   endyear: 2012
   interests: >
-    Katja is a PhD student at Radbound University in Nijmegen, investigating human language 
+    Katja Abramova is a PhD student at Radbound University in Nijmegen, investigating human language 
     evolution from an interdisciplinary perspective.  
 
 
@@ -164,7 +169,7 @@
   startyear: 2009
   endyear: 2010
   interests: >
-    Vanessa works as a postdoctoral researcher at the Santa Fe Institute, where she combes psychological
+    Vanessa Ferdinand works as a postdoctoral researcher at the Santa Fe Institute, where she combes psychological
     experiments and computational modeling to examines cultural evolution.
 
   
@@ -175,7 +180,7 @@
   startyear: 2015
   endyear: 2015
   interests: >
-     Jonathan is a PhD student at the University of Edinburgh, working on automatic text generation, 
+     Jonathan Mallison is a PhD student at the University of Edinburgh, working on automatic text generation, 
      focusing on paraphrasing and sentence compression.
 
 - name: Federico Sangati
@@ -186,14 +191,14 @@
   startyear: 2008
   endyear: 2011
   interests: >
-    Frederico works as a postdoctoral researcher at the University of Edinburgh, focusing on 
+    Frederico Sangati works as a postdoctoral researcher at the University of Edinburgh, focusing on 
     Natural Language Processing, in particular on dependency and constituency parsing.
   
 - name: Willemijn van Woerkum
   now: Data Scientist and at bunq
   type: former
   interests: >
-    Willemijn works as Data Scientist and Consumer Psychologist at bunq in Amsterdam. 
+    Willemijn Woerkum works as Data Scientist and Consumer Psychologist at bunq in Amsterdam. 
 
 - name: Stijn de Gooijer
   now: Data Scientist at Xomnia
@@ -208,7 +213,7 @@
   now: Data Scientists at Decos Information Solutions
   type: former
   interests: >
-    Kasper completed a PhD at the Vrije University Amsterdam and now works as Data Scientists at Decos Information Solutions.
+    Kasper Kok completed a PhD at the Vrije University Amsterdam and now works as Data Scientists at Decos Information Solutions.
 
 - name: Simon Hofmann
   type: former
