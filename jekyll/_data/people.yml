@@ -47,13 +47,19 @@
   twitter: bas_c
   email: bjmcornelissen@gmail.com
   img: media/bas.jpg
+  interests: > 
+    Bas Cornelissen got interested in the interaction between cognition and 
+    language during his graduate studies in Logic. In his PhD, he investigates 
+    probabilisitc models of language evolution. His aim is to address the intruiging 
+    question, by which mechanisms human cognition shapes language evolution, while at
+    the same time language appears to be a prerequesite to many cognitive processes.
 
 - name: Peter Dekker  
   type: current
   position: master
   interests: >
     Peter Dekker studied Artificial Intelligence in Utrecht and Amsterdam. 
-    In his MSc thesis at the CLC lab, Peter investigated  the possibilities to 
+    In his Master's thesis at the CLC lab, Peter investigated  the possibilities to 
     use neural networks to reconstruct the ancestry of languages. He currently 
     works as a software developer at the Dutch Language Institute.
 
