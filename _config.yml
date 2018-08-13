@@ -16,7 +16,7 @@ description: >-
   at the University of Amsterdam.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://bacor.nl/clc"
+url: "http://projects.illc.uva.nl/LaCo/clclab/"
 
 # Build settings
 markdown: kramdown
