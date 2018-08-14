@@ -1,6 +1,6 @@
 # Editing the CLC website
 
-There is a demo running at [bacor.nl/clc](http://bacor.nl/clc). 
+The website is running on the LaCo server at [projects.illc.uva.nl/LaCo/clclab](http://projects.illc.uva.nl/LaCo/clclab).
 
 ## How does this work? 
 
@@ -11,7 +11,7 @@ It generates a website based on what we put in the folder `jekyll`.
 So to update the website, we have to do two things: (1) change something in the folder `jekyll` (a blogpost, say). 
 Then (2) run Jekyll to generate an updated version of the website. 
 Step (2) is now done by hand, but we want to automate this later. 
-*For now, this means that new changes to the repository are not directly visible on the (demo) site [bacor.nl/clc](http://bacor.nl/clc).*
+*For now, this means that new changes to the repository are not directly visible on the website*
 
 ## How is the site structured?
 You only have to look at the folder `jekyll`, the rest is for development (javascripting, styling, etc). 
