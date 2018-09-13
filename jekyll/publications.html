@@ -14,7 +14,8 @@ updated: 2018-01-29
             <button type="button" class="btn btn-sm btn-primary d-none d-sm-block" disabled>Sort by</button>
             
             <button type="button" class="btn btn-sm btn-primary" 
-                data-sort-selector="#publications .bibliography>li .bib-entry"
+                data-sort-group-selector="#publications .group"
+                data-sort-selector=".bib-entry"
                 data-sort-order="asc"
                 data-sort="year,author">
                 year 
@@ -23,7 +24,8 @@ updated: 2018-01-29
             </button>
 
             <button type="button" class="btn btn-sm btn-primary" 
-                data-sort-selector="#publications .bibliography>li .bib-entry"
+                data-sort-group-selector="#publications .group"
+                data-sort-selector=".bib-entry"
                 data-sort-order="asc"
                 data-sort="author,year">
                 author
@@ -31,14 +33,16 @@ updated: 2018-01-29
             </button>
 
             <button type="button" class="btn btn-sm btn-primary" 
-                data-sort-selector="#publications .bibliography>li .bib-entry"
+                data-sort-group-selector="#publications .group"
+                data-sort-selector=".bib-entry"
                 data-sort-order="asc"
                 data-sort="title">title
                 <span class="oi oi-chevron-top small hidden" aria-hidden="true"></span>
             </button>
 
             <button type="button" class="btn btn-sm btn-primary d-none d-sm-block" 
-                data-sort-selector="#publications .bibliography>li .bib-entry"
+                data-sort-group-selector="#publications .group"
+                data-sort-selector=".bib-entry"
                 data-sort-order="asc"
                 data-sort="publication">publication
                 <span class="oi oi-chevron-top small hidden" aria-hidden="true"></span>
@@ -51,11 +55,45 @@ updated: 2018-01-29
         </div>
 
 
-        <div class="col-lg-9 offset-lg-3" id="publications">
-          {% bibliography 
-              --file publications 
-              --order ascending
-              --sort_by year %}
+        <div class="col-lg-9 offset-lg-3" id="publications"
+            data-sort-group-by-seperator="#publications h2.bibliography">
+
+            <div class="group">
+                <h2 class="bibliography">Journal articles</h2>
+                {% bibliography 
+                  --file publications 
+                  --query @article
+                  --sort_by year 
+                  --order asc %}
+            </div>
+
+            <div class="group">
+                <h2 class="bibliography">Conference articles</h2>
+                {% bibliography 
+                  --file publications 
+                  --query @inproceedings
+                  --sort_by year 
+                  --order asc %}
+            </div>
+
+            <div class="group">
+                <h2 class="bibliography">Book chapters</h2>
+                {% bibliography 
+                  --file publications 
+                  --query @inbook||@incollection
+                  --sort_by year 
+                  --order asc %}
+            </div>
+
+            <div class="group">
+                <h2 class="bibliography">Others</h2>
+                {% bibliography 
+                  --file publications 
+                  --query @phdthesis||@unpublished||@manuscript||@mastersthesis||@misc||@proceedings||@techreport
+                  --sort_by year 
+                  --order asc %}
+            </div>
+
 
             <div class="alert alert-warning d-none" role="alert" id="filter-no-results">
               <h4 class="alert-heading">No results...</h4>
