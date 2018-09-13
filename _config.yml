@@ -19,18 +19,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://projects.illc.uva.nl/LaCo/clclab/"
 
 # Build settings
-markdown: kramdown
-# theme: minima
-# plugins:
-#   - jekyll-feed
-
-
 destination: site
 source: jekyll
+encoding: utf-8
+markdown: kramdown
 exclude: 
   - node_modules
-
-encoding: utf-8
 
 # Jekkyl Scholar 
 # See here for a useful tutorial: 
@@ -43,6 +37,7 @@ scholar:
   order: descending
   bibliography: publications.bib
   bibliography_template: bib
+  source: ./
   #bibtex_skip_fields: [mendeley-tags, file, url]
   bibtex_filters:
     - latex
