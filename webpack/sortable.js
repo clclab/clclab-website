@@ -5,12 +5,29 @@ export default function setupSortables() {
 
   // Find all sort handles
   const sortHandles = document.querySelectorAll('[data-sort]')
+
+  // Split bibliography in groups?
+  // const separatorSelectors = document.querySelectorAll('[data-sort-group-by-seperator]');
+  // if(separatorSelectors.length > 0) {
+  //   // Find all group separators
+  //   const selector = separatorSelectors[0].dataset.sortGroupSeperator;
+  //   const separators = document.querySelectorAll(selector);
+
+  //   // Move separator and list into one div
+  //   separators.forEach(separator => {
+  //     const list = separator.nextElementSibling;
+  //     const group = document.createElement("div");
+  //     group.classList = 'group'
+  //     separator.parentElement.appendChild(group)
+  //     group.appendChild(separator)
+  //     group.appendChild(list)
+  //   })
+  // }
   
   sortHandles.forEach((handle) => {
     handle.onclick = (event) => {
       const handle = event.target;
       if( 'sortSelector' in handle.dataset && 'sort' in handle.dataset) {
-        
         // The fields to sort
         const fields = handle.dataset.sort.split(',');
         
@@ -31,8 +48,16 @@ export default function setupSortables() {
           'order': orders[index]
         }));
 
-        // Sort!
-        tinysort(handle.dataset.sortSelector, ...options);
+        if('sortGroupSelector' in handle.dataset) {
+          const groups = document.querySelectorAll(handle.dataset.sortGroupSelector);
+          groups.forEach(group => {
+            const items = group.querySelectorAll(handle.dataset.sortSelector);
+            tinysort(items, ...options);
+          })
+        } else {
+          // Sort!
+          tinysort(handle.dataset.sortSelector, ...options);
+        }
 
         // Fix icon
         const icon = handle.querySelectorAll('.oi')[0]

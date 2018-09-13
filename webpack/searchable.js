@@ -32,10 +32,12 @@ export default function setupSearchables() {
     const className = input.dataset.searchableInputFor;
     const searchApi = setupSearchApi(className);
 
+    // The element whon no publications match the query
     const noResultsMessage = ('noResultsMessage' in input.dataset) 
       ? jquery(input.dataset.noResultsMessage) 
       : undefined;
 
+    // Update the filter whenever the input field changes
     jquery(input).bind('propertychange change click keyup input paste', (event) => {
       const query = event.target.value;
 
