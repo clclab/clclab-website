@@ -14,6 +14,19 @@
      Biology group at Leiden University (2007-2008).
   img: media/jelle.jpg
 
+- name: Lisa Beinborn
+  type: current
+  position: postdoc
+  email: l.m.beinborn@uva.nl
+  img: media/lisa.jpg
+  interests: >
+    Lisa Beinborn completed her dissertation on educational natural language processing for 
+    language learning at the department of computer science in Darmstadt. She received her 
+    master’s degree in computational linguistics in Saarbrücken and her interdisciplinary 
+    profile has been further influenced by studies in Barcelona, Bolzano, Hamburg, Frankfurt 
+    and Trento. Her current research interests are focused on cognitively plausible language 
+    processing including multimodal and multilingual aspects. 
+
 - name: Dieuwke Hupkes
   type: current
   position: phd
