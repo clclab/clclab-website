@@ -21,8 +21,7 @@ You find the content, in more convenient formats, here:
 
 - `jekyll/_data/people.yml` A text file with all details about people associated to the lab. 
 These details are stored as a [YAML](https://en.wikipedia.org/wiki/YAML) file, a super simple and human readable format.
-- `jekyll/_bibliography/publications.bib` A BibTeX file with all publications of the CLC lab. 
-These are shown on the publications page.
+- `jekyll/publications.bib` A BibTeX file with all publications of the CLC lab. These are shown on the publications page.
 - `media/` contains, well, media: images, pdfs of publications, etc.
 - `posts/` contains the updates shown on the homepage. Every post gets its own markdown file, see more about that below.
 
