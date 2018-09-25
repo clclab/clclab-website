@@ -3,19 +3,21 @@ layout: page
 title: Lab Meetings
 ---
 
-### 18 September 2018
-*Labmeeting at  16:00-17:30 in the PostDoc Meeting Room F2.02*
-
-There's no paper to discuss this week, but there will be coffee and cookies.
 
 ### 25 September 2018
 *No labmeeting* — [CLS](http://projects.illc.uva.nl/LaCo/CLS/#): Ekaterina Shutova, ILLC
 
 
 ### 2 October 2018
-*No labmeeting* — [CLS](http://projects.illc.uva.nl/LaCo/CLS/#): Steven Schockaert, Cardiff University, UK
+*Labmeeting 16:00-17:30 in the PostDoc Meeting Room F2.02. CLS starts at **12:00**.*
 
-### 9 October 2018
+- **Paper (see email, please don't distribute):** Zuidema, French, Alhama et al (draft). Five ways in which computational models can help advancing Artificial Grammar Learning research.<br />
+*Abstract.*
+Computational modelling in cognitive science can sometimes appear as an inward looking field — a domain separated from experimental research, where obscure technical details dominate, hungry for data but seldomly giving something back. In this paper, we argue that this is not at all how things need to be. Computational techniques, even simple ones that are straightforward to use, can greatly facilitate designing, implementing and analyzing experiments, and generally help lift research to a new level. We focus on the domain of artificial grammar learning, and give five concrete examples in this domain for: (1) Formalizing and clarifying theories, (2) Generating stimuli, (3) Visualization, (4) Model selection, and (5) Automatically generating alternative hypotheses.
+
+
+
+### 9 October 2018 (?)
 *Labmeeting 16:00-17:30 in the PostDoc Meeting Room F2.02*
 - **Presentation 1**: Jaap Jumelet. [Do Language Models Understand Anything? On the Ability of LSTMs to Understand Negative Polarity Items](https://arxiv.org/abs/1808.10627)<br />
 *Abstract.* In this paper, we attempt to link the inner workings of a neural language model to linguistic theory, focusing on a complex phenomenon well discussed in formal linguis- tics: (negative) polarity items. We briefly discuss the leading hypotheses about the licensing contexts that allow negative polarity items and evaluate to what extent a neural language model has the ability to correctly process a subset of such constructions. We show that the model finds a relation between the licensing context and the negative polarity item and appears to be aware of the scope of this context, which we extract from a parse tree of the sentence. With this research, we hope to pave the way for other studies linking formal linguistics to deep learning. 
@@ -24,7 +26,8 @@ There's no paper to discuss this week, but there will be coffee and cookies.
 
 
 ### 16 October 2018
-*No labmeeting* — [CLS](http://projects.illc.uva.nl/LaCo/CLS/#): Mehrnoosh Sadrzadeh, Queen Mary University of London, UK
+
+Note: [CLS](http://projects.illc.uva.nl/LaCo/CLS/#) (Mehrnoosh Sadrzadeh, Queen Mary University of London, UK) at **12:00.**
 
 ### 23 October 2018
 *Labmeeting 16:00-17:30 in the PostDoc Meeting Room F2.02*
