@@ -13,12 +13,20 @@ h2 {
 	margin-top: 2em;
 }
 
-.display-1 {
-	color: $blue;
-	line-height: .75em !important;
-}
+// .display-1 {
+// 	color: $blue;
+// 	// line-height: .75em !important;
+// }
 
 ::selection { 
 	color: $gray-900;
 	background-color: $blue;
+}
+
+p.intro {
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: $blue;
+	margin-bottom: 3 * $spacer;
+	padding-top: 3 * $spacer;
 }

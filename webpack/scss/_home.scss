@@ -2,14 +2,14 @@
  * _home.scss
  */
 
-#lab-intro {
+.lab-intro {
 	position: relative;
 
 	.container {
 		display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
 	}
 
 	.lead {

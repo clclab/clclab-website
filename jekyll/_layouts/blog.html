@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<article class="blog">
+	<div class="lab-intro">
+		<div class="container">
+			<header class="offset-lg-3 pt-5 lead my-5">
+				<p class="date">
+						<span class="badge badge-pill badge-light">{{ page.date | date: '%-d %B %Y' }}</span>
+				</p>
+				<h1 class="display-1">{{ page.title }}</h1>
+				<p class="subtitle">{{ page.subtitle }}</p>
+				<p class="author mt-5"><span class="by">by</span> {{ page.author }}</p>
+			</header>
+			<div class="clc-pattern bg-div dark">
+				{% include pattern.svg %}
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9  offset-lg-3 content">
+				
+				<!-- <p class="intro my-5">{{ page.intro }}</p> -->
+
+				{{ content }}
+
+
+				<footer>
+					<p class="text-muted small">
+						{% if page.updated %}
+							Last updated: {{ page.updated | date: '%B %d, %Y' }}
+						{% endif %}
+					</p>
+				</footer>
+			</div>
+		</div>
+	</div>
+</article>
+
+<!-- 
+<div class="col-lg-2 fixed">
+	<h1 class="rotated">{{ page.title }}</h1>
+</div> -->

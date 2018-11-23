@@ -46,4 +46,8 @@
 			fill: transparentize(#fff, $opacity);
 		}
 	}
+
+	&.dark {
+		background: $blue;
+	}
 }

@@ -1,5 +1,7 @@
 /**
  * _variables.scss
+ * Here you can overrride pretty much all of bootstrap,
+ * see node_modules/bootstrap/scss/variables.scss
  */
 
 // Fonts
@@ -19,3 +21,16 @@ $footer-color: transparentize($black, .5);
 
 // Other settings
 $enable-rounded: false;
+
+// $font-size-base: 1rem; // Assumes the browser default, typically `16px`
+// $h1-font-size: $font-size-base * 1;
+// $h2-font-size: $font-size-base * 1.5;
+// $h3-font-size: $font-size-base * 1.25;
+// $h4-font-size: $font-size-base * 1;
+// $h5-font-size: $font-size-base * 1;
+
+$display1-size: 5rem;
+$display2-size: 3rem;
+$display-line-height: .9;
+
+$spacer: 1rem !default;
