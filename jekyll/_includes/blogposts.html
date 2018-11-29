@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col-md-3 order-first">
         {% if post.figure %}
-          <img class="figure" src="{{ site.url}}/{{ post.figure }}" alt="{{ post.title | strip_html }}" />
+          <img class="figure" src="{{ site.url }}{{ post.figure }}" alt="{{ post.title | strip_html }}" />
         {% else %}
           <div class="clc-pattern bg-div dark">
               {% include pattern.svg %}
@@ -17,7 +17,7 @@
 
       <div class="col-md-5 order-md-3">
         <header>
-          <h2 class="p-0 m-0"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+          <h2 class="p-0 m-0"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
           {% if post.subtitle %}
             <p class="subtitle">{{ post.subtitle }}</p>
           {% endif %}
@@ -27,7 +27,7 @@
 
       <div class="col-md-4 order-md-2">
         {{ post.excerpt }}
-        <a href="{{ post.url }}" class="btn btn-outline-primary btn-sm">
+        <a href="{{ site.url }}{{ post.url }}" class="btn btn-outline-primary btn-sm">
           Read on...
           <span class="oi oi-chevron-right" aria-hidden="true"></span>
         </a>
