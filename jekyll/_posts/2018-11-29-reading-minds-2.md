@@ -8,10 +8,11 @@ author: Iris Proff
 figure: "/media/posts/Linda-Jolink-reading-minds-2.jpg"
 ---
 
-As we saw in the [previous post]({% post_url 2018-11-29-reading-minds-2 %}), we can decode someone’s visual experience from their brain activity using machine learning with increasing accuracy. This is pretty impressive already, however this is not quite what we understand as mind reading, is it? So let’s go a step further!
+As we saw in the [previous post]({{ site.url }}{% post_url 2018-11-29-reading-minds-2 %}), we can decode someone’s visual experience from their brain activity using machine learning with increasing accuracy. This is pretty impressive already, however this is not quite what we understand as mind reading, is it? So let’s go a step further!
 {: .intro }
 
 ## Decoding thoughts: the first steps
+
 In terms of mind reading, we are not interested in decoding what a person *sees*, but rather what they *think* about. That is, we want to know which semantic concepts are represented in their brain. By semantic concepts we mean any coherent idea that can be represented in different ways. The semantic concept *bike* can be represented by the word bike, or by a sketch of a bike or, arguably, by a specific pattern of brain activity. 
 
 It turns out we can apply the very same brain decoding approach described in the previous post to decode semantic concepts from the brain using *word embeddings*. These are models that map a word onto a numerical vector. This vector encodes semantic features of the word by capturing how often it co-occurs with other words in a large text database. Consequently, vectors of words that tend to occur together will be more similar than vectors of words that never occur together. Thus, word embeddings are yet another way to represent semantic concepts. They rely on a *distributional semantics* stance [1], claiming that the meaning of a concept is defined by the context it tends to appear in. In order to decode semantic concepts from brain activation, a machine learning classifier can be trained to learn the association between the two kinds of representations: brain activation and word embeddings. 
