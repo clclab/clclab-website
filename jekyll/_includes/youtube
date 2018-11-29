@@ -1,0 +1,9 @@
+<figure class="{{ include.class }}">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    {% if include.caption || include.credits %}
+      <figcaption>
+      {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
+      <span class="credits">{{ include.credits | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+      </figcaption>
+    {% endif %}
+  </figure>

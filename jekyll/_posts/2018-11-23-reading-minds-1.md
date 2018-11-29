@@ -2,15 +2,24 @@
 title: "I know what you see"
 subtitle: "Reading minds, part 1"
 published: 2018-11-23
-categories: news
+categories: blog
 layout: blog
 author: Iris Proff
+figure: "/media/posts/Linda-Jolink-reading-minds-1.jpg"
 ---
 
 Ever since we started investigating the brain, neuroscientists have
 dreamed about reading the human mind. Will we ever be able to look into
 the brain and tell what someone is thinking? How would this even work?
 {: .intro}
+
+{%
+ include figure
+ image_path="/media/posts/Linda-Jolink-reading-minds-1.jpg"
+ alt="A rabbit and a brain"
+ caption=""
+ credits="Illustration by Linda Jolink"
+%}
 
 ## Decoding what you see: the first step
 
@@ -22,12 +31,16 @@ The assumption underlying this new approach is that neural activation patterns a
 
 The world of neuroscience was highly excited about this step towards decoding human brain activity. But not only that, suddenly computational scientists gained interest in neuroimaging. Why? Even though the kind of data being examined is very different, the approach is analogous to image classification, the prime application of machine learning. You have a multi-featured data set, namely brain activation data, and your goal is to classify each data point into one out of a set of known categories, which are the corresponding visual stimuli. Soon, the applied models were further developed to generalize to stimuli which have not explicitly been learned, thus moving beyond classification into a fixed set of categories. For instance, the Gallant lab at Berkeley became famous for reconstructing the visual experience of subjects watching movies from their brain activity [2].
 
-https://www.youtube.com/watch?v=nsjDnYxJ0bo
+{%
+    include youtube
+    id="nsjDnYxJ0bo"
+    caption="Reconstructing movies from brain activity"
+%}
 
 As research continues, the accuracy of vision decoding is likely to increase further and further. However, is this approach to decoding brain activity limited to vision? Or can we also decode someone’s thoughts from brain activation? These questions are tackled in the next post!
 
-Author: Iris Proff
-Illustration: Linda Jolink
+
+### References 
 
 [1] Haxby, J. V., Gobbini, M. I., Furey, M. L., Ishai, A., Schouten, J. L., & Pietrini, P. (2001). Distributed and overlapping representations of faces and objects in ventral temporal cortex. Science, 293(5539), 2425-2430.
 

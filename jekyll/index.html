@@ -23,7 +23,6 @@ layout: default
 	</div>
 </div>
 
-
 <div class="container py-5">
 	<div class="row">
 		
@@ -62,3 +61,28 @@ layout: default
 	</div>
 	
 </div>
+
+<div class="lab-intro">
+	<div class="container">
+		<div class="offset-lg-3 clc-name display-4 my-5">
+			recent blogposts
+			<a href="{{ site.url }}/blog.html" class="btn btn-outline-secondary">
+				all
+				<span class="oi oi-chevron-right" aria-hidden="true"></span>
+			</a>
+		</div>
+		<div class="clc-pattern bg-div dark">
+			{% include pattern.svg %}
+		</div>
+	</div>
+</div>
+	
+	
+<div class="container py-5 blog-overview">
+		<div class="row">
+			{% assign posts = site.posts | where:"categories","blog" | limit: 1 %}     
+			{% include blogposts.html posts=posts %}
+		</div>	
+	</div>	
+
+
