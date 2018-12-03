@@ -67,7 +67,7 @@ updated: 2018-01-29
             <div class="group">
                 <h2 class="bibliography">Journal articles</h2>
                 {% bibliography 
-                  --file publications 
+                  --file clc_publications 
                   --query @article
                   --sort_by year 
                   --order asc %}
@@ -76,7 +76,7 @@ updated: 2018-01-29
             <div class="group">
                 <h2 class="bibliography">Conference articles</h2>
                 {% bibliography 
-                  --file publications 
+                  --file clc_publications 
                   --query @inproceedings
                   --sort_by year 
                   --order asc %}
@@ -85,7 +85,7 @@ updated: 2018-01-29
             <div class="group">
                 <h2 class="bibliography">Book chapters</h2>
                 {% bibliography 
-                  --file publications 
+                  --file clc_publications 
                   --query @inbook||@incollection
                   --sort_by year 
                   --order asc %}
@@ -94,7 +94,7 @@ updated: 2018-01-29
             <div class="group">
                 <h2 class="bibliography">Others</h2>
                 {% bibliography 
-                  --file publications 
+                  --file clc_publications 
                   --query @phdthesis||@unpublished||@manuscript||@mastersthesis||@misc||@proceedings||@techreport
                   --sort_by year 
                   --order asc %}

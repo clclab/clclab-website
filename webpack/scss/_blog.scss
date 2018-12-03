@@ -86,3 +86,19 @@
         font-weight: bold;
     }
 }
+
+.references {
+    padding-top: 3 * $spacer;
+    font-size: .9rem;
+    color: transparentize($black, .4);
+    font-family: $font-family-monospace;
+
+    h4 {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    ol {
+        column-count: 2
+    }
+}
