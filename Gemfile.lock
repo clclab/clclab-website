@@ -49,6 +49,8 @@ GEM
       jekyll (~> 3.0)
     jekyll-seo-tag (2.4.0)
       jekyll (~> 3.3)
+    jekyll-sitemap (1.2.0)
+      jekyll (~> 3.3)
     jekyll-twitter-plugin (2.0.0)
     jekyll-watch (2.0.0)
       listen (~> 3.0)
@@ -88,10 +90,11 @@ DEPENDENCIES
   jekyll (~> 3.7.0)
   jekyll-feed (~> 0.6)
   jekyll-scholar
+  jekyll-sitemap
   jekyll-twitter-plugin (~> 2.0)
   minima (~> 2.0)
   tzinfo-data
   unicode (~> 0.4.4)
 
 BUNDLED WITH
-   1.16.2
+   1.17.1

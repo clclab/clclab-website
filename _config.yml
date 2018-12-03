@@ -29,7 +29,7 @@ exclude:
 # Jekkyl Scholar 
 # See here for a useful tutorial: 
 # https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/02/01/jekyll-and-bibtex/
-plugins: ['jekyll/scholar', 'jekyll-twitter-plugin']
+plugins: ['jekyll/scholar', 'jekyll-twitter-plugin', 'jekyll-sitemap']
 
 scholar:
   style: apa-no-doi-no-issue

@@ -30,3 +30,4 @@ gem "unicode", "~> 0.4.4"
 
 # Added at 2018-05-22 10:22:08 +0200 by Bas:
 gem "jekyll-twitter-plugin", "~> 2.0"
+gem "jekyll-sitemap"
