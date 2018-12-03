@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Lab Meetings
+sitemap: false
 ---
 
 
