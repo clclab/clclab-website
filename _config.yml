@@ -10,6 +10,12 @@
 
 # Site settings
 title: Cognition, Language and Computation Lab
+shorttitle: clclab
+tagline: >
+  We try to understand the computational principles underlying natural language 
+  understanding by humans and machines. We investigate the neural implementation 
+  of these principles in the human brain, their evolutionary origins and their 
+  usefulness in language technology.
 description: >-
   The Cognition, Language and Computation lab lead by Jelle Zuidema 
   at the Institute for Logic, Language and Computation 
@@ -17,6 +23,9 @@ description: >-
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://projects.illc.uva.nl/LaCo/clclab/"
+
+# Default social media image
+socialimg: ""
 
 # Build settings
 destination: site
@@ -30,6 +39,13 @@ exclude:
 # See here for a useful tutorial: 
 # https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/02/01/jekyll-and-bibtex/
 plugins: ['jekyll/scholar', 'jekyll-twitter-plugin', 'jekyll-sitemap']
+
+defaults:
+  -
+    scope:
+      path:            "google*"
+    values:
+      sitemap:         false
 
 scholar:
   style: apa-no-doi-no-issue

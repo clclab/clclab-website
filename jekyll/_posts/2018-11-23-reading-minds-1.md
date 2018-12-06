@@ -5,7 +5,7 @@ published: 2018-11-23
 categories: blog
 layout: blog
 author: Iris Proff
-figure: "/media/posts/Linda-Jolink-reading-minds-1.jpg"
+image: "/media/posts/Linda-Jolink-reading-minds-1.jpg"
 ---
 
 Ever since we started investigating the brain, neuroscientists have

@@ -3,35 +3,61 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	{%- if page.fulltitle -%}
+		{% assign pagetitle = page.fulltitle %}
+	{% else if page.title %}
+		{% assign pagetitle = page.title %}
+	{% endif %}
+
+	{%- if pagetitle == blank -%}
+		{% assign pagetitle = site.title %}
+	{% else %}
+		{% assign pagetitle = pagetitle | append: " ‹ " | append: site.shorttitle %}
+	{% endif %}
+
+	{%- if page.categories contains "blog" -%}
+		{% assign pagetitle = pagetitle | append: " blog" %}
+	{% endif %}
+
+	{%- if page.excerpt -%}
+		{% assign description = page.excerpt | strip_html %}
+	{% else %}
+		{% assign description = site.tagline %}
+	{% endif %}
+	{% assign description = description | strip %}
+
+	{%- if page.image -%}
+		{% assign image = site.url | append: page.image %}
+	{% else %}
+		{% assign image = site.url | append: site.socialimg %}
+	{% endif %}
+
 	<!-- Plain Description -->
-	<title>{{ site.title }}</title>
-	<meta name="description" content="{% if page.excerpt %}{{page.excerpt | strip_html}}{% else %}{{site.tagline}}{% endif %}">
+	<title>{{ pagetitle }}</title>
+	<meta name="description" content="{{ description }}">
 	<link rel="icon" type="image/png" href="/favicon.png">
-	
+
 	<!-- Google+ -->
-	<link rel="publisher" href="https://plus.google.com/{{site.googleplus}}"/>
-	<meta itemprop="name" content="{% if page.fulltitle %}{{page.fulltitle}}{% else %}{{page.title}} | {{ site.title }} {% endif %}">
-	<meta itemprop="description" content="{% if page.excerpt %}{{page.excerpt | strip_html}}{% else %}{{site.tagline}}{% endif %}">
-	<meta itemprop="image" content="{% if page.image %}{{site.url}}{{page.image}}{% else %}{{site.url}}{{site.socialimg}}{% endif %}">
-	
+	<meta itemprop="name" content="{{ pagetitle }}">
+	<meta itemprop="description" content="{{ description }}">
+	<meta itemprop="image" content="{{ image }}">
+
 	<!-- Facebook -->
-	<meta property="og:type" content="website"/>
-	<meta property="og:title" content="{% if page.fulltitle %}{{page.fulltitle}}{% else %}{{page.title}} | {{ site.title }} {% endif %}"/>
-	<meta property="og:description" content="{% if page.excerpt %}{{page.excerpt | strip_html}}{% else %}{{site.tagline}}{% endif %}"/>
-	<meta property="og:image" content="{% if page.image %}{{site.url}}{{page.image}}{% else %}{{site.url}}{{site.socialimg}}{% endif %}"/>
-	<meta property="og:url" content="{{site.url}}{{page.url}}"/>
-	<meta property="og:site_name" content="{{ site.title }} "/>
-	
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="{{ pagetitle }}" />
+	<meta property="og:description" content="{{ description }}" />
+	<meta property="og:image" content="{{ image }}" />
+	<meta property="og:url" content="{{site.url}}{{page.url}}" />
+	<meta property="og:site_name" content="{{ site.title }} " />
+
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="{% if page.fulltitle %}{{page.fulltitle}}{% else %}{{page.title}} | {{ site.title }} {% endif %}">
-	<meta name="twitter:description" content="{% if page.excerpt %}{{page.excerpt | strip_html}}{% else %}{{site.tagline}}{% endif %}">
-	<meta name="twitter:image" content="{{site.url}}{{site.socialimg}}">
+	<meta name="twitter:title" content="{{ pagetitle }}">
+	<meta name="twitter:description" content="{{ description }}">
+	<meta name="twitter:image" content="{{ image }}">
 	<meta name="twitter:url" content="{{site.url}}{{page.url}}">
-	
+
 	<!-- CSS & fonts -->
-  <link rel="stylesheet" type="text/css" href="{{site.url}}/assets/styles.css">
-   <link rel="stylesheet" href="{{site.url}}/assets/iconic/css/open-iconic-bootstrap.css">
-
-
+	<link rel="stylesheet" type="text/css" href="{{site.url}}/assets/styles.css">
+	<link rel="stylesheet" href="{{site.url}}/assets/iconic/css/open-iconic-bootstrap.css">
 </head>

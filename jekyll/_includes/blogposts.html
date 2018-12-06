@@ -6,8 +6,8 @@
   <article class="mb-4 pb-4 blogpost border-bottom container">
     <div class="row">
       <div class="col-md-3 order-first">
-        {% if post.figure %}
-          <img class="figure" src="{{ site.url }}{{ post.figure }}" alt="{{ post.title | strip_html }}" />
+        {% if post.image %}
+          <img class="figure" src="{{ site.url }}{{ post.image }}" alt="{{ post.title | strip_html }}" />
         {% else %}
           <div class="clc-pattern bg-div dark">
               {% include pattern.svg %}
