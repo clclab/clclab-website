@@ -12,7 +12,7 @@ layout: default
 			<p class="mb-4">
 				We try to understand the computational principles underlying natural language understanding by humans and machines. We investigate the neural implementation of these principles in the human brain, their evolutionary origins and their usefulness in language technology.</p>
 
-			<a href="{{ site.url }}/research.html" class="btn btn-outline-primary">
+			<a href="{{ site.baseurl }}/research.html" class="btn btn-outline-primary">
 				Our research
 				<span class="oi oi-chevron-right" aria-hidden="true"></span>
 			</a>
@@ -40,11 +40,11 @@ layout: default
 							{% if post.date %}
 							<span class="badge badge-pill badge-light">{{ post.date | date: '%d %b' }}</span>
 							{% endif %}
-							<a href="{{ post.url }}" class="btn btn-link btn-sm">Read more...</a>
+							<a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-link btn-sm">Read more...</a>
 						</div>
 				</article>
 			{% endfor %}
-			<a href="{{ site.url }}/updates.html" class="btn btn-outline-secondary mt-2">
+			<a href="{{ site.baseurl }}/updates.html" class="btn btn-outline-secondary mt-2">
 				Older updates
 				<span class="oi oi-chevron-right" aria-hidden="true"></span>
 			</a>
@@ -66,7 +66,7 @@ layout: default
 	<div class="container">
 		<div class="offset-lg-3 clc-name display-4 my-5">
 			recent blogposts
-			<a href="{{ site.url }}/blog.html" class="btn btn-outline-secondary">
+			<a href="{{ site.baseurl }}/blog.html" class="btn btn-outline-secondary">
 				all
 				<span class="oi oi-chevron-right" aria-hidden="true"></span>
 			</a>

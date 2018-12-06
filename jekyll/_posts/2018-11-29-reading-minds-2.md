@@ -8,7 +8,7 @@ author: Iris Proff
 image: "/media/posts/Linda-Jolink-reading-minds-2.jpg"
 ---
 
-As we saw in the [previous post]({{ site.url }}{% post_url 2018-11-23-reading-minds-1 %}), we can decode someone’s visual experience from their brain activity using machine learning with increasing accuracy. This is pretty impressive already, however this is not quite what we understand as mind reading, is it? So let’s go a step further!
+As we saw in the [previous post]({{ site.baseurl }}{% post_url 2018-11-23-reading-minds-1 %}), we can decode someone’s visual experience from their brain activity using machine learning with increasing accuracy. This is pretty impressive already, however this is not quite what we understand as mind reading, is it? So let’s go a step further!
 {: .intro }
 
 ## Decoding thoughts: the first steps

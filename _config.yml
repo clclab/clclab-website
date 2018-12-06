@@ -22,7 +22,7 @@ description: >-
   at the University of Amsterdam.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://projects.illc.uva.nl/LaCo/clclab/"
+url: "http://projects.illc.uva.nl/LaCo/clclab"
 
 # Default social media image
 socialimg: ""
@@ -53,7 +53,7 @@ scholar:
   order: descending
   bibliography: clc_publications.bib
   bibliography_template: bib
-  source: _bibliography
+  source: bibliography
   #bibtex_skip_fields: [mendeley-tags, file, url]
   bibtex_filters:
     - latex

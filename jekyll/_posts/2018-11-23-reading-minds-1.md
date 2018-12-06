@@ -37,7 +37,7 @@ The world of neuroscience was highly excited about this step towards decoding hu
     caption="Reconstructing movies from brain activity, Gallant lab at UC Berkeley, 2011"
 %}
 
-As research continues, the accuracy of vision decoding is likely to increase further and further. However, is this approach to decoding brain activity limited to vision? Or can we also decode someone’s thoughts from brain activation? These questions are tackled in the [next post]({{ site.url }}{% post_url 2018-11-29-reading-minds-2 %})!
+As research continues, the accuracy of vision decoding is likely to increase further and further. However, is this approach to decoding brain activity limited to vision? Or can we also decode someone’s thoughts from brain activation? These questions are tackled in the [next post]({{ site.baseurl }}{% post_url 2018-11-29-reading-minds-2 %})!
 
 <div class="references">
   <h4>References</h4>
