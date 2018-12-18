@@ -65,10 +65,10 @@ updated: 2018-01-29
             </a>
 
             <div class="group">
-                <h2 class="bibliography">Journal articles</h2>
+                <h2 class="bibliography">Journal and key conference articles</h2>
                 {% bibliography 
                   --file clc_publications 
-                  --query @article
+                  --query @article||@*[clc-a-conference=1]
                   --sort_by year 
                   --order asc %}
             </div>

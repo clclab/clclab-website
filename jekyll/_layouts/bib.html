@@ -23,7 +23,7 @@
   
   <div>
     {% if entry.doi %}
-      <a class="badge badge-pill badge-secondary" href="https://doi.org/{{ entry.doi }}">DOI</a>
+      <a class="badge badge-pill badge-secondary" href="https://doi.org/{{ entry.doi }}" target="_blank" title="{{ entry.title }}">DOI</a>
     {% endif %}
 
     {% if entry.file %}

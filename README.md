@@ -21,11 +21,21 @@ You find the content, in more convenient formats, here:
 
 - `jekyll/_data/people.yml` A text file with all details about people associated to the lab. 
 These details are stored as a [YAML](https://en.wikipedia.org/wiki/YAML) file, a super simple and human readable format.
-- `jekyll/publications.bib` A BibTeX file with all publications of the CLC lab. These are shown on the publications page.
+- `jekyll/publications.bib` A BibTeX file with all publications of the CLC lab; see below on edit instructions.
 - `media/` contains, well, media: images, pdfs of publications, etc.
 - `posts/` contains the updates shown on the homepage. Every post gets its own markdown file, see more about that below.
 
 You can ignore: `jekyll/_layouts`, `jekyll/assets` and `jekyll/_includes`.
+
+## Updating publications
+
+You can update the publications by editing `jekyll/bibliography/clc_publications.bib`. 
+Note that it's easy to corrupt the bibtex file by forgetting brackets and comma's. 
+So alternatively, you can also use software like BibDesk to manage the bibtex file.
+
+Custom fields:
+
+* `CLC-A-Conference={1}` indicates that this is a publication at an A conference.
 
 ## Writing posts 
 Jekyll files typically start with a *header* (between three dashes) with properties of the document (title, categories, etc), again in YAML.

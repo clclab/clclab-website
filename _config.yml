@@ -54,7 +54,8 @@ scholar:
   bibliography: clc_publications.bib
   bibliography_template: bib
   source: bibliography
-  #bibtex_skip_fields: [mendeley-tags, file, url]
+  bibtex_skip_fields: [clc-a-conference]
+  #mendeley-tags, file, url]
   bibtex_filters:
     - latex
     - markdown
