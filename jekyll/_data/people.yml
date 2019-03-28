@@ -1,11 +1,12 @@
 - name: Jelle Zuidema
   type: current
+  url: https://staff.fnwi.uva.nl/w.zuidema/
   position: PI
   email: w.h.zuidema@uva.nl
   twitter: wzuidema
   interests: >
-     Willem Zuidema (a.k.a. Jelle) is an assistant professor in Cognitive Science and 
-     Computational Linguistics at the Institute for Logic, Language and Computation (ILLC) 
+     Willem Zuidema (a.k.a. Jelle) is an associate professor in Computational Linguistics and
+     Cognitive Science at the Institute for Logic, Language and Computation (ILLC) 
      of the University of Amsterdam and research fellow of the national Language In 
      Interaction consortium. Before joining ILLC in 2004, he worked at the University of Edinburgh 
      (2002-2004), where he completed his PhD thesis on “The Major Transitions in the 
@@ -13,6 +14,16 @@
      the AI lab of the Vrije Universiteit in Brussels, (2000-2002), and in the Behavioural
      Biology group at Leiden University (2007-2008).
   img: media/jelle.jpg
+
+- name: Tom Lentz
+  type: current
+  url: http://www.uva.nl/profiel/l/e/t.o.lentz/t.o.lentz.html
+  position: assistant professor
+  email: lentz@uva.nl
+  img: media/lentz.jpg
+  interests: >
+    Tom Lentz is a computational phonologist. He teaches in the bachelor programs 'Cognition, Language and Communication' and 'Artificial Intelligence'.
+    
 
 - name: Lisa Beinborn
   type: current
@@ -93,8 +104,7 @@
   img: https://rgalhama.github.io/img/raquel-home.jpg
   interests: >
     Raquel Alhama completed her PhD in our lab in 2017 with a focus on Artificial Grammar Learning.
-    Today, she is a postdoctoral researcher at the Basque Center on Cognition, Brain 
-    and Language in Spain, where she investigates computational models of visual word recognition.
+    Today, she is a postdoctoral researcher at the Max Planck Institute for Psycholinguistics in Nijmegen.
 
 - name: Raquel Fernandez
   type: collaborator
@@ -123,7 +133,7 @@
   img: https://staff.fnwi.uva.nl/t.deoskar/td1.jpg
   url: https://staff.fnwi.uva.nl/t.deoskar/
   interests: >
-    Tejaswini Deoskar is an assistant professor at the ILLC, investigating probabilistic
+    Tejaswini Deoskar is an assistant professor at Utrecht University, investigating probabilistic
     language models. In particular, she focuses on semi-supervised language learning techniques.
 
 
@@ -148,7 +158,7 @@
   
 - name: Phong Le
   type: former
-  now: Postdoc at the University of Amsterdam
+  now: Postdoc at the University of Edinburgh
   img: https://sites.google.com/site/lephongxyz/_/rsrc/1510338357982/home/me.jpg?height=200&width=200
   url: https://sites.google.com/site/lephongxyz/home
   startyear: 2012
@@ -216,7 +226,7 @@
     Natural Language Processing, in particular on dependency and constituency parsing.
   
 - name: Willemijn van Woerkum
-  now: Data Scientist and at bunq
+  now: Data Scientist
   type: former
   interests: >
     Willemijn Woerkum works as Data Scientist and Consumer Psychologist at bunq in Amsterdam. 
