@@ -2,9 +2,16 @@
 type: publication
 title: Experiential, Distributional and Dependency-based Word Embeddings have Complementary Roles in Decoding Brain Activity
 layout: page
-type: publication
+type: demo
 categories: news
 ---
+
+We now have a simple demo online that accompagnies our 2018 CMCL paper.
+
+https://lang.science.uva.nl/neuro_semantics/
+
+
+***
 
 Samira Abnar, Rasyan Ahmed, Max Mijnheer, Willem Zuidema
 
