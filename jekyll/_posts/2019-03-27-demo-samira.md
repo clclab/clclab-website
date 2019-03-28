@@ -1,6 +1,6 @@
 ---
 type: publication
-title: Experiential, Distributional and Dependency-based Word Embeddings have Complementary Roles in Decoding Brain Activity
+title: Decoding Brain Activity - simple demo now online!
 layout: page
 type: demo
 categories: news
