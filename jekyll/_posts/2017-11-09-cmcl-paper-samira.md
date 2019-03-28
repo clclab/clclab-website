@@ -1,6 +1,6 @@
 ---
 type: publication
-title: Language, art and music are extremely revealing about workings of the human mind
+title: Experiential, Distributional and Dependency-based Word Embeddings have Complementary Roles in Decoding Brain Activity
 layout: page
 type: publication
 categories: news
