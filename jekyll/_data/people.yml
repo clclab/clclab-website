@@ -6,11 +6,11 @@
   twitter: wzuidema
   interests: >
      Willem Zuidema (a.k.a. Jelle) is an associate professor in Computational Linguistics and
-     Cognitive Science at the Institute for Logic, Language and Computation (ILLC) 
-     of the University of Amsterdam and research fellow of the national Language In 
-     Interaction consortium. Before joining ILLC in 2004, he worked at the University of Edinburgh 
-     (2002-2004), where he completed his PhD thesis on “The Major Transitions in the 
-     Evolution of Language”. He also worked at Sony Computer Science Laboratory - Paris (2000), 
+     Cognitive Science at the Institute for Logic, Language and Computation (ILLC)
+     of the University of Amsterdam and research fellow of the national Language In
+     Interaction consortium. Before joining ILLC in 2004, he worked at the University of Edinburgh
+     (2002-2004), where he completed his PhD thesis on “The Major Transitions in the
+     Evolution of Language”. He also worked at Sony Computer Science Laboratory - Paris (2000),
      the AI lab of the Vrije Universiteit in Brussels, (2000-2002), and in the Behavioural
      Biology group at Leiden University (2007-2008).
   img: media/jelle.jpg
@@ -23,7 +23,7 @@
   img: media/lentz.jpg
   interests: >
     Tom Lentz is a computational phonologist. He teaches in the bachelor programs 'Cognition, Language and Communication' and 'Artificial Intelligence'.
-    
+
 
 - name: Lisa Beinborn
   type: current
@@ -32,12 +32,12 @@
   url: http://lisa.beinborn.de/
   img: media/lisa.jpg
   interests: >
-    Lisa Beinborn completed her dissertation on educational natural language processing for 
-    language learning at the department of computer science in Darmstadt. She received her 
-    master’s degree in computational linguistics in Saarbrücken and her interdisciplinary 
-    profile has been further influenced by studies in Barcelona, Bolzano, Hamburg, Frankfurt 
-    and Trento. Her current research interests are focused on cognitively plausible language 
-    processing including multimodal and multilingual aspects. 
+    Lisa Beinborn completed her dissertation on educational natural language processing for
+    language learning at the department of computer science in Darmstadt. She received her
+    master’s degree in computational linguistics in Saarbrücken and her interdisciplinary
+    profile has been further influenced by studies in Barcelona, Bolzano, Hamburg, Frankfurt
+    and Trento. Her current research interests are focused on cognitively plausible language
+    processing including multimodal and multilingual aspects.
 
 - name: Dieuwke Hupkes
   type: current
@@ -48,11 +48,11 @@
   img: media/dieuwke.png
   interests: >
     Dieuwke Hupkes has a background in Physics, Logic and Computational Linguistics.
-    In her PhD she works with artificial neural network models for semantic parsing. 
-    Despite the differences between artificial and biological neural networks, 
-    she hopes that investigating how artificial systems encode linguistic processes 
+    In her PhD she works with artificial neural network models for semantic parsing.
+    Despite the differences between artificial and biological neural networks,
+    she hopes that investigating how artificial systems encode linguistic processes
     can help understanding how language is implemented in the brain.
-    
+
 - name: Samira Abnar
   type: current
   position: phd
@@ -62,10 +62,10 @@
   img: media/samira.jpg
   interests: >
     Samira Abnar obtained her Master’s degree in Computer Science at the University of Tehran.
-    Her main interest lies in the field of Cognitive Modeling. During her PhD, 
+    Her main interest lies in the field of Cognitive Modeling. During her PhD,
     she investigates biologically plausible neural network models which simulate
     how humans learn and develop language.
-    
+
 - name: Bas Cornelissen
   type: current
   position: phd
@@ -74,28 +74,28 @@
   twitter: bas_c
   email: mail@bascornelissen.nl
   img: media/bas.jpg
-  interests: > 
-    Bas Cornelissen got interested in the interaction between cognition and 
-    language during his graduate studies in Logic. In his PhD, he investigates 
-    probabilisitc models of language evolution. His aim is to address the intruiging 
+  interests: >
+    Bas Cornelissen got interested in the interaction between cognition and
+    language during his graduate studies in Logic. In his PhD, he investigates
+    probabilisitc models of language evolution. His aim is to address the intruiging
     question, by which mechanisms human cognition shapes language evolution, while at
     the same time language appears to be a prerequesite to many cognitive processes.
 
-- name: Peter Dekker  
+- name: Peter Dekker
   type: former
   position: master
   interests: >
-    Peter Dekker studied Artificial Intelligence in Utrecht and Amsterdam. 
-    In his Master's thesis at the CLC lab, Peter investigated  the possibilities to 
-    use neural networks to reconstruct the ancestry of languages. He currently 
+    Peter Dekker studied Artificial Intelligence in Utrecht and Amsterdam.
+    In his Master's thesis at the CLC lab, Peter investigated  the possibilities to
+    use neural networks to reconstruct the ancestry of languages. He currently
     works as a software developer at the Dutch Language Institute.
 
 - name: Matthijs Mul
   type: current
   position: master
   interests: >
-    Matthijs Mul is a graduate student in Artificial Intelligence and Logic. 
-    For his master’s thesis he works on computational models 
+    Matthijs Mul is a graduate student in Artificial Intelligence and Logic.
+    For his master’s thesis he works on computational models
     that recognize logical relations between pairs of sentences.
 
 
@@ -116,7 +116,7 @@
     Raquel Fernandez is an associate professor and the head of the Dialogue Modelling Group
     at the ILLC. She researches computational semantics and pragmatics
     with a special focus on linguistic interaction.
-  
+
 
 - name: Ivan Titov
   type: collaborator
@@ -124,8 +124,8 @@
   img: http://ivan-titov.org/it2.jpg
   twitter: iatitov
   interests: >
-    Ivan Titov is an associate professor at the University of Edinburgh and 
-    affiliated with the ILLC . His research focuses on Natural 
+    Ivan Titov is an associate professor at the University of Edinburgh and
+    affiliated with the ILLC . His research focuses on Natural
     Language Processing and Machine Learning.
 
 
@@ -145,18 +145,18 @@
   url: http://www.mcg.uva.nl/
   interests: >
     Henkjan Honing leads the Music Cognition Group at the University of Amsterdam.
-    His research aims to identify the cognitive and biological mechanisms underlying musicality, 
-    as well as the commonalities and differences in the processing of music and language. 
+    His research aims to identify the cognitive and biological mechanisms underlying musicality,
+    as well as the commonalities and differences in the processing of music and language.
 
 - name: Sara Veldhoen
   type: former
   now: Dataanalyst at Snappet Connected learning
-  img: 
-  url: 
+  img:
+  url:
   startyear: 2015
   endyear: 2017
   interests: >
-  
+
 - name: Phong Le
   type: former
   now: Postdoc at the University of Edinburgh
@@ -165,9 +165,9 @@
   startyear: 2012
   endyear: 2016
   interests: >
-    Phong Le completed his PhD in our lab and is now a postdoctoral researcher at the University 
+    Phong Le completed his PhD in our lab and is now a postdoctoral researcher at the University
     of Edinburgh, applying deep learning to natural language processing tasks.
-    
+
 - name: Marieke Woensdregt
   type: former
   now: PhD student at the University of Edinburgh
@@ -177,11 +177,11 @@
   startyear: 2014
   endyear: 2014
   interests: >
-    Marieke Woensdregt is a PhD student at the University of Edinburgh. Using agent-based models, 
+    Marieke Woensdregt is a PhD student at the University of Edinburgh. Using agent-based models,
     she explores the hypothesis that language and theory of mind have co-evolved.
 
 
-- name: Katja Abramova 
+- name: Katja Abramova
   type: former
   now: PhD student at Radboud University Nijmegen
   url: http://www.ru.nl/ptrs/ccl/about-us-0/members/katja-abramova-ma/
@@ -189,8 +189,8 @@
   startyear: 2011
   endyear: 2012
   interests: >
-    Katja Abramova is a PhD student at Radbound University in Nijmegen, investigating human language 
-    evolution from an interdisciplinary perspective.  
+    Katja Abramova is a PhD student at Radboud University in Nijmegen, investigating human language
+    evolution from an interdisciplinary perspective.
 
 
 - name: Vanessa Ferdinand
@@ -201,10 +201,10 @@
   startyear: 2009
   endyear: 2010
   interests: >
-    Vanessa Ferdinand works as a postdoctoral researcher at the Santa Fe Institute, where she combes psychological
+    Vanessa Ferdinand works as a postdoctoral researcher at the Santa Fe Institute, where she combines psychological
     experiments and computational modeling to examines cultural evolution.
 
-  
+
 - name: Jonathan Mallinson
   type: former
   now: PhD student at the University of Edinburgh
@@ -212,7 +212,7 @@
   startyear: 2015
   endyear: 2015
   interests: >
-     Jonathan Mallison is a PhD student at the University of Edinburgh, working on automatic text generation, 
+     Jonathan Mallison is a PhD student at the University of Edinburgh, working on automatic text generation,
      focusing on paraphrasing and sentence compression.
 
 - name: Federico Sangati
@@ -223,20 +223,20 @@
   startyear: 2008
   endyear: 2011
   interests: >
-    Frederico Sangati works as a postdoctoral researcher at the University of Edinburgh, focusing on 
+    Frederico Sangati works as a postdoctoral researcher at the University of Edinburgh, focusing on
     Natural Language Processing, in particular on dependency and constituency parsing.
-  
+
 - name: Willemijn van Woerkum
   now: Data Scientist
   type: former
   interests: >
-    Willemijn Woerkum works as Data Scientist and Consumer Psychologist at bunq in Amsterdam. 
+    Willemijn Woerkum works as Data Scientist and Consumer Psychologist at bunq in Amsterdam.
 
 - name: Stijn de Gooijer
   now: Data Scientist at Xomnia
   type: former
   interests: >
-    Stijn wrote his master’s thesis in our lab and today works as Data Scientist at Xomnia in Amsterdam. 
+    Stijn wrote his master’s thesis in our lab and today works as Data Scientist at Xomnia in Amsterdam.
 
 - name: Gideon Borensztajn
   type: former
