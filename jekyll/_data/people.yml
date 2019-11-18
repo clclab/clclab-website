@@ -86,9 +86,10 @@
   position: master
   interests: >
     Peter Dekker studied Artificial Intelligence in Utrecht and Amsterdam.
-    In his Master's thesis at the CLC lab, Peter investigated  the possibilities to
-    use neural networks to reconstruct the ancestry of languages. He currently
-    works as a software developer at the Dutch Language Institute.
+    In his Master's thesis at the CLC lab, Peter investigated the possibilities to
+    use neural networks to reconstruct the ancestry of languages. He worked as a
+    software developer at the Dutch Language Institute, and is currently a PhD student
+    in the AI lab of the Vrije Universiteit Brussels.
 
 - name: Matthijs Mul
   type: current
