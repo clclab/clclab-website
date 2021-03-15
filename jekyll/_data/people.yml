@@ -72,14 +72,13 @@
   url: http://bascornelissen.nl
   github: bacor
   twitter: bas_c
-  email: mail@bascornelissen.nl
+  email: 
   img: media/bas.jpg
   interests: >
-    Bas Cornelissen got interested in the interaction between cognition and
-    language during his graduate studies in Logic. In his PhD, he investigates
-    probabilisitc models of language evolution. His aim is to address the intruiging
-    question, by which mechanisms human cognition shapes language evolution, while at
-    the same time language appears to be a prerequesite to many cognitive processes.
+    Why do humans make music, and how do they do it? Why are we a musical species? 
+    These are the questions that motivate my research. I use computational methods 
+    to study how musical traditions differ. Mapping the diversity of musics across 
+    the globe, is a key step in understanding the cultural evolution of musics.
 
 - name: Peter Dekker
   type: former
