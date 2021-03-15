@@ -5,7 +5,7 @@
   email: w.h.zuidema@uva.nl
   twitter: wzuidema
   interests: >
-     Willem Zuidema (a.k.a. Jelle) is an associate professor in Computational Linguistics and
+     Willem Zuidema (a.k.a. Jelle) is associate professor of Computational Linguistics and
      Cognitive Science at the Institute for Logic, Language and Computation (ILLC)
      of the University of Amsterdam and research fellow of the national Language In
      Interaction consortium. Before joining ILLC in 2004, he worked at the University of Edinburgh
@@ -15,8 +15,30 @@
      Biology group at Leiden University (2007-2008).
   img: media/jelle.jpg
 
-- name: Tom Lentz
+- name: Oskar van der Wal
   type: current
+  position: phd
+
+- name: Jaap Jumelet
+  type: current
+  position: phd
+
+- name: Dieuwke Hupkes
+  type: former
+  position: phd
+  url: http://dieuwkehupkes.nl
+  github: dieuwkehupkes
+  email: d.hupkes@uva.nl
+  img: media/dieuwke.png
+  interests: >
+    Dieuwke Hupkes has a background in Physics, Logic and Computational Linguistics.
+    In her PhD she works with artificial neural network models for semantic parsing.
+    Despite the differences between artificial and biological neural networks,
+    she hopes that investigating how artificial systems encode linguistic processes
+    can help understanding how language is implemented in the brain.
+
+- name: Tom Lentz
+  type: former
   url: http://www.uva.nl/profiel/l/e/t.o.lentz/t.o.lentz.html
   position: assistant professor
   email: lentz@uva.nl
@@ -26,7 +48,7 @@
 
 
 - name: Lisa Beinborn
-  type: current
+  type: former
   position: postdoc
   email: l.m.beinborn@uva.nl
   url: http://lisa.beinborn.de/
@@ -40,7 +62,7 @@
     processing including multimodal and multilingual aspects.
 
 - name: Dieuwke Hupkes
-  type: current
+  type: former
   position: phd
   url: http://dieuwkehupkes.nl
   github: dieuwkehupkes
