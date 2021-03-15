@@ -21,8 +21,8 @@ description: >-
   at the Institute for Logic, Language and Computation 
   at the University of Amsterdam.
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://projects.illc.uva.nl/LaCo/clclab"
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "https://projects.illc.uva.nl/LaCo/clclab"
 
 # Default social media image
 socialimg: ""
