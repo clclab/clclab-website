@@ -22,6 +22,15 @@
 - name: Jaap Jumelet
   type: current
   position: phd
+  url: https://jumelet.ai/
+  github: jumelet
+  email: j.w.d.jumelet@uva.nl
+  twitter: jumeletj
+  img: media/jaap.png
+  interests: >
+    The topic of my PhD is centered around the fields of NLP, interpretability, and linguistics.
+    I am interested in gaining a better understanding of the current successes of the state of the art in NLP.
+    My research is guided by hypotheses derived from linguistics, that I evaluate on deep neural models using techniques from the field of Explainable AI. 
 
 - name: Dieuwke Hupkes
   type: former
