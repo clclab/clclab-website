@@ -18,6 +18,10 @@
 - name: Oskar van der Wal
   type: current
   position: phd
+  interests: >
+    Oskar van der Wal is a PhD candidate advised by Jelle Zuidema and Katrin Schulz.
+    His research focuses on detecting social biases found in NLP models, such as gender bias and racism, and understanding how these biases are learnt from text.
+    As part of the (Bias Barometer project)[https://bias-barometer.github.io/] he investigates what these NLP models can teach us about our own biases and those in digital media.
 
 - name: Jaap Jumelet
   type: current
