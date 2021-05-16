@@ -74,20 +74,6 @@
     and Trento. Her current research interests are focused on cognitively plausible language
     processing including multimodal and multilingual aspects.
 
-- name: Dieuwke Hupkes
-  type: former
-  position: phd
-  url: http://dieuwkehupkes.nl
-  github: dieuwkehupkes
-  email: d.hupkes@uva.nl
-  img: media/dieuwke.png
-  interests: >
-    Dieuwke Hupkes has a background in Physics, Logic and Computational Linguistics.
-    In her PhD she works with artificial neural network models for semantic parsing.
-    Despite the differences between artificial and biological neural networks,
-    she hopes that investigating how artificial systems encode linguistic processes
-    can help understanding how language is implemented in the brain.
-
 - name: Samira Abnar
   type: current
   position: phd
