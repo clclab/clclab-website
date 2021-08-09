@@ -40,6 +40,10 @@ exclude:
 # https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/02/01/jekyll-and-bibtex/
 plugins: ['jekyll/scholar', 'jekyll-twitter-plugin', 'jekyll-sitemap']
 
+# Build settings
+sass:
+  sass_dir: assets/css
+
 defaults:
   -
     scope:
@@ -53,11 +57,14 @@ scholar:
   order: descending
   bibliography: clc_publications.bib
   bibliography_template: bib
-  source: bibliography
+  source: assets/bibliography
   bibtex_skip_fields: [clc-a-conference]
   #mendeley-tags, file, url]
   bibtex_filters:
     - latex
     - markdown
 
-
+collections:
+  pages:
+    output: true
+    permalink: /:name

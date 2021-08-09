@@ -10,8 +10,11 @@ layout: default
     </div>
 		<div class="offset-lg-3 py-5 lead">
 			<p class="mb-4">
-				We try to understand the computational principles underlying natural language understanding by humans and machines. We investigate the neural implementation of these principles in the human brain, their evolutionary origins and their usefulness in language technology.</p>
-
+				We try to understand the computational principles underlying natural 
+				language understanding by humans and machines. We investigate the 
+				neural implementation of these principles in the human brain, 
+				their evolutionary origins and their usefulness in language technology.
+			</p>
 			<a href="{{ site.baseurl }}/research.html" class="btn btn-outline-primary">
 				Our research
 				<span class="oi oi-chevron-right" aria-hidden="true"></span>
@@ -35,10 +38,14 @@ layout: default
 						<p class="p-0 m-0">{{ post.title }}</p>
 						<div>
 							{% if post.type %}
-								<span class="badge badge-pill badge-secondary">{{ post.type }}</span>
+								{% comment %}
+									Badges don't work after migrating to bootstrap v5. 
+									Setting bg and text color is a silly workaround
+								{% endcomment %}
+								<span class="badge badge-secondary bg-secondary text-dark">{{ post.type }}</span>
 							{% endif %}
 							{% if post.date %}
-							<span class="badge badge-pill badge-light">{{ post.date | date: '%d %b' }}</span>
+							<span class="badge badge-light bg-light text-dark">{{ post.date | date: '%d %b' }}</span>
 							{% endif %}
 							<a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-link btn-sm">Read more...</a>
 						</div>

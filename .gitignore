@@ -4,5 +4,7 @@ node_modules/
 yarn-error.log
 .sass-cache
 .jekyll-metadata
+.jekyll-cache
 site/
 .tweet-cache
+tmp
