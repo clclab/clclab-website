@@ -9,7 +9,7 @@ const path = require('path');
 module.exports = {
   entry: "./index.js",
   output: {
-    path: path.join(__dirname, "../jekyll/assets/js"),
+    path: path.join(__dirname, "../assets/js"),
     filename: "bundle.js"
   },
   devtool: 'inline-source-map'
