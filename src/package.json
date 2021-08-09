@@ -1,0 +1,22 @@
+{
+  "name": "clc",
+  "version": "2.0.0",
+  "main": "index.js",
+  "author": "bacor <mail@bascornelissen.nl>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "js-worker-search": "^1.2.1",
+    "lodash": "^4.17.10",
+    "tinysort": "^2.3.6"
+  },
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open"
+  }
+}
