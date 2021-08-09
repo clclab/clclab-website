@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2cf9d372-dc50-4c35-9c5e-24b005b517d3/deploy-status)](https://app.netlify.com/sites/clclab/deploys)
+
 # Editing the CLC website
 
 The website is running on the LaCo server at [projects.illc.uva.nl/LaCo/clclab](http://projects.illc.uva.nl/LaCo/clclab).
