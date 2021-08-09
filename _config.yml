@@ -28,11 +28,13 @@ description: >-
 socialimg: ""
 
 # Build settings
-# destination: site
-# source: jekyll
 encoding: utf-8
 markdown: kramdown
-exclude: [src]
+exclude: 
+  - src
+  - README.md
+  - Gemfile
+  - Gemfile.lock
 
 # Jekkyl Scholar 
 # See here for a useful tutorial: 
