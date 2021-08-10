@@ -1,0 +1,56 @@
+---
+layout: default
+excerpt: ""
+---
+
+<div class="mt-5"></div>
+{% assign itemsByYear = site.data.news | group_by_exp: "item", "item.date | date: '%Y'"  %}
+{% for yearItems in itemsByYear %}
+<section class="container-fluid">
+	<div class="container">
+		
+		<h3 class="pt-md-5 pb-2 display-1 col-2 sticky-md-top news-year">
+			<span class="bg-white d-block pt-md-5">
+				{{ yearItems.name }}
+			</span>
+		</h3>
+
+		<div class="row mb-4">
+			<div class="col-12 col-md-9 offset-md-3 border-bottom">
+				<div class=" row row-cols-1 row-cols-sm-2">
+					{% for item in yearItems.items %}
+					<div class="col mb-3">
+						<time datetime="{{ item.date | date: '%Y-%m-%d' }}" class="fw-bolder">
+							{{- item.date | date: '%B %d, %Y' -}}
+						</time>
+						<div>
+							{{- item.text | markdownify -}}
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+{% endfor %}
+
+
+{% comment %}
+{% assign posts = site.posts | where:"categories","news" %}
+{% for post in posts %}
+	
+	<div class="card my-5 bg-light border-0">
+		<div class="card-body">
+			<h2 class="card-title">{{post.title}}</h2>
+			{{ post.excerpt }}
+		</div>
+		<div class="card-footer bg-light border-0 card-underline small">
+			<a href="{{ post.url }}" class="btn btn-outline-primary btn-sm mr-2">Read more...</a>
+			<span class="text-muted">{{ post.date | date: '%d %B %Y'}}</span>
+		</div>
+	</div>
+
+{% endfor %}
+{% endcomment %}
