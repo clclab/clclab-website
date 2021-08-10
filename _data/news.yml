@@ -38,7 +38,10 @@
 - date: 2019-03-27
   text: >-
     We now have a [simple demo](https://lang.science.uva.nl/arithmetic/) online 
-    that accompagnies our 2018 JAIR paper.
+    that accompagnies our 2018 JAIR paper [Visualisation and 'diagnostic 
+    classifiers' reveal how recurrent and recursive neural networks process 
+    hierarchical structure](https://arxiv.org/abs/1711.10203) by Dieuwke Hupkes, 
+    Sara Veldhoen and Willem Zuidema.
 
 - date: 2016-09-05
   text: >
