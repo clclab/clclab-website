@@ -13,12 +13,23 @@ h2 {
 	margin-top: 2em;
 }
 
-// .display-1 {
-// 	color: $blue;
-// 	// line-height: .75em !important;
-// }
-
 ::selection { 
 	color: $gray-900;
 	background-color: $blue;
+}
+
+// Small devices (landscape phones, less than 768px)
+@include media-breakpoint-down(md) {
+	.display-1 {
+		font-size: 4rem !important;
+	}
+	.references ol {
+		column-count: 1
+	}
+}
+
+@media (max-width: 575.98px) {
+	.blog p.intro {
+		font-size: 1.25rem;
+	}
 }
