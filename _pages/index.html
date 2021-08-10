@@ -33,7 +33,7 @@ layout: default
 			<h3 class="mb-4">news</h3>
 			<div class="row row-cols-2">
 				{%- assign newsItems = site.data.news | sort: "date" | reverse %}
-				{%- for item in newsItems limit: 10 %}
+				{%- for item in newsItems limit: 6 %}
 				<div class="col mb-3">
 					<time datetime="{{ item.date | date: '%Y-%m-%d' }}" class="fw-bold">
 						{{- item.date | date: "%-d %b '%y" -}}.
