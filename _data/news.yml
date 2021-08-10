@@ -1,8 +1,33 @@
-- date: 2020-10-16
+- date: 2021-08-02
+  text: >-
+    We have a paper accepted at [ISMIR2021](https://ismir2021.ismir.net) where we introduce a new
+    representation for melodic contour: [_cosine contours_](github.com/bacor/cosine-contours).
+    The representation is motivated by an interesting observation:
+    the principal components of melodies are shaped as cosines.
+
+- date: 2021-08-01
+  text: >-
+    We are very happy that Marianne de Heer-Kloots is continuing as a
+    PhD student in our lab! Welcome, Marianne!
+
+- date: 2020-10-15
   text: >-
     We won a best paper award for the best multi/interdisciplinary 
     research at [ISMIR2020](https://www.ismir2020.net/awards/) for our paper on
     [mode classification in plainchant](https://github.com/bacor/ISMIR2020).
+
+- date: 2020-10-16
+  text: >-
+    [We presented a paper](https://doi.org/10.1145/3424911.3425514) 
+    at [DLfM 2020](https://dlfm.web.ox.ac.uk/7th-international-conference-digital-libraries-musicology)
+    where we introduce [Chant21](https://github.com/bacor/chant21), 
+    a Python library for working with plainchant in music21,
+    and two large datasets, [CantusCorpus](https://github.com/bacor/cantuscorpus)
+    and [GregoBaseCorpus](https://github.com/bacor/cantuscorpus).
+    In the paper we also discuss two case studies on the melodic
+    arch hypothesis and, essentially, melodic predictability in 
+    parts of chants known as _differentiae_.
+    
 
 - date: 2019-03-27
   text: >- 
