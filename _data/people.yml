@@ -13,7 +13,7 @@
      Evolution of Language”. He also worked at Sony Computer Science Laboratory - Paris (2000),
      the AI lab of the Vrije Universiteit in Brussels, (2000-2002), and in the Behavioural
      Biology group at Leiden University (2007-2008).
-  img: media/jelle.jpg
+  img: assets/images/people/jelle-square.jpg
 
 - name: Oskar van der Wal
   startyear: 2021
@@ -38,7 +38,7 @@
   github: jumelet
   email: j.w.d.jumelet@uva.nl
   twitter: jumeletj
-  img: media/jaap.png
+  img: assets/images/people/jaap.png
   interests: >
     The topic of my PhD is centered around the fields of NLP, interpretability, and linguistics.
     I am interested in gaining a better understanding of the current successes of the state of the art in NLP.
@@ -50,7 +50,7 @@
   url: http://dieuwkehupkes.nl
   github: dieuwkehupkes
   email: d.hupkes@uva.nl
-  img: media/dieuwke.png
+  img: assets/images/people/dieuwke.png
   interests: >
     Dieuwke Hupkes has a background in Physics, Logic and Computational Linguistics.
     In her PhD she works with artificial neural network models for semantic parsing.
@@ -64,7 +64,7 @@
   url: http://www.uva.nl/profiel/l/e/t.o.lentz/t.o.lentz.html
   position: assistant professor
   email: lentz@uva.nl
-  img: media/lentz.jpg
+  img: assets/images/people/lentz.jpg
   interests: >
     Tom Lentz is a computational phonologist. He teaches in the bachelor programs 'Cognition, Language and Communication' and 'Artificial Intelligence'.
 
@@ -75,7 +75,7 @@
   endyear: 2021
   email: l.m.beinborn@uva.nl
   url: http://lisa.beinborn.de/
-  img: media/lisa.jpg
+  img: assets/images/people/lisa.jpg
   interests: >
     Lisa Beinborn completed her dissertation on educational natural language processing for
     language learning at the department of computer science in Darmstadt. She received her
@@ -90,7 +90,7 @@
   url: https://staff.fnwi.uva.nl/s.abnar/
   github: samiraabnar
   twitter: samiraabnar
-  img: media/samira.jpg
+  img: assets/images/people/samira.jpg
   interests: >
     Samira Abnar obtained her Master’s degree in Computer Science at the University of Tehran.
     Her main interest lies in the field of Cognitive Modeling. During her PhD,
@@ -105,7 +105,7 @@
   github: bacor
   twitter: bas_c
   email: b.j.m.cornelissen@uva.nl
-  img: media/bas.jpg
+  img: assets/images/people/bas.jpg
   interests: >
     Why do humans make music, and how do they do it? Why are we a musical species? 
     These are the questions that motivate my research. I use computational methods 
