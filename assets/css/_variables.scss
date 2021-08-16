@@ -11,13 +11,21 @@ $font-family-monospace: "Ubuntu Mono";
 
 // Colors
 $blue: #00b49d;
+$blue-dark: #008F7C;
 $yellow: #fdf499;
+
 $secondary: $yellow;
 $gray-900: #004b44;
 $black: $gray-900;
 $gray-100: #fbfcf2;
 $warning: $yellow;
 $footer-color: transparentize($black, .5);
+
+
+$link-color: $blue-dark;
+// Fix this? low contrast
+$min-contrast-ratio:   2.5;
+
 
 // Other settings
 $enable-rounded: false;
