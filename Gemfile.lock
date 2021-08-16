@@ -84,7 +84,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-scholar
   jekyll-sitemap
-  tzinfo-data
   unicode (~> 0.4.4)
 
 BUNDLED WITH
