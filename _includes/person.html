@@ -9,12 +9,12 @@
 
 	<div class="card-body">
 		<h4 class="card-title mt-4 mb-3">{{ member.name }}</h4>
-    <p class="card-text">{{ member.interests }}</p>
+    <p class="card-text">{{ member.interests | markdownify }}</p>
   </div>
 
   <div class="card-footer bg-light text-white border-0 card-underline">
     {% if member.url %}
-    	<a href="{{ member.url }}" class="card-link">More...</a>
+    	<a href="{{ member.url }}" class="card-link">Website</a>
     {% endif %}
     {% if member.twitter %}
     	<a href="https://twitter.com/{{ member.twitter }}" 
@@ -24,11 +24,11 @@
     {% if member.github %}
     	<a href="https://github.com/{{ member.github }}" 
     		target="_blank"
-    		class="card-link">GH</a>
+    		class="card-link">GitHub</a>
   	{% endif %}
   	{% if member.email %}
     	<a href="mailto:{{ member.email }}" 
-    		class="card-link">@</a>
+    		class="card-link">Mail</a>
   	{% endif %}
   </div>
 </div>
