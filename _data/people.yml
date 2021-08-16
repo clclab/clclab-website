@@ -16,6 +16,7 @@
   img: media/jelle.jpg
 
 - name: Oskar van der Wal
+  startyear: 2021
   type: current
   position: phd
   url: https://odvanderwal.nl/
@@ -30,6 +31,7 @@
     and those in digital media.
 
 - name: Jaap Jumelet
+  startyear: 2019
   type: current
   position: phd
   url: https://jumelet.ai/
@@ -58,6 +60,7 @@
 
 - name: Tom Lentz
   type: former
+  endyear: 2021
   url: http://www.uva.nl/profiel/l/e/t.o.lentz/t.o.lentz.html
   position: assistant professor
   email: lentz@uva.nl
@@ -69,6 +72,7 @@
 - name: Lisa Beinborn
   type: former
   position: postdoc
+  endyear: 2021
   email: l.m.beinborn@uva.nl
   url: http://lisa.beinborn.de/
   img: media/lisa.jpg
@@ -96,6 +100,7 @@
 - name: Bas Cornelissen
   type: current
   position: phd
+  startyear: 2016
   url: http://bascornelissen.nl
   github: bacor
   twitter: bas_c
@@ -109,7 +114,8 @@
 
 - name: Marianne de Heer Kloots
   type: current
-  position: master
+  position: phd
+  startyear: 2020
   interests: >
     Marianne de Heer Kloots is a student in the MSc Artificial Intelligence and the MSc Brain and Cognitive Sciences.
 
