@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  {% include head.html %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    {%- if page.fulltitle -%}
+      {% assign pagetitle = page.fulltitle %}
+    {% else if page.title %}
+      {% assign pagetitle = page.title %}
+    {% endif %}
+  
+    {%- if pagetitle == blank -%}
+      {% assign pagetitle = site.title %}
+    {% else %}
+      {% assign pagetitle = pagetitle | append: " ‹ " | append: site.shorttitle %}
+    {% endif %}
+  
+    {%- if page.categories contains "blog" -%}
+      {% assign pagetitle = pagetitle | append: " blog" %}
+    {% endif %}
+  
+    {%- if page.excerpt -%}
+      {% assign description = page.excerpt | strip_html %}
+    {% else %}
+      {% assign description = site.tagline %}
+    {% endif %}
+    {% assign description = description | strip %}
+  
+    {%- if page.image -%}
+      {% assign image = site.url | append: page.image %}
+    {% else %}
+      {% assign image = site.url | append: site.socialimg %}
+    {% endif %}
+  
+    <!-- Plain Description -->
+    <title>{{ pagetitle }}</title>
+    <meta name="description" content="{{ description }}">
+    <link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
+  
+    <!-- Google+ -->
+    <meta itemprop="name" content="{{ pagetitle }}">
+    <meta itemprop="description" content="{{ description }}">
+    <meta itemprop="image" content="{{ image }}">
+  
+    <!-- Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ pagetitle }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:image" content="{{ image }}" />
+    <meta property="og:url" content="{{site.url}}{{page.url}}" />
+    <meta property="og:site_name" content="{{ site.title }} " />
+  
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ pagetitle }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:image" content="{{ image }}">
+    <meta name="twitter:url" content="{{site.url}}{{page.url}}">
+  
+    <!-- CSS & fonts -->
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/iconic/css/open-iconic-bootstrap.css' | relative_url }}">
+  </head>
 
   <body>
-    
     <div class="navbar navbar-light navbar-expand-sm" id="to-top"> 
       <div class="container">
-
         <div class="clc-mark">
           <a href="{{ '/' | relative_url }}" title="clc lab home">{% include clc.svg %}</a>
         </div>
@@ -38,8 +97,37 @@
    
     {{ content }}
     
-    {% include footer.html %}
-
+    <footer class="footer" id="footer">
+      <div class="container py-3">
+        <div class="col-lg-9 px-0 offset-lg-3">
+          <div class="clc-mark py-3">
+            {% include clc.svg %}
+            <p class="clc-name my-o">
+                cognition, language<br />
+                and computation lab <br/>
+                @ <a href="http://www.illc.uva.nl/" target="__blank">illc</a> in <a href="https://uva.nl" target="__blank">amsterdam</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-9  offset-lg-3 navbar navbar-expand-sm px-0">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#to-top">To Top</a>
+            </li>
+            {%- for item in site.data.menu %}
+            <li class="nav-item">
+              <a class="nav-link{% if item.url == page.url %} active{% endif %}" 
+                href="{{ item.url | relative_url}}"
+                {%- if item.url == page.url %} aria-current="page"{% endif %}>
+                {{- item.label -}}
+              </a>
+            </li>
+            {%- endfor %}
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="{{ site.url }}/assets/js/bundle.js"></script>
+    <script src="{{ '/assets/js/bootstrap/bootstrap.bundle.min.js' | relative_url }}"></script>
   </body>
-
 </html>
