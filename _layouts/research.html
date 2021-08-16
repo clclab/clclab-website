@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<article class="blog">
+	<div class="lab-intro">
+		<div class="container">
+			<header class="offset-lg-3 pt-5 lead my-5">
+				<h1 class="display-1">{{ page.title }}</h1>
+				{%- if page.subtitle %}
+				<p class="subtitle">{{ page.subtitle }}</p>
+				{%- endif %}
+			</header>
+			<div class="clc-pattern bg-div dark">
+				{% include pattern.svg %}
+			</div>
+		</div>
+	</div>
+
+	<div class="container mb-5">
+		<div class="row">
+			<div class="col-lg-9 offset-lg-3 content">
+				
+				{{ content }}
+
+				<footer>
+					{%- if page.updated %}
+					<p class="text-muted small">
+						<time datetime="{{ page.updated | date: '%Y-%m-%d' }}" class="fw-bolder">
+							Last updated on {{ page.updated | date: '%B %d, %Y' }}	
+						</time>
+					</p>
+					{%- endif %}
+				</footer>
+			</div>
+		</div>
+	</div>
+	
+	<div class="bg-light d-none d-md-block">
+		<div class="container py-5 mt-2">
+			<h3 class="display-5 mb-4">Recent publications</h3>
+			<div class="publication-card-deck">
+				{% bibliography 
+					--file clc_publications 
+					--template bib-card
+					--max 6 
+					--sort_by year 
+					--order asc %}
+			</div>	
+		</div>
+	</div>
+</article>

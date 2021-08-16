@@ -1,0 +1,23 @@
+---
+---
+<div id="bib-item-{{ entry.key }}" class="bib-entry card mb-2">
+  <div class="card-body">
+    <h5 class="card-title">{{ entry.title }}</h5>
+    <p class="card-text small text-muted">
+      {{ reference }}
+    </p>
+  <!-- </div>
+  <div class="card-footer"> -->
+    {% if entry.doi %}
+      <a class="badge badge-pill bg-primary" href="https://doi.org/{{ entry.doi }}" target="_blank" title="{{ entry.title }}">DOI</a>
+    {% endif %}
+
+    {% if entry.file %}
+      <a class="badge badge-pill bg-primary" href="{{ site.url }}/assets/pdfs/{{ entry.file }}" target="_blank">PDF</a>
+    {% endif %}
+
+    {% if entry.arxivid %} 
+      <a class="badge badge-pill bg-primary" href="https://arxiv.org/abs/{{ entry.arxivid }}" target="_blank">arXiv</a>
+    {% endif %}
+  </div>
+</div>

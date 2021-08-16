@@ -64,6 +64,9 @@ scholar:
     - latex
     - markdown
 
+  # File repository 
+  repository: assets/pdfs
+
 collections:
   pages:
     output: true
