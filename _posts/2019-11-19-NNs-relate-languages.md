@@ -5,7 +5,7 @@ published: 2019-11-19
 categories: blog
 layout: blog
 author: Peter Dekker
-image: assets/posts/Philipp-Wicke-appel.png
+image: assets/posts/2019/Philipp-Wicke-appel.png
 ---
 
 How are the languages of the world related? This is the central question in the discipline of *historical linguistics*. In his MSc thesis, [Peter Dekker](http://peterdekker.eu/) studied how neural networks can help to reconstruct the ancestry of languages.
