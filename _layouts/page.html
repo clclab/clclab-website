@@ -4,7 +4,6 @@ layout: default
 
 <div class="container">
 	<div class="row">
-
 		<article class="col-lg-9  offset-lg-3">
 			<header>
 				<h1 class="display-1 my-5">{{ page.title }}</h1>
@@ -14,15 +13,11 @@ layout: default
 
 			<footer>
 				<p class="text-muted small">
-					{% if page.updated %}
-						Last updated: {{ page.updated | date: '%B %d, %Y' }}
-					{% endif %}
+					{%- if page.updated %}
+					Last updated: {{ page.updated | date: '%B %d, %Y' }}
+					{%- endif %}
 				</p>
 			</footer>
 		</article>
 	</div>
 </div>
-<!-- 
-<div class="col-lg-2 fixed">
-	<h1 class="rotated">{{ page.title }}</h1>
-</div> -->

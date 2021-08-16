@@ -1,18 +1,19 @@
-{% comment %} 
+{%- comment %} 
   From https://github.com/mmistakes/minimal-mistakes #}
-{% endcomment %}
-<figure class="{{ include.class }}">
-    <img src=
-      {% if include.image_path contains "://" %}
-        "{{ include.image_path }}"
-      {% else %}
-        "{{ site.url }}{{ include.image_path }}"
-      {% endif %}
-      alt="{% if include.alt %}{{ include.alt }}{% endif %}">
-    {% if include.caption || include.credits %}
-      <figcaption>
-      {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
-      <span class="credits">{{ include.credits | markdownify | remove: "<p>" | remove: "</p>" }}</span>
-      </figcaption>
-    {% endif %}
-  </figure>
+{% endcomment -%}
+<figure class="{{ include.class }} p-0 my-3 text-primary">
+  <img src=
+    {%- if include.path contains "://" -%}
+      "{{ include.path }}"
+    {%- else -%}
+      "{{ site.url }}{{ include.path }}"
+    {%- endif %}
+    alt="{% if include.alt %}{{ include.alt }}{% endif %}">
+  
+  {%- if include.caption || include.credits %}
+  <figcaption class="pb-3">
+    {{ include.caption | markdownify }}
+    <p class="credits text-muted fst-italic mb-0">{{ include.credits | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+  </figcaption>
+  {%- endif %}
+</figure>

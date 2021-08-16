@@ -52,8 +52,7 @@ updated: 2018-01-29
         data-searchable-input-for="bib-entry"
         data-no-results-message="#filter-no-results">
     </div>
-
-      
+    
     <div class="col-lg-9 offset-lg-3 accordion my-5" id="publications"
       data-sort-group-by-seperator="#publications h2.bibliography">
       
@@ -83,6 +82,7 @@ updated: 2018-01-29
           <div class="accordion-body p-0">
           {% bibliography 
             --file clc_publications 
+            --template pub
             --query @article||@*[clc-a-conference=1]
             --sort_by year 
             --order asc %}
@@ -104,6 +104,7 @@ updated: 2018-01-29
           <div class="accordion-body p-0">
             {% bibliography 
               --file clc_publications 
+              --template pub
               --query @inproceedings
               --sort_by year 
               --order asc %}
@@ -124,6 +125,7 @@ updated: 2018-01-29
           <div class="accordion-body p-0">
             {% bibliography 
               --file clc_publications 
+              --template pub
               --query @inbook||@incollection
               --sort_by year 
               --order asc %}
@@ -144,6 +146,7 @@ updated: 2018-01-29
           <div class="accordion-body p-0">
             {% bibliography 
               --file clc_publications 
+              --template pub
               --query @phdthesis||@unpublished||@manuscript||@mastersthesis||@misc||@proceedings||@techreport
               --sort_by year 
               --order asc %}

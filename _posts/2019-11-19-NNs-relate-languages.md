@@ -5,7 +5,7 @@ published: 2019-11-19
 categories: blog
 layout: blog
 author: Peter Dekker
-image: "/media/posts/Philipp-Wicke-appel.png"
+image: assets/posts/Philipp-Wicke-appel.png
 ---
 
 How are the languages of the world related? This is the central question in the discipline of *historical linguistics*. In his MSc thesis, [Peter Dekker](http://peterdekker.eu/) studied how neural networks can help to reconstruct the ancestry of languages.
@@ -20,13 +20,14 @@ Based on this idea, I developed an approach to word prediction: I trained a mach
 
 {%
  include figure
- image_path="/media/posts/Philipp-Wicke-appel.png"
+ path="/assets/posts/2019/Philipp-Wicke-appel.png"
  alt="Two people saying apple, and a confused robot"
  caption=""
  credits="Illustration by Philipp Wicke"
 %}
 
-## A neural network model for word prediction
+A neural network model for word prediction
+------------------------------------------
 
 I used the NorthEuraLex dataset {% cite dellert2017 -f refs_peter %}, developed at the University of Tübingen. It consists of phonetic representations of 1000 words in 100 languages spoken across Northern Eurasia. I selected all pairs of Germanic and Slavic languages. Next, I trained two neural network models to perform word prediction on this data: a recurrent neural network (RNN) encoder-decoder and a structured perceptron. The simpler structured perceptron tended to give a better performance, whereas the encoder-decoder provides more flexibility to be extended.
 
@@ -49,15 +50,16 @@ I computed the overall distance between every pair of languages by averaging dis
 
 {%
  include figure
- image_path="/media/posts/boom.jpeg"
+ path="/assets/posts/2019/boom.jpeg"
  alt="A reconstructed ancestry tree for Slavic languages"
- caption=""
+ caption="A reconstructed ancestry tree for Slavic languages"
  credits=""
 %}
 
 This tree exactly matches the Glottolog ancestry tree for this family {% cite hammarstrom2017 -f refs_peter %}. This is a nice proof of concept: word prediction is able to replicate existing knowledge in historical linguistics.
 
-## Outlook
+Outlook
+-------
 
 Whereas most research at the CLC lab investigates the cognitive basis of language, I use neural networks to investigate the ancestry of languages. These are two different research objectives - but they can be combined in a fascinating way. When looking at language change, one can investigate which patterns are common across multiple language families. These changes may be caused by a common cognitive mechanism.
 

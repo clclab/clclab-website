@@ -7,7 +7,9 @@ layout: default
 		<div class="container">
 			<header class="offset-lg-3 pt-5 lead my-5">
 				<p class="date">
-						<span class="badge badge-pill badge-light">{{ page.date | date: '%-d %B %Y' }}</span>
+					<time datetime="{{ page.date | date: '%Y-%m-%d' }}">
+						{{- page.date | date: '%-d %B %Y' -}}
+					</time>
 				</p>
 				<h1 class="display-1">{{ page.title }}</h1>
 				<p class="subtitle">{{ page.subtitle }}</p>
@@ -26,11 +28,13 @@ layout: default
 				{{ content }}
 
 				<footer>
+					{%- if page.updated %}
 					<p class="text-muted small">
-						{% if page.updated %}
-							Last updated: {{ page.updated | date: '%B %d, %Y' }}
-						{% endif %}
+						<time datetime="{{ page.updated | date: '%Y-%m-%d' }}" class="fw-bolder">
+							Last updated on {{ page.updated | date: '%B %d, %Y' }}	
+						</time>
 					</p>
+					{%- endif %}
 				</footer>
 			</div>
 		</div>

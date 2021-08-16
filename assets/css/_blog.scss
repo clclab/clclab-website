@@ -52,21 +52,9 @@
 
   figure {
     font-family: $font-family-monospace;
-    border-bottom: 2px solid transparentize($blue, .5);
-    padding: .5em 0;
-    margin-bottom: 2em;
-
     img {
       width: 100%;
       color: transparentize($black, .8);
-    }
-
-    figcaption {
-      .credits {
-        color: $blue;//transparentize($black, .5);
-        font-style: italic;
-        display: block;
-      }
     }
   }
 }

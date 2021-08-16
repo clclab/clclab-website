@@ -5,13 +5,14 @@ published: 2018-11-23
 categories: blog
 layout: blog
 author: Iris Proff
-image: "/media/posts/Linda-Jolink-reading-minds-2.jpg"
+image: /assets/posts/2018/Linda-Jolink-reading-minds-2.jpg
 ---
 
 As we saw in the [previous post]({{ site.baseurl }}{% post_url 2018-11-23-reading-minds-1 %}), we can decode someone’s visual experience from their brain activity using machine learning with increasing accuracy. This is pretty impressive already, however this is not quite what we understand as mind reading, is it? So let’s go a step further!
 {: .intro }
 
-## Decoding thoughts: the first steps
+Decoding thoughts: the first steps
+----------------------------------
 
 In terms of mind reading, we are not interested in decoding what a person *sees*, but rather what they *think* about. That is, we want to know which semantic concepts are represented in their brain. By semantic concepts we mean any coherent idea that can be represented in different ways. The semantic concept *bike* can be represented by the word bike, or by a sketch of a bike or, arguably, by a specific pattern of brain activity. 
 
@@ -21,13 +22,14 @@ Tom Mitchell’s group in Pittsburgh pioneered this field with their 2008 paper 
 
 {%
  include figure
- image_path="/media/posts/Linda-Jolink-reading-minds-2.jpg"
+ path="/assets/posts/2018/Linda-Jolink-reading-minds-2.jpg"
  alt="A rabbit and a brain"
  caption=""
  credits="Illustration by Linda Jolink"
 %}
 
-## What does brain activity represent?
+What does brain activity represent?
+-----------------------------------
 
 While the advances in this field are fast and exciting, it is important to take a step back and reflect about the underlying assumption. What does it mean that a semantic concept is represented in the brain? As discussed in the previous post, for visual representations, there is an obvious analogy between the input image and the neural activation pattern. This is not the case for semantic concepts. In fact, what a neural representation of a concept is and if it exists is a heavily debated question.
 
@@ -35,7 +37,8 @@ The *hub-and-spokes theory* {% cite Ralph2017 -f refs_iris %} postulates that a 
 
 Therefore, researchers have recently proposed to use word embeddings designed to solve a specific task, such as a model designed for machine translation or sentiment analysis. Conclusions about neural representation of concepts should then be restricted to this one task {% cite Gauthier2018 -f refs_iris %}. Moreover, they highlight that the feature space, so the collection of features that characterize a concept, should be subdivided into different categories. For instance, the co-occurence of a word with sensory and motor verbs, such as *see*, *hear* or *move*, is a semantic feature. Conversely, the class of a word, such as noun or verb, is a syntactic feature. For each type of feature, voxels can be selected whose activation can be predicted with a higher accuracy than chance. Otherwise, if we use generic word embeddings containing various types of features, we cannot find out more than that the brain encodes *something* that the model also encodes.
 
-## Sharing knowledge
+Sharing knowledge
+-----------------
 
 If this fusion of neuroscience and machine learning ought to be successful, computational scientists must engage in some considerations about the nature of the data they are working with. fMRI data is not equivalent to activation of brain regions. Instead, is a measure of the contrast of oxygenated and deoxygenated blood, which is assumed to change when many neurons are activated at the same time {% cite Logothetis2008 -f refs_iris %}. To interpret this data, it needs to be pre-processed using complex procedures that involve many decisions and parameters, that have to be carefully chosen and reported by researchers to make results comparable between studies. Another issue is the selection of which voxels to analyse. When investigating semantic concepts, it is reasonable to take the whole brain into account, rather than selecting a region of interest. However, a vast network of small voxels spread across the whole cortex is hard to interpret. *Searchlight analyses* that consider the information carried by a set of adjacent voxels can reduce the complexity of the results, make them more robust, and easier to interpret {% cite Kriegeskorte2006 -f refs_iris %}. Finally, timing is crucial. Usually, an fMRI brain scan from a single time point is used as input to the classifier. Consequently, information about the dynamics of semantic representation is lost. Different timings of the points of the experiment might yield very different activation patterns. 
 
