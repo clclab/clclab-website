@@ -47,31 +47,6 @@ title: Home
 				All news
 				<span class="oi oi-chevron-right" aria-hidden="true"></span>
 			</a>
-		
-			<!-- {% assign posts = site.posts | where:"categories","news" %}
-			
-			{% for post in posts %}
-				<article class="mb-2 pb-2">
-						<p class="p-0 m-0">{{ post.title }}</p>
-						<div>
-							{% if post.type %}
-								{% comment %}
-									Badges don't work after migrating to bootstrap v5. 
-									Setting bg and text color is a silly workaround
-								{% endcomment %}
-								<span class="badge badge-secondary bg-secondary text-dark">{{ post.type }}</span>
-							{% endif %}
-							{% if post.date %}
-							<span class="badge badge-light bg-light text-dark">{{ post.date | date: '%d %b' }}</span>
-							{% endif %}
-							<a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-link btn-sm">Read more...</a>
-						</div>
-				</article>
-			{% endfor %}
-			<a href="{{ site.baseurl }}/updates.html" class="btn btn-outline-secondary mt-2">
-				Older updates
-				<span class="oi oi-chevron-right" aria-hidden="true"></span>
-			</a> -->
 		</div>
 	</div>
 	
@@ -81,7 +56,7 @@ title: Home
 	<div class="container">
 		<div class="offset-lg-3 clc-name display-4 my-5">
 			blogposts
-			<a href="{{ site.baseurl }}/blog.html" class="btn btn-outline-secondary">
+			<a href="{{ 'blog.html' | relative_url }}" class="btn btn-outline-secondary">
 				view all
 				<span class="oi oi-chevron-right" aria-hidden="true"></span>
 			</a>
@@ -92,12 +67,10 @@ title: Home
 	</div>
 </div>
 	
-	
 <div class="container py-5 blog-overview">
-		<div class="row">
-			{% assign posts = site.posts | where:"categories","blog" | limit: 1 %}     
-			{% include blogposts.html posts=posts %}
-		</div>	
+	<div class="row">
+		{% include blogposts.html posts=site.posts limit=2 %}
 	</div>	
+</div>	
 
 

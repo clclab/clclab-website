@@ -1,10 +1,9 @@
 ---
+layout: blog
 title: "I know what you think!"
 subtitle: "Reading minds, part 2"
-published: 2018-11-23
-categories: blog
-layout: blog
 author: Iris Proff
+published: 2018-11-23
 image: /assets/posts/2018/Linda-Jolink-reading-minds-2.jpg
 ---
 

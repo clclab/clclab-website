@@ -1,10 +1,8 @@
 ---
-title: "Neural networks help discover how languages are related"
-subtitle: ""
-published: 2019-11-19
-categories: blog
 layout: blog
+title: Neural networks help discover how languages are related
 author: Peter Dekker
+published: 2019-11-19
 image: assets/posts/2019/Philipp-Wicke-appel.png
 ---
 

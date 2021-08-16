@@ -16,7 +16,6 @@ title: Blog
 
 <div class="container py-5 blog-overview">
 	<div class="row">
-    {% assign posts = site.posts | where:"categories","blog" %}     
-    {% include blogposts.html posts=posts %}
+    {% include blogposts.html posts=site.posts %}
 	</div>	
 </div>

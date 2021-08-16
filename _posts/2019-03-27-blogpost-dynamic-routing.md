@@ -1,10 +1,9 @@
 ---
+layout: blog
 title: "Transformers, capsules, or both?"
 subtitle: "From Attention in Transformers to Dynamic Routing in Capsule Nets"
-published: 2019-03-27
-categories: blog
-layout: blog
 author: Samira Abnar
+published: 2019-03-27
 image: /assets/posts/attention_vs_dynamicrouting.png
 ---
 
