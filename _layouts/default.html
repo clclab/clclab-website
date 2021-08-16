@@ -9,37 +9,28 @@
       <div class="container">
 
         <div class="clc-mark">
-          <div>{% include clc.svg %}</div>
+          <a href="{{ '/' | relative_url }}" title="clc lab home">{% include clc.svg %}</a>
         </div>
 
-        <button class="navbar-toggler navbar-toggler-right ml-auto" type="button" 
-          data-toggle="collapse" 
-          data-target="#navbarResponsive" 
+        <button class="navbar-toggler navbar-toggler-right ml-auto border-0" type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarResponsive" 
           aria-controls="navbarResponsive" 
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         
         <div class="navbar-collapse collapse" id="navbarResponsive">
-          <ul class="navbar-nav offset-lg-3">
+          <ul class="navbar-nav offset-lg-3 align-items-center">
+            {%- for item in site.data.menu %}
             <li class="nav-item">
-              <a class="nav-link" href="{{site.baseurl}}/">Home</a>
+              <a class="nav-link{% if item.url == page.url %} active{% endif %}" 
+                href="{{ item.url | relative_url}}"
+                {%- if item.url == page.url %} aria-current="page"{% endif %}>
+                {{- item.label -}}
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ '/news.html' | relative_url }}">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/research.html">Research</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/people.html">People</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{ site.baseurl }}/publications.html">Publications</a>
-            </li>
+            {%- endfor %}
           </ul>
         </div>
       </div>

@@ -67,4 +67,4 @@ scholar:
 collections:
   pages:
     output: true
-    permalink: /:name
+    permalink: /:name.html

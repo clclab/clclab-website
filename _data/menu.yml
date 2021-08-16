@@ -1,0 +1,12 @@
+- label: Home
+  url: /
+- label: News
+  url: /news.html
+- label: Blog
+  url: /blog.html
+- label: Research
+  url: /research.html
+- label: People
+  url: /people.html
+- label: Publications
+  url: /publications.html
