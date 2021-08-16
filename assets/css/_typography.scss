@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6,
 
 ::selection { 
 	color: $gray-900;
-	background-color: $blue;
+	background-color: transparentize($blue, .4);
 }
 
 // Small devices (landscape phones, less than 768px)
