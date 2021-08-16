@@ -17,7 +17,7 @@ the brain and tell what someone is thinking? How would this even work?
  include figure
  path="/assets/posts/2018/Linda-Jolink-reading-minds-1.jpg"
  alt="A rabbit and a brain"
- caption="test"
+ caption=""
  credits="Illustration by Linda Jolink"
 %}
 
