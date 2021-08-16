@@ -28,14 +28,14 @@
     {% endif %}
 
     {% if entry.file %}
-      <a class="badge badge-pill bg-primary" href="{{ site.url }}/media/pdfs/{{ entry.file }}" target="_blank">PDF</a>
+      <a class="badge badge-pill bg-primary" href="{{ site.url }}/assets/pdfs/{{ entry.file }}" target="_blank">PDF</a>
     {% endif %}
 
     {% if entry.arxivid %} 
       <a class="badge badge-pill bg-primary" href="https://arxiv.org/abs/{{ entry.arxivid }}" target="_blank">arXiv</a>
     {% endif %}
     
-    <a href="#" class="badge badge-pill bg-primary" data-toggle="modal" data-target="#bibtexmodal-{{ entry.key }}">
+    <a href="#" class="badge badge-pill bg-primary" data-bs-toggle="modal" data-bs-target="#bibtexmodal-{{ entry.key }}">
       BibTeX
     </a>
 
@@ -55,7 +55,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">{{ entry.title }}</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="btn btn-outline-primary close" data-bs-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -63,7 +63,7 @@
           <pre>{{ entry.bibtex }}</pre>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
