@@ -36,21 +36,21 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-# Jekkyl Scholar 
-# See here for a useful tutorial: 
-# https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/02/01/jekyll-and-bibtex/
-plugins: ['jekyll/scholar', 'jekyll-twitter-plugin', 'jekyll-sitemap']
 
 # Build settings
 sass:
   sass_dir: assets/css
 
 defaults:
-  -
-    scope:
-      path:            "google*"
+  - scope:
+      path: "google*"
     values:
-      sitemap:         false
+      sitemap: false
+
+# Jekkyl Scholar 
+# See here for a useful tutorial: 
+# https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/02/01/jekyll-and-bibtex/
+plugins: ['jekyll/scholar', 'jekyll-sitemap']
 
 scholar:
   style: apa-no-doi-no-issue
