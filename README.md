@@ -1,18 +1,44 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2cf9d372-dc50-4c35-9c5e-24b005b517d3/deploy-status)](https://app.netlify.com/sites/clclab/deploys)
 
-# CLC Lab website
+Maintaining the CLC Lab website
+===============================
 
-The site is generated using [Jekyll](https://jekyllrb.com/). The site is hosted at Netlify at [clclab.netlify.com](https://clclab.netlify.com). Every time changes are made to the repository, the site is automatically regenerated. The address [projects.illc.uva.nl/clclab](https://projects.illc.uva.nl/clclab) redirects to Netlify.
+[Installation](#installation)
+• [News](#news)
+• [Publications](#publications)
+• [Blogposts](#blogposts)
+• [Development](#development)
+• [Notes](#notes) 
 
-## Editing the website
+The clc site is generated using [Jekyll](https://jekyllrb.com/). The site is hosted at Netlify at [clclab.netlify.com](https://clclab.netlify.com). Every time changes are made to the repository, the site is automatically regenerated. The address [projects.illc.uva.nl/clclab](https://projects.illc.uva.nl/clclab) redirects to Netlify.
 
-### Installation
+Installation
+------------
 
-Maintaing the website is easiest if you fist install Jekyll locally.
+Maintaing the website is easiest if you fist install Jekyll locally;
+see for example this guide on installing [Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/).
+After cloning the repository:
 
-### News: [`_data/news.yml`](_data/news.yml)
+```bash
+# Install all dependencies
+bundle install
 
-Every news item has a `date` and a `text` field. This is the format:
+# To serve the website
+bundle exec jekyll serve --livereload
+```
+
+Then go to http://127.0.0.1:4000, the website will be served here. 
+Whenever you edit a file, the site is regenerated and your browser
+will automatically refresh the page. After making the required changes,
+push your commits to the remote repository. Netfify will automatically
+start regenerating the website.
+
+[News](_data/news.yml)
+----
+
+See **[`_data/news.yml`](_data/news.yml)**.
+Every news item has a `date` and a `text` field.
+This is the format:
 
 ```yaml
 - date: yyyy-mm-dd
@@ -22,18 +48,21 @@ Every news item has a `date` and a `text` field. This is the format:
     [links](https://...), etc etc.
 ```
 
-### Publications: [`assets/bibliography/clc_publications.bib`](assets/bibliography/clc_publications.bib)
+[Publications](assets/bibliography/clc_publications.bib)
+--------------------------------------------------------
 
-The publications of the clc lab are stored in [a single BibTeX file](assets/bibliography/clc_publications.bib).
+The publications of the clc lab are stored in [`assets/bibliography/clc_publications.bib`](assets/bibliography/clc_publications.bib).
 The file is used to generate the publications page.To avoid corrupting the BibTeX file, please use [BibDesk](https://bibdesk.sourceforge.io/) to edit the file.
 
 * `CLC-A-Conference={1}`: custom field that indicates that this is a publication at an A conference.
 
 Note: the other bibtex files in `assets/bibliography` contain references that are cited elsewhere on the website, e.g. in blogposts.
 
-### People: [`_data/people.yml`](_data/people.yml)
+[People](_data/people.yml)
+--------------------------
 
-Details about (former) lab members. Supported fields are:
+Details about (former) lab members are stored in [`_data/people.yml`](_data/people.yml).
+Supported fields are:
 
 * `name`
 * `type`: one of `current`, `former`, `collaborator`
@@ -44,9 +73,11 @@ Details about (former) lab members. Supported fields are:
 * `interests`: a brief description of interests. Markdown allowed.
 * `startyear` and `endyear`: used for former members only
 
-### Blogposts: ``_posts/yyyy-mm-dd-title.md``
+[Blogposts](_posts)
+----------------------------------------
 
-Blogposts are stored in `_posts`. Jekyll only processes files that start with a header: a section deliminated by three dashes.
+Blogposts are stored in [`_posts`](_posts) as markdownfiles named ``yyyy-mm-dd-title.md``. 
+Jekyll only processes files that start with a header: a section deliminated by three dashes.
 The header contains metadata about the file in YAML format, such as the title.
 Here's a starter for a blogpost:
 
@@ -105,17 +136,18 @@ Think about whether your results/methods/framework could be nicely visualized as
 * **Citations:** Please use [jekyll-scholar](https://github.com/inukshuk/jekyll-scholar) for citations: `{% cite Zuidema2009 %}`
 * You can use formulas.
 
-## Development
+Development
+-----------
 
+Directory structure:
 
-### Directory structure
+* `/_data`: YAML files with structured data.
+* `/_posts` and `/_pages`: blogposts and pages
+* `/_includes` and `/_layouts`: these directories contain the template files used by Jekyll when generating the website.
+* `/assets`: all publicly available files, such as css, js, images, pdfs, bibliography etc.
+* `/src`: javascript source code for filtering the publications. The code is saved to `assets/js/bundle.js`.
 
-- `/_data`: YAML files with structured data.
-- `/_posts` and `/_pages`: blogposts and pages
-- `/_includes` and `/_layouts`: these directories contain the template files used by Jekyll when generating the website.
-- `/assets`: all publicly available files, such as css, js, images, pdfs, bibliography etc.
-- `/src`: javascript source code for filtering the publications. The code is saved to `assets/js/bundle.js`.
+Notes
+-----
 
-### Hosting
-
-- **Marco Vervoort** (marco@greenlightsolutions.nl) wrote the script to make https://clclab.netlify.app/ available at https://projects.illc.uva.nl/LaCo/clclab. Contact him about problems etc regarding this setup..
+* **Marco Vervoort** (marco@greenlightsolutions.nl) wrote the script to make https://clclab.netlify.app/ available at https://projects.illc.uva.nl/LaCo/clclab. Contact him about problems etc regarding this setup..
