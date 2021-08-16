@@ -1,104 +1,112 @@
 
 .blog {
+  .content {
+    max-width: 680px;
 
-    .content {
-        max-width: 680px;
+    table {
+      @extend .table;
+      font-family: $font-family-monospace;
     }
 
-    header {
-        text-shadow: 0 0 15px transparentize($gray-900, .8);
-        
-        .display-1 {
-            color: $gray-900;
-            font-weight: bold;
-        }
+    h2 {
+      @extend .mt-5;
+    }
+  }
 
-        .subtitle {
-            font-weight: bold;
-            color: $yellow;
-            font-size: 2.5rem;
-        }
-
-        .author {
-            font-size: 2rem;
-            font-family: $font-family-monospace;
-            color: $gray-900;
-
-            .by {
-                font-style: italic;
-            }
-        }
+  header {
+    text-shadow: 0 0 15px transparentize($gray-900, .8);
+    
+    .display-1 {
+      color: $gray-900;
+      font-weight: bold;
     }
 
-    p.intro {
-        font-weight: bold;
-        font-size: 1.5rem;
-        color: $blue;
-        margin-bottom: 3 * $spacer;
-        padding-top: 3 * $spacer;
-
-        a {
-            color: $black;
-        }
+    .subtitle {
+      font-weight: bold;
+      color: $yellow;
+      font-size: 2.5rem;
     }
 
-    figure {
-        font-family: $font-family-monospace;
-        border-bottom: 2px solid transparentize($blue, .5);
-        padding: .5em 0;
-        margin-bottom: 2em;
+    .author {
+      font-size: 2rem;
+      font-family: $font-family-monospace;
+      color: $gray-900;
 
-        img {
-            width: 100%;
-            color: transparentize($black, .8);
-        }
-
-        figcaption {
-            .credits {
-                color: $blue;//transparentize($black, .5);
-                font-style: italic;
-                display: block;
-            }
-        }
+      .by {
+        font-style: italic;
+      }
     }
+  }
+
+  p.intro {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: $blue;
+    margin-bottom: 3 * $spacer;
+    padding-top: 3 * $spacer;
+
+    a {
+      color: $black;
+    }
+  }
+
+  figure {
+    font-family: $font-family-monospace;
+    border-bottom: 2px solid transparentize($blue, .5);
+    padding: .5em 0;
+    margin-bottom: 2em;
+
+    img {
+      width: 100%;
+      color: transparentize($black, .8);
+    }
+
+    figcaption {
+      .credits {
+        color: $blue;//transparentize($black, .5);
+        font-style: italic;
+        display: block;
+      }
+    }
+  }
 }
 
 .blog-overview {
-    .blogpost {
-        img.figure {
-            width: 100%;
-        }
-
-        header {
-            h2 a {
-                color: $black;
-            }
-            .subtitle {
-                font-size: 1.25rem;
-                color: $blue;
-                font-weight: bold
-            }
-        }
+  .blogpost {
+    img.figure {
+      width: 100%;
     }
 
-    span.author {
-        font-family: $font-family-monospace;
-        font-weight: bold;
+    header {
+      h2 a {
+        color: $black;
+      }
+      .subtitle {
+        font-size: 1.25rem;
+        color: $blue;
+        font-weight: bold
+      }
     }
+  }
+
+  span.author {
+    font-family: $font-family-monospace;
+    font-weight: bold;
+  }
 }
 
 .references {
-    padding-top: 3 * $spacer;
-    font-size: .9rem;
-    color: transparentize($black, .4);
-    font-family: $font-family-monospace;
+  padding-top: 3 * $spacer;
+  font-size: .9rem;
+  color: transparentize($black, .4);
+  font-family: $font-family-monospace;
 
-    h4 {
-        font-weight: bold;
-        font-size: 1rem;
-    }
+  h4 {
+    font-weight: bold;
+    font-size: 1rem;
+  }
 
-    ol {
-        column-count: 2
-    }
+  ol {
+    column-count: 2
+  }
 }
