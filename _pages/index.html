@@ -31,7 +31,7 @@ layout: default
 		
 		<div class="offset-lg-3 col-lg-9">
 			<h3 class="mb-4">news</h3>
-			<div class="row row-cols-2">
+			<div class="row row-cols-1 row-cols-sm-2">
 				{%- assign newsItems = site.data.news | sort: "date" | reverse %}
 				{%- for item in newsItems limit: 6 %}
 				<div class="col mb-3">
