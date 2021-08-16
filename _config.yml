@@ -36,7 +36,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-
 # Build settings
 sass:
   sass_dir: assets/css

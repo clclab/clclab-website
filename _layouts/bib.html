@@ -13,28 +13,29 @@
   {% assign publication = 'zzz' %}
 {% endif %}
 
-<div id="bib-item-{{ entry.key }}" class="bib-entry my-3" 
+<div id="bib-item-{{ entry.key }}" class="bib-entry my-4 row" 
   data-searchable
   data-year="{{ entry.year }}"
   data-title="{{ entry.title }}"
   data-author="{{ entry.author }}"
   data-publication="{{ publication }}">
-  {{ reference }}
-  
-  <div>
+
+  <h5 class="col-md-5">{{ entry.title }}</h5>
+  <p class="text-muted small col-md-5 mb-0">{{ reference }}</p>
+  <div class="col-md-2">
     {% if entry.doi %}
-      <a class="badge badge-pill badge-secondary" href="https://doi.org/{{ entry.doi }}" target="_blank" title="{{ entry.title }}">DOI</a>
+      <a class="badge badge-pill bg-primary" href="https://doi.org/{{ entry.doi }}" target="_blank" title="{{ entry.title }}">DOI</a>
     {% endif %}
 
     {% if entry.file %}
-      <a class="badge badge-pill badge-secondary" href="{{ site.url }}/media/pdfs/{{ entry.file }}" target="_blank">PDF</a>
+      <a class="badge badge-pill bg-primary" href="{{ site.url }}/media/pdfs/{{ entry.file }}" target="_blank">PDF</a>
     {% endif %}
 
     {% if entry.arxivid %} 
-      <a class="badge badge-pill badge-secondary" href="https://arxiv.org/abs/{{ entry.arxivid }}" target="_blank">arXiv</a>
+      <a class="badge badge-pill bg-primary" href="https://arxiv.org/abs/{{ entry.arxivid }}" target="_blank">arXiv</a>
     {% endif %}
     
-    <a href="#" class="badge badge-pill badge-secondary" data-toggle="modal" data-target="#bibtexmodal-{{ entry.key }}">
+    <a href="#" class="badge badge-pill bg-primary" data-toggle="modal" data-target="#bibtexmodal-{{ entry.key }}">
       BibTeX
     </a>
 
@@ -42,7 +43,7 @@
       {% assign rawtags = entry.clctags %}
       {% assign tags = rawtags | split: "," %}
       {% for tag in tags %}
-        <a href="#" class="badge badge-pill badge-light">
+        <a href="#" class="badge badge-pill bg-light">
           {{ tag }}
         </a>
       {% endfor %}

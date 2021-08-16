@@ -4,107 +4,153 @@ title: Publications
 updated: 2018-01-29
 ---
 <div class="container">
-    <div class="row">
+  <div class="row">
 
-        <header class="col-lg-9 offset-lg-3 my-5">
-            <h1 class="display-1 my-5">Publications</h1>
-        </header>
+    <header class="col-lg-9 offset-lg-3 my-5">
+      <h1 class="display-1 my-5">Publications</h1>
+    </header>
 
-        <div class="btn-group col-lg-9 offset-lg-3 p-0 sticky-top bg-light">
-            <button type="button" class="btn btn-sm btn-primary d-none d-sm-block" disabled>Sort by</button>
-            
-            <button type="button" class="btn btn-sm btn-primary" 
-                data-sort-group-selector="#publications .group"
-                data-sort-selector=".bib-entry"
-                data-sort-order="asc"
-                data-sort="year,author">
-                year 
-                <span class="oi oi-chevron-top" aria-hidden="true"></span>
-            </button>
+    <div class="btn-group col-lg-9 offset-lg-3 p-0 sticky-top bg-light">
+      <button type="button" class="btn btn-sm btn-primary d-none d-sm-block" disabled>Sort by</button>
+      
+      <button type="button" class="btn btn-sm btn-primary" 
+        data-sort-group-selector="#publications .group"
+        data-sort-selector=".bib-entry"
+        data-sort-order="asc"
+        data-sort="year,author">
+        year 
+        <span class="oi oi-chevron-top" aria-hidden="true"></span>
+      </button>
 
-            <button type="button" class="btn btn-sm btn-primary" 
-                data-sort-group-selector="#publications .group"
-                data-sort-selector=".bib-entry"
-                data-sort-order="asc"
-                data-sort="author,year">
-                author
-                <span class="oi small hidden" aria-hidden="true"></span>
-            </button>
+      <button type="button" class="btn btn-sm btn-primary" 
+        data-sort-group-selector="#publications .group"
+        data-sort-selector=".bib-entry"
+        data-sort-order="asc"
+        data-sort="author,year">
+        author
+        <span class="oi small hidden" aria-hidden="true"></span>
+      </button>
 
-            <button type="button" class="btn btn-sm btn-primary" 
-                data-sort-group-selector="#publications .group"
-                data-sort-selector=".bib-entry"
-                data-sort-order="asc"
-                data-sort="title">title
-                <span class="oi oi-chevron-top small hidden" aria-hidden="true"></span>
-            </button>
+      <button type="button" class="btn btn-sm btn-primary" 
+        data-sort-group-selector="#publications .group"
+        data-sort-selector=".bib-entry"
+        data-sort-order="asc"
+        data-sort="title">title
+        <span class="oi oi-chevron-top small hidden" aria-hidden="true"></span>
+      </button>
 
-            <button type="button" class="btn btn-sm btn-primary d-none d-sm-block" 
-                data-sort-group-selector="#publications .group"
-                data-sort-selector=".bib-entry"
-                data-sort-order="asc"
-                data-sort="publication">publication
-                <span class="oi oi-chevron-top small hidden" aria-hidden="true"></span>
-            </button>
+      <button type="button" class="btn btn-sm btn-primary d-none d-sm-block" 
+        data-sort-group-selector="#publications .group"
+        data-sort-selector=".bib-entry"
+        data-sort-order="asc"
+        data-sort="publication">publication
+        <span class="oi oi-chevron-top small hidden" aria-hidden="true"></span>
+      </button>
 
-            <input type="text" id="search-pubs" class="form-control w-25"    
-                placeholder="filter..."
-                data-searchable-input-for="bib-entry"
-                data-no-results-message="#filter-no-results">
-        </div>
-
-
-        <div class="col-lg-9 offset-lg-3" id="publications"
-            data-sort-group-by-seperator="#publications h2.bibliography">
-            
-
-            <a href="{{ site.baseurl }}/bibliography/clc_publications.bib" class="btn btn-outline-primary" target="_blank" style="margin-top:4em;">
-                Download our publications as a BibTeX file.
-                <span class="oi oi-chevron-right" aria-hidden="true"></span>
-            </a>
-
-            <div class="group">
-                <h2 class="bibliography">Journal and key conference articles</h2>
-                {% bibliography 
-                  --file clc_publications 
-                  --query @article||@*[clc-a-conference=1]
-                  --sort_by year 
-                  --order asc %}
-            </div>
-
-            <div class="group">
-                <h2 class="bibliography">Conference articles</h2>
-                {% bibliography 
-                  --file clc_publications 
-                  --query @inproceedings
-                  --sort_by year 
-                  --order asc %}
-            </div>
-
-            <div class="group">
-                <h2 class="bibliography">Book chapters</h2>
-                {% bibliography 
-                  --file clc_publications 
-                  --query @inbook||@incollection
-                  --sort_by year 
-                  --order asc %}
-            </div>
-
-            <div class="group">
-                <h2 class="bibliography">Others</h2>
-                {% bibliography 
-                  --file clc_publications 
-                  --query @phdthesis||@unpublished||@manuscript||@mastersthesis||@misc||@proceedings||@techreport
-                  --sort_by year 
-                  --order asc %}
-            </div>
-
-
-            <div class="alert alert-warning d-none" role="alert" id="filter-no-results">
-              <h4 class="alert-heading">No results...</h4>
-              <p>Couldn't find any publications matching your query. Please try again.</p>
-            </div>
-        </div>
-
+      <input type="text" id="search-pubs" class="form-control w-25"    
+        placeholder="filter..."
+        data-searchable-input-for="bib-entry"
+        data-no-results-message="#filter-no-results">
     </div>
+
+      
+    <div class="col-lg-9 offset-lg-3 accordion my-5" id="publications"
+      data-sort-group-by-seperator="#publications h2.bibliography">
+      
+      <a href="{{ site.baseurl }}/bibliography/clc_publications.bib" class="btn btn-outline-primary mb-4" target="_blank" style="margin-top:4em;">
+        Download our publications as a BibTeX file.
+        <span class="oi oi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+      <div class="group accordion-item border-0">
+
+        <div class="alert alert-warning d-none" role="alert" id="filter-no-results">
+          <h4 class="alert-heading">No results...</h4>
+          <p>Couldn't find any publications matching your query. Please try again.</p>
+        </div>  
+
+        <h2 class="accordion-header bibliography" id="headerJournalPapers">
+          <button class="accordion-button bg-secondary" type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#collapseJournalPapers" 
+            aria-expanded="true" 
+            aria-controls="collapseJournalPapers">
+            Journal and key conference articles
+          </button>
+        </h2>
+        <div id="collapseJournalPapers" 
+          class="accordion-collapse collapse show" aria-labelledby="headerJournalPapers">
+          <div class="accordion-body p-0">
+          {% bibliography 
+            --file clc_publications 
+            --query @article||@*[clc-a-conference=1]
+            --sort_by year 
+            --order asc %}
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item group border-0">
+        <h2 class="accordion-header bibliography" id="headerConferenceArticles">
+          <button class="accordion-button bg-secondary" type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#collapseConferenceArticles" 
+            aria-expanded="true" 
+            aria-controls="collapseConferenceArticles">
+            Conference articles
+          </button>
+        </h2>
+        <div id="collapseConferenceArticles" class="accordion-collapse collapse show" aria-labelledby="headerConferenceArticles">
+          <div class="accordion-body p-0">
+            {% bibliography 
+              --file clc_publications 
+              --query @inproceedings
+              --sort_by year 
+              --order asc %}
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item group border-0">
+        <h2 class="accordion-header bibliography" id="headingBookChapters">
+          <button class="accordion-button bg-secondary" type="button"    
+            data-bs-toggle="collapse" 
+            data-bs-target="#collapseBookChapters" 
+            aria-expanded="true" aria-controls="collapseBookChapters">
+            Book chapters
+          </button>
+        </h2>
+        <div id="collapseBookChapters" class="accordion-collapse collapse show" aria-labelledby="headingBookChapters">
+          <div class="accordion-body p-0">
+            {% bibliography 
+              --file clc_publications 
+              --query @inbook||@incollection
+              --sort_by year 
+              --order asc %}
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item group border-0">
+        <h2 class="accordion-header bibliography" id="headingOthers">
+          <button class="accordion-button bg-secondary" type="button"    
+            data-bs-toggle="collapse" 
+            data-bs-target="#collapseOthers" 
+            aria-expanded="true" aria-controls="collapseOthers">
+            Others
+          </button>
+        </h2>
+        <div id="collapseOthers" class="accordion-collapse collapse show" aria-labelledby="headingOthers">
+          <div class="accordion-body p-0">
+            {% bibliography 
+              --file clc_publications 
+              --query @phdthesis||@unpublished||@manuscript||@mastersthesis||@misc||@proceedings||@techreport
+              --sort_by year 
+              --order asc %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
