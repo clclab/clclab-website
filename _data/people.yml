@@ -15,8 +15,16 @@
      Biology group at Leiden University (2007-2008).
   img: assets/people/jelle-square.jpg
 
+- name: Erman Acar
+  startyear: 2022
+  type: current
+  position: PI
+  email: e.acar@uva.nl
+  interests: >
+    Erman Acar is an assistent professor at the ILLC and IvI.
+
 - name: Oskar van der Wal
-  startyear: 2021
+  startyear: 2020
   type: current
   position: phd
   url: https://odvanderwal.nl/
@@ -123,13 +131,13 @@
     Marianne de Heer Kloots is a student in the MSc Artificial Intelligence and the MSc Brain and Cognitive Sciences.
 
 - name: Lucia Liu
-  type: current
+  type: former
   position: master
   interests: >
     Lucia Liu is a student in the MSc Brain and Cognitive Sciences.
 
 - name: Marta Radzikowska
-  type: current
+  type: former
   position: master
   interests: >
     Marta Radzikowska is a student in the MSc Brain and Cognitive Sciences.
