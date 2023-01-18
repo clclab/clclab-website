@@ -20,9 +20,13 @@
   type: current
   position: PI
   email: e.acar@uva.nl
+  url: https://sup-erman.github.io
   interests: >
     Erman Acar is an assistant professor for XAI in Finance at ILLC and IvI. Prior to joining UvA, he was a postdoctoral researcher in the Knowledge Representation and Reasoning group at VU (2018 -2021) and in the Reinforcement Learning group at Leiden University (2021-2022).  he did his PhD in Germany, University of Mannheim (2014-2017), and obtained a masters degree in Computational Logic from TU-Wien (Austria) and TU-Dresden (Germany) in 2012. During his career he made research visits to several institutions, including University of Bozen-Bolzano,  University of Amsterdam, University of Calabria and University of Oxford.
+    His research focuses on integrating machine learning with symbolically structured systems to extend their capacity in reasoning and explainability.
+    See: [sup-erman.github.io](https://sup-erman.github.io) for further information.
   img: assets/people/erman.png
+  twitter: erman_ai
 
 - name: Oskar van der Wal
   startyear: 2020
