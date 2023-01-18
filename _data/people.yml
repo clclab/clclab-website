@@ -55,9 +55,10 @@
   twitter: jumeletj
   img: assets/people/jaap.png
   interests: >
-    The topic of my PhD is centered around the fields of NLP, interpretability, and linguistics.
-    I am interested in gaining a better understanding of the current successes of the state of the art in NLP.
-    My research is guided by hypotheses derived from linguistics, that I evaluate on deep neural models using techniques from the field of Explainable AI. 
+    Jaap Jumelet is a PhD candidate advised by Jelle Zuidema and Raquel Fernandez.
+    The topic of his PhD is centered around the fields of NLP, interpretability, and linguistics.
+    He is interested in gaining a better understanding of the current successes of the state of the art in NLP.
+    His research is guided by hypotheses derived from linguistics, that he evaluates on deep neural models using techniques from the field of Explainable AI. 
 
 - name: Charlotte Pouw
   startyear: 2022
