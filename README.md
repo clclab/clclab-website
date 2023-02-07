@@ -150,4 +150,4 @@ Directory structure:
 Notes
 -----
 
-* **Marco Vervoort** (marco@greenlightsolutions.nl) wrote the script to make https://clclab.netlify.app/ available at https://projects.illc.uva.nl/LaCo/clclab. Contact him about problems etc regarding this setup..
+* **Marco Vervoort** wrote the script to make https://clclab.netlify.app/ available at https://projects.illc.uva.nl/LaCo/clclab. Contact him about problems etc regarding this setup..
