@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Syntactic Dependencies in Transformers and Their Relation to the Brain
+author: Bram Fresen
 updated: 2023-12-07
 published: 2023-12-07
 ---
