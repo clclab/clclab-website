@@ -1,5 +1,5 @@
 ---
-layout: research
+layout: blog
 title: Syntactic Dependencies in Transformers and Their Relation to the Brain
 updated: 2023-12-07
 published: 2023-12-07
