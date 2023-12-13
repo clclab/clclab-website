@@ -21,5 +21,8 @@ Since their emergence, transformers have dominated the field of computational li
 
 <div class="references">
   <h4>References</h4>
-  {% bibliography --file refs_for_poster --sort_by author %}
+  {% bibliography 
+    --file refs_for_poster 
+    --sort_by author 
+    --order asc %}
 </div>
