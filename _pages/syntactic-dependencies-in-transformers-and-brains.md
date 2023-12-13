@@ -13,7 +13,7 @@ This study formed Bram's first research project within the [MSc Brain & Cognitiv
 Poster
 -----------------
 Click the thumbnail below to download a pdf of Bram's poster.
-<a href="{{ site.baseurl }}/assets/pdfs/2023/BramPoster_NVP.pdf"><img src="{{ site.baseurl }}/assets/posts/2023/Bram_poster_thumbnail.png"></img></a>
+<a href="{{ site.baseurl }}/assets/pdfs/2023/BramPoster_NVP.pdf"><img src="{{ site.baseurl }}/assets/posts/2023/Bram_poster_thumbnail.png"></a>
 
 Abstract
 -----------------
@@ -21,5 +21,5 @@ Since their emergence, transformers have dominated the field of computational li
 
 <div class="references">
   <h4>References</h4>
-  {% bibliography --file refs_for_poster %}
+  {% bibliography --file refs_for_poster --sort_by author %}
 </div>
