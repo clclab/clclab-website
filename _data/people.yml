@@ -148,6 +148,19 @@
   interests: >
     Marianne de Heer Kloots is a PhD candidate within the Language in Interaction consortium. Her PhD focuses on the connection between language model representations and neural image data.
 
+- name: Angela van Sprang
+  startyear: 2023
+  type: current
+  position: phd
+  url: https://www.linkedin.com/in/angela-van-sprang-655116191/
+  email: a.v.vansprang@uva.nl
+  github: angelavansprang
+  interests: >
+    Angela van Sprang is a PhD Candidate working on (mechanistic) interpretability. 
+    Understanding of neural networks is important for application in society, especially in high-stakes domains. 
+    She is supervised by Erman Acar and Jelle Zuidema.
+  img: assets/people/angela.png
+
 - name: Lucia Liu
   type: former
   position: master
