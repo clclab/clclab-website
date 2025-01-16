@@ -143,10 +143,12 @@
 - name: Marianne de Heer Kloots
   type: current
   position: phd
-  startyear: 2020
+  startyear: 2021
   img: assets/people/marianne.jpg
   interests: >
-    Marianne de Heer Kloots is a PhD candidate within the Language in Interaction consortium. Her PhD focuses on the connection between language model representations and neural image data.
+    Marianne de Heer Kloots is a PhD candidate advised by Jelle Zuidema and Raquel Fernandez, 
+    with a background in linguistics and cognitive science. She is interested in modelling human 
+    speech perception and in interpreting deep learning models for speech processing.
 
 - name: Lucia Liu
   type: former
