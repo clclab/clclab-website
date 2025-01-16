@@ -25,7 +25,7 @@
     Erman Acar is an assistant professor for XAI in Finance at ILLC and IvI. His main research areas include neurosymbolic AI, explainability and interpretability in AI, computational logic,  multiagent systems and their applications in financial technologies. He obtained his PhD in AI from University of Mannheim, Germany
     and masters degree in Computational Logic from TU-Vienna and TU-Dresden. He  has been a visiting researcher to various institutions, including University of Bozen-Bolzano,  University of Amsterdam, University of Calabria and University of Oxford.
 
-  See: [sup-erman.github.io](https://sup-erman.github.io) for further information.
+    see: [sup-erman.github.io](https://sup-erman.github.io) for further information.
   img: assets/people/erman.png
 
 - name: Ana Lucic
@@ -37,8 +37,7 @@
   twitter: __alucic
   interests: >
     Ana Lucic is an assistant professor in interpretable machine learning at the ILLC and the IvI. Previously, she held research positions at Microsoft Research Amsterdam and at the Partnership on AI. She holds a PhD in explainable machine learning from the University of Amsterdam, along with an MSc and BSc, both in mathematics, from McMaster University in Canada.
-  img: assets/people/ana-square.jpg 
-
+  img: assets/people/ana-square.jpg
 
 - name: Marianne de Heer Kloots
   type: current
@@ -50,7 +49,6 @@
     Marianne de Heer Kloots is a PhD candidate advised by Jelle Zuidema and Raquel Fernandez, 
     with a background in linguistics and cognitive science. She is interested in modelling human 
     speech perception and in interpreting deep learning models for speech processing.
-
 
 - name: Oskar van der Wal
   startyear: 2020
@@ -162,7 +160,7 @@
     These are the questions that motivate my research. I use computational methods 
     to study how musical traditions differ. Mapping the diversity of musics across 
     the globe, is a key step in understanding the cultural evolution of musics.
-    
+
 - name: Lucia Liu
   type: former
   position: master
