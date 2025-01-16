@@ -158,9 +158,8 @@
   email: a.v.vansprang@uva.nl
   github: angelavansprang
   interests: >
-    Angela van Sprang is a PhD Candidate working on (mechanistic) interpretability. 
-    Understanding of neural networks is important for application in society, especially in high-stakes domains. 
-    She is supervised by Erman Acar and Jelle Zuidema.
+    Angela van Sprang is a PhD Candidate advised by Erman Acar and Jelle Zuidema, with a background in Artificial Intelligence.
+    She works on (mechanistic) interpretability and is interested in interpreting deep learning models for applications in society.
   img: assets/people/angela.png
 
 - name: Lucia Liu
