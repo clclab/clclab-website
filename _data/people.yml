@@ -5,14 +5,14 @@
   email: w.h.zuidema@uva.nl
   twitter: wzuidema
   interests: >
-     Willem Zuidema (a.k.a. Jelle) is associate professor of Computational Linguistics and
-     Cognitive Science at the Institute for Logic, Language and Computation (ILLC)
-     of the University of Amsterdam and research fellow of the national Language In
-     Interaction consortium. Before joining ILLC in 2004, he worked at the University of Edinburgh
-     (2002-2004), where he completed his PhD thesis on “The Major Transitions in the
-     Evolution of Language”. He also worked at Sony Computer Science Laboratory - Paris (2000),
-     the AI lab of the Vrije Universiteit in Brussels, (2000-2002), and in the Behavioural
-     Biology group at Leiden University (2007-2008).
+    Willem Zuidema (a.k.a. Jelle) is associate professor of Computational Linguistics and
+    Cognitive Science at the Institute for Logic, Language and Computation (ILLC)
+    of the University of Amsterdam and research fellow of the national Language In
+    Interaction consortium. Before joining ILLC in 2004, he worked at the University of Edinburgh
+    (2002-2004), where he completed his PhD thesis on “The Major Transitions in the
+    Evolution of Language”. He also worked at Sony Computer Science Laboratory - Paris (2000),
+    the AI lab of the Vrije Universiteit in Brussels, (2000-2002), and in the Behavioural
+    Biology group at Leiden University (2007-2008).
   img: assets/people/jelle-square.jpg
 
 - name: Erman Acar
@@ -23,9 +23,9 @@
   url: https://sup-erman.github.io
   interests: >
     Erman Acar is an assistant professor for XAI in Finance at ILLC and IvI. Prior to joining UvA, he was a postdoctoral researcher in the Knowledge Representation and Reasoning group at VU (2018 -2021) and in the Reinforcement Learning group at Leiden University (2021-2022).  he did his PhD in Germany, University of Mannheim (2014-2017), and obtained a masters degree in Computational Logic from TU-Wien (Austria) and TU-Dresden (Germany) in 2012. During his career he made research visits to several institutions, including University of Bozen-Bolzano,  University of Amsterdam, University of Calabria and University of Oxford.
-    
+
     His research focuses on integrating machine learning with symbolically structured systems to extend their capacity in reasoning and explainability.
-    
+
     See: [sup-erman.github.io](https://sup-erman.github.io) for further information.
   img: assets/people/erman.png
 
@@ -47,7 +47,8 @@
 
 - name: Jaap Jumelet
   startyear: 2019
-  type: current
+  endyear: 2024
+  type: former
   position: phd
   url: https://jumelet.ai/
   github: jumelet
@@ -58,7 +59,7 @@
     Jaap Jumelet is a PhD candidate advised by Jelle Zuidema and Raquel Fernandez.
     The topic of his PhD is centered around the fields of NLP, interpretability, and linguistics.
     He is interested in gaining a better understanding of the current successes of the state of the art in NLP.
-    His research is guided by hypotheses derived from linguistics, that he evaluates on deep neural models using techniques from the field of Explainable AI. 
+    His research is guided by hypotheses derived from linguistics, that he evaluates on deep neural models using techniques from the field of Explainable AI.
 
 - name: Charlotte Pouw
   startyear: 2022
@@ -95,7 +96,6 @@
     He teaches in the bachelor programs 
     'Cognition, Language and Communication' 
     and 'Artificial Intelligence'.
-
 
 - name: Lisa Beinborn
   type: former
@@ -178,7 +178,6 @@
     For his master’s thesis he works on computational models
     that recognize logical relations between pairs of sentences.
 
-
 - name: Raquel Alhama
   type: collaborator
   url: https://rgalhama.github.io/
@@ -197,7 +196,6 @@
     at the ILLC. She researches computational semantics and pragmatics
     with a special focus on linguistic interaction.
 
-
 - name: Ivan Titov
   type: collaborator
   url: http://ivan-titov.org/
@@ -208,7 +206,6 @@
     affiliated with the ILLC . His research focuses on Natural
     Language Processing and Machine Learning.
 
-
 - name: Tejaswini Deoskar
   type: collaborator
   img: https://staff.fnwi.uva.nl/t.deoskar/td1.jpg
@@ -216,7 +213,6 @@
   interests: >
     Tejaswini Deoskar is an assistant professor at Utrecht University, investigating probabilistic
     language models. In particular, she focuses on semi-supervised language learning techniques.
-
 
 - name: Henkjan Honing
   type: collaborator
@@ -260,7 +256,6 @@
     Marieke Woensdregt is a PhD student at the University of Edinburgh. Using agent-based models,
     she explores the hypothesis that language and theory of mind have co-evolved.
 
-
 - name: Katja Abramova
   type: former
   now: PhD student at Radboud University Nijmegen
@@ -271,7 +266,6 @@
   interests: >
     Katja Abramova is a PhD student at Radboud University in Nijmegen, investigating human language
     evolution from an interdisciplinary perspective.
-
 
 - name: Vanessa Ferdinand
   type: former
@@ -284,7 +278,6 @@
     Vanessa Ferdinand works as a postdoctoral researcher at the Santa Fe Institute, where she combines psychological
     experiments and computational modeling to examines cultural evolution.
 
-
 - name: Jonathan Mallinson
   type: former
   now: PhD student at the University of Edinburgh
@@ -292,8 +285,8 @@
   startyear: 2015
   endyear: 2015
   interests: >
-     Jonathan Mallison is a PhD student at the University of Edinburgh, working on automatic text generation,
-     focusing on paraphrasing and sentence compression.
+    Jonathan Mallison is a PhD student at the University of Edinburgh, working on automatic text generation,
+    focusing on paraphrasing and sentence compression.
 
 - name: Federico Sangati
   type: former
