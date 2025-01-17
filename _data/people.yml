@@ -22,12 +22,33 @@
   email: e.acar@uva.nl
   url: https://sup-erman.github.io
   interests: >
-    Erman Acar is an assistant professor for XAI in Finance at ILLC and IvI. Prior to joining UvA, he was a postdoctoral researcher in the Knowledge Representation and Reasoning group at VU (2018 -2021) and in the Reinforcement Learning group at Leiden University (2021-2022).  he did his PhD in Germany, University of Mannheim (2014-2017), and obtained a masters degree in Computational Logic from TU-Wien (Austria) and TU-Dresden (Germany) in 2012. During his career he made research visits to several institutions, including University of Bozen-Bolzano,  University of Amsterdam, University of Calabria and University of Oxford.
+    Erman Acar is an assistant professor for XAI in Finance at ILLC and IvI. His main research areas include neurosymbolic AI, explainability and interpretability in AI, computational logic,  multiagent systems and their applications in financial technologies. He obtained his PhD in AI from University of Mannheim, Germany
+    and masters degree in Computational Logic from TU-Vienna and TU-Dresden. He  has been a visiting researcher to various institutions, including University of Bozen-Bolzano,  University of Amsterdam, University of Calabria and University of Oxford.
 
-    His research focuses on integrating machine learning with symbolically structured systems to extend their capacity in reasoning and explainability.
-
-    See: [sup-erman.github.io](https://sup-erman.github.io) for further information.
+    see: [sup-erman.github.io](https://sup-erman.github.io) for further information.
   img: assets/people/erman.png
+
+- name: Ana Lucic
+  startyear: 2024
+  type: current
+  url: https://a-lucic.github.io
+  position: PI
+  email: a.lucic@uva.nl
+  twitter: __alucic
+  interests: >
+    Ana Lucic is an assistant professor in interpretable machine learning at the ILLC and the IvI. Previously, she held research positions at Microsoft Research Amsterdam and at the Partnership on AI. She holds a PhD in explainable machine learning from the University of Amsterdam, along with an MSc and BSc, both in mathematics, from McMaster University in Canada.
+  img: assets/people/ana-square.jpg
+
+- name: Marianne de Heer Kloots
+  type: current
+  position: phd
+  startyear: 2021
+  url: https://mdhk.net/
+  img: assets/people/marianne.jpg
+  interests: >
+    Marianne de Heer Kloots is a PhD candidate advised by Jelle Zuidema and Raquel Fernández, 
+    with a background in linguistics and cognitive science. She is interested in modelling human 
+    speech perception and in interpreting deep learning models for speech processing.
 
 - name: Oskar van der Wal
   startyear: 2020
@@ -56,7 +77,7 @@
   twitter: jumeletj
   img: assets/people/jaap.png
   interests: >
-    Jaap Jumelet is a PhD candidate advised by Jelle Zuidema and Raquel Fernandez.
+    Jaap Jumelet is a PhD candidate advised by Jelle Zuidema and Raquel Fernández.
     The topic of his PhD is centered around the fields of NLP, interpretability, and linguistics.
     He is interested in gaining a better understanding of the current successes of the state of the art in NLP.
     His research is guided by hypotheses derived from linguistics, that he evaluates on deep neural models using techniques from the field of Explainable AI.
@@ -140,16 +161,6 @@
     to study how musical traditions differ. Mapping the diversity of musics across 
     the globe, is a key step in understanding the cultural evolution of musics.
 
-- name: Marianne de Heer Kloots
-  type: current
-  position: phd
-  startyear: 2021
-  img: assets/people/marianne.jpg
-  interests: >
-    Marianne de Heer Kloots is a PhD candidate advised by Jelle Zuidema and Raquel Fernandez, 
-    with a background in linguistics and cognitive science. She is interested in modelling human 
-    speech perception and in interpreting deep learning models for speech processing.
-
 - name: Angela van Sprang
   startyear: 2023
   type: current
@@ -200,13 +211,13 @@
     Raquel Alhama completed her PhD in our lab in 2017 with a focus on Artificial Grammar Learning.
     Today, she is a postdoctoral researcher at the Max Planck Institute for Psycholinguistics in Nijmegen.
 
-- name: Raquel Fernandez
+- name: Raquel Fernández
   type: collaborator
   img: https://staff.fnwi.uva.nl/r.fernandezrovira/web/raq.png
   url: https://staff.fnwi.uva.nl/r.fernandezrovira
   twitter: raquelfdzrovira
   interests: >
-    Raquel Fernandez is an associate professor and the head of the Dialogue Modelling Group
+    Raquel Fernández is an associate professor and the head of the Dialogue Modelling Group
     at the ILLC. She researches computational semantics and pragmatics
     with a special focus on linguistic interaction.
 

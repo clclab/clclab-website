@@ -10,7 +10,7 @@ Maintaining the CLC Lab website
 • [Development](#development)
 • [Notes](#notes) 
 
-The clc site is generated using [Jekyll](https://jekyllrb.com/). The site is hosted at Netlify at [clclab.netlify.com](https://clclab.netlify.com). Every time changes are made to the repository, the site is automatically regenerated. The address [projects.illc.uva.nl/clclab](https://projects.illc.uva.nl/clclab) redirects to Netlify.
+The clc site is generated using [Jekyll](https://jekyllrb.com/). The site is hosted at Netlify at [clclab.netlify.app](https://clclab.netlify.app). Every time changes are made to the repository, the site is automatically regenerated. The address [projects.illc.uva.nl/clclab](https://projects.illc.uva.nl/clclab) redirects to Netlify.
 
 Installation
 ------------
