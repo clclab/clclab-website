@@ -4,7 +4,9 @@ title: Our research
 updated: 2025-05-08
 published: 2025-05-08
 ---
-Most of the research in the lab in focused on Interpretability methods in Artificial Intelligence. We apply them to LLMs, neural speech models, vision-language models, and time series models. We develop new interpretability techniques. Much of our work has been inspired by findings in linguistics, cognitive science and neuroscience, and a long term goal is to 'give back' to those fields, for instance by using AI models as scaffolds to build predictive models of neuroimaging data or by providing 'existence proofs' of possible ways in which networks of neurons might implement specific cognitive functions. {: .intro }
+
+Most of the research in the lab in focused on Interpretability methods in Artificial Intelligence. We apply them to LLMs, neural speech models, vision-language models, and time series models. We develop new interpretability techniques. Much of our work has been inspired by findings in linguistics, cognitive science and neuroscience, and a long term goal is to 'give back' to those fields, for instance by using AI models as scaffolds to build predictive models of neuroimaging data or by providing 'existence proofs' of possible ways in which networks of neurons might implement specific cognitive functions. 
+{: .intro }
 
 ## Some things you might (want to) know us for:
 - In 2023, 2024 and 2025 we published a series of papers on **Speech-AI Interpretability**. Check out our papers analyzing speech encoders (such as Wav2Vec2, Hubert), speech recognition systems (finetuned Wav2Vec2, Whisper), and text-to-speech models (such as Parler-TTS, Tacotron-TTS). We adapted some state-of-the-art interpretability techniques from the text domain (including the LogitLens, causal interventions) to the pecularities of speech, and developed some new techqiues (including Value Zeroing) to open up the blackbox of this increasingly impactful class of deep learning models. See: {% cite pouw2024perception %}  {% cite deheerklootsHumanlikeLinguisticBiases2024 %} 
